@@ -477,7 +477,7 @@ footer ul{margin:6px 0 0;padding-left:18px}
     var maxFunnel=Math.max.apply(null,(d.funnel||[]).map(function(x){return x.count||0}).concat([1]));
     var html='<section class="panel"><h2>Research funnel</h2>'+bars((d.funnel||[]).map(function(x){return {label:x.label,count:x.count};}), maxFunnel,'cyan')+"</section>";
     var scores=Object.keys(d.score_counts||{}).sort().map(function(k){return {label:"Score "+k,count:d.score_counts[k]};});
-    html+='<section class="panel"><h2>Score distribution</h2>'+(scores.length?bars(scores,d.categories&&d.categories.tested_total,'amber"):'<p class="omit">No scores in results_table.csv.</p>')+"</section>";
+    html+='<section class="panel"><h2>Score distribution</h2>'+(scores.length?bars(scores,d.categories&&d.categories.tested_total,'amber'):'<p class="omit">No scores in results_table.csv.</p>')+"</section>";
     html+='<section class="panel"><h2>Overfit stats on decided names</h2>';
     html+='<p class="dim">Only rows that already record PBO, DSR, or holdout Sharpe in approved_strategies.json are listed. Dates and missing cells are left blank when the file has no value.</p>';
     html+=tbl(

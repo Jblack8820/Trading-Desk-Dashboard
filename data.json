@@ -16,8 +16,8 @@
     "sha256": "090301a57041b531978faea11939f879f9f17ac8ca11b5d39178ae4ff9a27372",
     "status": "ok"
   },
-  "built_at": "2026-11-10T16:10:01.472370-05:00",
-  "content_hash": "3fb319e1a951d415f2ea8ca033947ef109812a7b77a10f78f461784c88b6e32f",
+  "built_at": "2026-11-10T16:13:46.438623-05:00",
+  "content_hash": "cd8e399e4a3f51d1f96666ee8d2b477002ae70b8ee36f850f8e150bb50dd2bc1",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -762,16 +762,8 @@
       }
     ],
     "issues": [
-      {
-        "issue": "mark_stale",
-        "source": "paper_trades.json",
-        "trade_id": "PT-SB29-2026-10-30-001"
-      },
-      {
-        "issue": "mark_stale",
-        "source": "paper_trades.json",
-        "trade_id": "PT-SE01-2026-11-02-001"
-      }
+      "mark_stale · PT-SB29-2026-10-30-001 · source paper_trades.json",
+      "mark_stale · PT-SE01-2026-11-02-001 · source paper_trades.json"
     ],
     "kpis": [
       {
@@ -868,9 +860,9 @@
         "executed_at": null,
         "legs": [
           {
-            "change_pct": null,
+            "change_pct": -0.20424592007131553,
             "fill_price": 751.545,
-            "last_price": null,
+            "last_price": 750.01,
             "notional_usd": 33.68,
             "price_time": "2026-10-30T14:43:21-04:00 (latest available Yahoo print; feed stale)",
             "shares": 0.044814,
@@ -879,9 +871,9 @@
             "weight_pct": 42.1
           },
           {
-            "change_pct": null,
+            "change_pct": -0.8823529411764692,
             "fill_price": 81.6,
-            "last_price": null,
+            "last_price": 80.88,
             "notional_usd": 31.76,
             "price_time": "2026-10-30T15:44:57-04:00",
             "shares": 0.389216,
@@ -890,9 +882,9 @@
             "weight_pct": 39.7
           },
           {
-            "change_pct": null,
+            "change_pct": 4.041684269821142,
             "fill_price": 355.05,
-            "last_price": null,
+            "last_price": 369.4,
             "notional_usd": 14.56,
             "price_time": "2026-10-30T15:44:04-04:00",
             "shares": 0.041008,
@@ -14170,6 +14162,7 @@
     }
   },
   "target_url_not_published": "https://trading-desk-dashboard-2exs.pages.grok.bot/",
+  "template_hash": "8451c27972fc765dd4b136fc8b0c990d770f796fc52c018a56e4de25a6041ddd",
   "tester_only_trades": [
     {
       "book": "TESTER_ONLY",
