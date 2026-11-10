@@ -1,103 +1,601 @@
 <!doctype html>
 <html lang="en">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Trading desk · trading-team local site</title>
+<title>Trading Desk Dashboard</title>
 <style>
-body{margin:0;background:#141922;color:#dbe2ea;font:15px/1.45 system-ui,sans-serif}
-main{max-width:1180px;margin:0 auto;padding:28px 20px 48px}
-h1{margin:8px 0 4px;font-size:28px}
-h2{margin:0 0 12px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#94a0b0}
-.sub{color:#94a0b0}
-.dim{color:#6b7685;font-size:12px}
-.banner{background:rgba(227,180,95,.10);border:1px solid rgba(227,180,95,.35);color:#f0c77c;padding:12px 16px;border-radius:10px;margin:16px 0}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:16px 0}
-.card,.panel{background:#1b222d;border:1px solid #2b3442;border-radius:12px;padding:16px 18px}
-.panel{margin:16px 0}
-.k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#94a0b0}
-.v{font-size:26px;font-weight:600;margin-top:6px;font-variant-numeric:tabular-nums}
-table{width:100%;border-collapse:collapse}
-th,td{padding:9px 10px;text-align:left;border-bottom:1px solid rgba(43,52,66,.6);font-variant-numeric:tabular-nums;vertical-align:top}
-th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#94a0b0;background:#202834}
-.pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11px;font-weight:600}
-pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#202834;padding:12px;border-radius:8px}
-ul{margin:8px 0 0 18px}
+:root{
+  --bg:#141922;--panel:#1b222d;--panel2:#202834;--zebra:#1f2631;
+  --border:#2b3442;--text:#dbe2ea;--sub:#94a0b0;--dim:#6b7685;
+  --green:#3fbf8f;--red:#ef6b73;--blue:#62a0f6;--amber:#e3b45f;--cyan:#4cc3d4;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);
+  font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+button,input{font:inherit;color:inherit}
+main{max-width:1180px;margin:0 auto;padding:28px 20px 64px}
+.eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--sub)}
+h1{margin:6px 0 8px;font-size:28px;font-weight:650;letter-spacing:-.02em}
+h2{margin:0 0 12px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--sub);font-weight:650}
+h3{margin:0 0 8px;font-size:15px;font-weight:650}
+.sub{color:var(--sub);margin:0 0 6px}
+.dim{color:var(--dim);font-size:12px}
+.mono,.num,kpi .v,td.num{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+.up{color:var(--green)} .down{color:var(--red)}
+.asof{margin:10px 0 18px;color:var(--sub);font-size:13px}
+.asof b{color:var(--text);font-weight:650}
+.tabs{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch;
+  border-bottom:1px solid var(--border);margin:18px 0 20px;scrollbar-width:thin}
+.tab{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;
+  color:var(--sub);padding:10px 14px;white-space:nowrap;cursor:pointer;font-weight:600;font-size:13px}
+.tab:hover{color:var(--text)}
+.tab.active{color:var(--text);border-bottom-color:var(--blue)}
+.tab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.pane{display:none} .pane.active{display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px;margin:0 0 16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin:0 0 16px}
+.card,.panel{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px 18px}
+.panel{margin:0 0 16px}
+kpi{display:block}
+kpi .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--sub)}
+kpi .v{font-size:24px;font-weight:650;margin-top:6px;letter-spacing:-.02em}
+kpi .h{margin-top:6px;color:var(--dim);font-size:12px;line-height:1.35}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11px;font-weight:650;letter-spacing:.02em;line-height:1.4}
+.pill.paper{color:#8cbcff;background:rgba(98,160,246,.12)}
+.pill.live{color:#ff9aa0;background:rgba(239,107,115,.12)}
+.pill.good{color:#6fd8ae;background:rgba(63,191,143,.12)}
+.pill.warn{color:#f0c77c;background:rgba(227,180,95,.12)}
+.pill.info{color:#7ec8d8;background:rgba(76,195,212,.12)}
+.pill.muted{color:#b3bdca;background:rgba(148,160,176,.10)}
+.scroll{overflow:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+table{width:100%;border-collapse:collapse;min-width:520px}
+th,td{padding:9px 10px;text-align:left;border-bottom:1px solid rgba(43,52,66,.75);vertical-align:top}
+th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--sub);background:var(--panel2);font-weight:650;position:sticky;top:0}
+tbody tr:nth-child(even){background:var(--zebra)}
+td.num{text-align:right;white-space:nowrap}
+.prop{display:grid;grid-template-columns:140px 1fr;gap:6px 12px;font-size:13px}
+.prop .k{color:var(--sub)}
+.barrow{display:grid;grid-template-columns:minmax(92px,160px) 1fr 48px;gap:8px;align-items:center;margin:6px 0}
+.barrow .lab{color:var(--sub);font-size:13px}
+.barrow .n{text-align:right;font-size:13px}
+.track{height:8px;background:var(--panel2);border-radius:99px;overflow:hidden}
+.fill{height:100%;background:var(--blue);border-radius:99px}
+.fill.green{background:var(--green)} .fill.amber{background:var(--amber)} .fill.cyan{background:var(--cyan)}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--panel2);padding:12px 14px;border-radius:8px;margin:0;font:12.5px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--text)}
+.note{background:rgba(227,180,95,.08);border:1px solid rgba(227,180,95,.28);color:#e8c888;padding:10px 14px;border-radius:10px;margin:0 0 16px;font-size:13px}
+.omit{color:var(--dim);font-size:13px;padding:8px 0}
+.legs{margin-top:12px}
+footer{margin-top:28px;color:var(--dim);font-size:12px}
+footer ul{margin:6px 0 0;padding-left:18px}
+.err{background:rgba(239,107,115,.12);border:1px solid rgba(239,107,115,.35);color:#ff9aa0;padding:14px 16px;border-radius:10px}
+.pos-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap;margin-bottom:8px}
+.stack{display:flex;flex-direction:column;gap:16px}
+@media (max-width:640px){
+  main{padding:16px 12px 48px}
+  h1{font-size:22px}
+  kpi .v{font-size:20px}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cards{grid-template-columns:1fr}
+  .tabs{margin-left:-12px;margin-right:-12px;padding:0 12px}
+  .tab{padding:10px 10px}
+  table{min-width:460px;font-size:13px}
+  th,td{padding:8px}
+  .prop{grid-template-columns:1fr;gap:2px}
+  .barrow{grid-template-columns:1fr 40px;grid-template-rows:auto auto}
+  .barrow .lab{grid-column:1/-1}
+}
 </style>
+</head>
+<body>
 <main>
-  <div class="dim">Trading team only · local generated site · America/New_York</div>
-  <h1>Trading Desk Dashboard</h1>
-  <p class="sub">Kept current by script from desk files and the alerts poller marks (newest timestamp wins). Sourced as-of times, not a brokerage stream. Not the private Canvas. Publish to pages.grok.bot is blocked until a non-AI publish path exists.</p>
-  <p class="dim">Built 2026-11-10T16:00:02.350819-05:00 · content hash b51b0085423bb01c…</p>
-  <div class="banner"><b>Publish status:</b> blocked_no_non_ai_path. No non-AI publish path: pages.grok.bot Pages are updated only by a Bot (official docs: https://cursor.com/help/grok-bot/pages). No wrangler/CLI or stored publish credential found on this box. Live URL is login-gated (HTTP 302 apps-gate). Canvas a875f485 is private and must not be modified. Local generator is ready; republish remains a parent/Bot-in-chat step.</div>
-  <div class="cards">
-    <div class="card"><div class="k">Open desk paper trades</div><div class="v">1</div></div>
-    <div class="card"><div class="k">Live real-order legs</div><div class="v">0</div></div>
-    <div class="card"><div class="k">Paper / recorded decisions</div><div class="v">5 paper · 59 reject</div></div>
-    <div class="card"><div class="k">Risk file equity</div><div class="v">200</div><div class="dim">as recorded · freshness stale</div></div>
-    <div class="card"><div class="k">Pending list (cross-checked)</div><div class="v">0 pending · 7 already decided</div></div>
-  </div>
-  <section class="panel"><h2>Data quality / stale flags</h2><ul><li>{&#x27;source&#x27;: &#x27;paper_trades.json&#x27;, &#x27;trade_id&#x27;: &#x27;PT-SB29-2026-10-30-001&#x27;, &#x27;issue&#x27;: &#x27;mark_stale&#x27;}</li><li>{&#x27;source&#x27;: &#x27;paper_trades.json&#x27;, &#x27;trade_id&#x27;: &#x27;PT-SE01-2026-11-02-001&#x27;, &#x27;issue&#x27;: &#x27;mark_stale&#x27;}</li></ul></section>
-  <section class="panel"><h2>Open desk positions (sourced marks)</h2>
-    <table><thead><tr><th>Trade</th><th>Strategy</th><th>Mode</th><th>Status</th><th>Basket $</th><th>uPnL $</th><th>Mark source</th><th>As-of</th><th>Freshness</th></tr></thead>
-    <tbody><tr><td>PT-SB29-2026-10-30-001</td><td>SB29</td><td><span class="pill" style="color:#8cbcff;background:rgba(98,160,246,0.12)">paper</span></td><td>OPEN</td><td>80.2386</td><td>0.2386</td><td>alerts/poll.log</td><td>2026-11-10 16:00:01 ET</td><td><span class="pill" style="color:#6fd8ae;background:rgba(63,191,143,0.12)">recent</span></td></tr></tbody></table>
-  </section>
-  <section class="panel"><h2>Tester-only (not desk production P&amp;L)</h2>
-    <table><thead><tr><th>Trade</th><th>Strategy</th><th>Status</th><th>Recorded PnL</th><th>As-of</th><th>Book / owner</th></tr></thead>
-    <tbody><tr><td>PT-SE01-2026-11-02-001</td><td>SE01</td><td>CLOSED_TESTER_ONLY</td><td>3.507469</td><td>2026-11-06T09:31:55-05:00</td><td>TESTER_ONLY</td></tr></tbody></table>
-  </section>
-  <section class="panel"><h2>Pending strategies (cross-checked against decisions)</h2>
-    <p class="dim">Names still listed in pending_strategies.json that already have a decision in approved_strategies.json (or a rejected/decided file) are shown as decided, not pending. Desk files are not modified.</p>
-    <p class="dim">7 already decided · 0 still pending</p>
-    <div style="overflow:auto;max-height:360px"><table><thead><tr><th>ID</th><th>Name</th><th>Listed as</th><th>Shown as</th><th>Decided at</th><th>Decision source</th></tr></thead>
-    <tbody><tr><td>NC06</td><td>Treasury end-of-month effect (Hartley-Schwarz 2019): hold TLT over the last D trading days of each month, else T-bills</td><td>pending_review</td><td>PAPER_APPROVED</td><td>2026-10-31T02:00:00-04:00</td><td>approved_strategies.json</td></tr><tr><td>NE06</td><td>Jason Kelly 9Sig (The Kelly Letter, YouTube/Reddit): TQQQ/AGG, quarterly rebalance of TQQQ to a 9%-growth signal line</td><td>pending_review</td><td>REJECT</td><td>2026-10-31T14:05:00-04:00</td><td>approved_strategies.json</td></tr><tr><td>CX02</td><td>Multi-coin trend with inverse-vol risk parity and a portfolio vol cap (6 Robinhood majors: BTC ETH XRP SOL DOGE ADA), weekly</td><td>pending_review</td><td>REJECT</td><td>2026-10-31T16:30:00-04:00</td><td>approved_strategies.json</td></tr><tr><td>CX06</td><td>Turtle-style breakout on BTC/ETH/SOL with stop-defined risk sizing (Original Turtle Rules, System 2 adapted to daily crypto closes)</td><td>pending_review</td><td>REJECT</td><td>2026-10-31T16:30:00-04:00</td><td>approved_strategies.json</td></tr><tr><td>CX06B</td><td>CX06 on BTC + ETH only (the two coins Robinhood has listed continuously since its 2018 crypto launch): Turtle-style breakout with stop-defined sizing</td><td>pending_review</td><td>PAPER_APPROVED</td><td>2026-10-31T16:30:00-04:00</td><td>approved_strategies.json</td></tr><tr><td>NH01</td><td>Bitcoin MVRV Z-score cycle (LookIntoBitcoin / Glassnode; Vaasa thesis 2025; X/YouTube on-chain influencers): buy BTC when MVRV-Z &lt; lo, sell when &gt; hi</td><td>pending_review</td><td>REJECT</td><td>2026-11-01T01:15:00-05:00</td><td>approved_strategies.json</td></tr><tr><td>NH03</td><td>Bitcoin power-law corridor (Giovanni Santostasi / X &quot;power law&quot; accounts; btcpower.ai; btcpowerlaw.nl): buy BTC when the log-residual vs the power-law trend is below ent sigma, sell above ext sigma (expanding monthly refit)</td><td>pending_review</td><td>REJECT</td><td>2026-11-01T01:15:00-05:00</td><td>approved_strategies.json</td></tr></tbody></table></div>
-  </section>
-  <section class="panel"><h2>Recorded approvals</h2>
-    <p class="dim">Counts: {&#x27;PAPER_APPROVED&#x27;: 5, &#x27;REJECT&#x27;: 59}. live_eligible is the recorded field, not a recommendation.</p>
-    <div style="overflow:auto;max-height:420px"><table><thead><tr><th>ID</th><th>Name</th><th>Decision</th><th>Decided at</th><th>Score</th><th>live_eligible</th></tr></thead><tbody><tr><td>S1</td><td>SPY monthly SMA trend (Faber-style)</td><td>REJECT</td><td>2026-10-30T13:40:00-04:00</td><td>2</td><td>None</td></tr><tr><td>S2</td><td>SPY 12-1 style time-series momentum</td><td>REJECT</td><td>2026-10-30T13:40:00-04:00</td><td>2</td><td>None</td></tr><tr><td>S3</td><td>Global Equities Momentum (dual momentum SPY/EFA/IEF)</td><td>REJECT</td><td>2026-10-30T13:40:00-04:00</td><td>2</td><td>None</td></tr><tr><td>S4</td><td>8-ETF momentum rotation top-K w/ absolute filter</td><td>REJECT</td><td>2026-10-30T13:40:00-04:00</td><td>2</td><td>None</td></tr><tr><td>S5</td><td>BTC weekly SMA trend</td><td>REJECT</td><td>2026-10-30T13:40:00-04:00</td><td>2</td><td>None</td></tr><tr><td>S6</td><td>ETH weekly SMA trend</td><td>REJECT</td><td>2026-10-30T13:40:00-04:00</td><td>2</td><td>None</td></tr><tr><td>S7</td><td>SPY trend + volatility targeting</td><td>REJECT</td><td>2026-10-30T13:40:00-04:00</td><td>2</td><td>None</td></tr><tr><td>S8</td><td>SPY RSI mean reversion above 200d (Connors-style)</td><td>REJECT</td><td>2026-10-30T13:40:00-04:00</td><td>2</td><td>None</td></tr><tr><td>S9</td><td>QQQ 200d trend toggling 2x Nasdaq ETF (QLD)</td><td>REJECT</td><td>2026-10-30T13:40:00-04:00</td><td>2</td><td>None</td></tr><tr><td>S10</td><td>SPY long 30-DTE ATM call when SPY&gt;200d (BS approx, IV=VIX)</td><td>REJECT</td><td>2026-10-30T13:40:00-04:00</td><td>1</td><td>None</td></tr><tr><td>SB11</td><td>TJR NY-open liquidity sweep + 5m BOS reversal with ES/NQ SMT gate</td><td>PAPER_APPROVED</td><td>2026-10-30T14:40:00-04:00</td><td>3</td><td>False</td></tr><tr><td>SB26</td><td>Benjamin Cowen BTC bull-market support band (YouTube)</td><td>PAPER_APPROVED</td><td>2026-10-30T14:40:00-04:00</td><td>3</td><td>False</td></tr><tr><td>SB29</td><td>Robot Wealth risk-premia harvesting (inverse-vol SPY/TLT/GLD)</td><td>PAPER_APPROVED</td><td>2026-10-30T14:40:00-04:00</td><td>3</td><td>False</td></tr><tr><td>SB01</td><td>ICT daily fair value gap retracement (QQQ)</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>1</td><td>None</td></tr><tr><td>SB02</td><td>ICT 2022 Mentorship model (sweep + MSS + FVG), daily SPY</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>SB03</td><td>ICT 2022 model on 1-hour QQQ (Marketalyx H1 detector)</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>SB04</td><td>ICT order block retest, daily SPY</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>SB05</td><td>ICT Turtle Soup: prior-day-low sweep and close back inside, daily SPY</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>1</td><td>None</td></tr><tr><td>SB06</td><td>ICT weekly profile: previous-week-low sweep, weekly SPY</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>SB07</td><td>ICT Power of Three (AMD) daily: buy the manipulation dip below the open</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>1</td><td>None</td></tr><tr><td>SB08</td><td>ICT Optimal Trade Entry (OTE) 62-79% retracement, daily SPY</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>SB09</td><td>ICT Silver Bullet (10-11 AM NY FVG), QQQ 5-minute</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>1</td><td>None</td></tr><tr><td>SB10</td><td>ICT Judas swing, London kill zone (NQ futures 1h)</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>1</td><td>None</td></tr><tr><td>SB13</td><td>Opening Range Breakout, first 5-min candle (Zarattini &amp; Aziz, SSRN)</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>1</td><td>None</td></tr><tr><td>SB14</td><td>Trading Rush MACD + 200 EMA (daily, long-only)</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>SB15</td><td>Supertrend (10,3) trend filter, TradingView-style, daily SPY</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>SB16</td><td>Larry Williams volatility breakout, daily SPY</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>1</td><td>None</td></tr><tr><td>SB17</td><td>Internal Bar Strength mean reversion (QuantifiedStrategies)</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>1</td><td>None</td></tr><tr><td>SB18</td><td>Connors Double 7s (r/algotrading)</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>SB19</td><td>Turn-of-the-month (QuantifiedStrategies / Quantpedia)</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>1</td><td>None</td></tr><tr><td>SB20</td><td>Pre-holiday effect (Quantpedia)</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>SB21</td><td>Overnight drift: buy close, sell next open</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>1</td><td>None</td></tr><tr><td>SB22</td><td>Turtle-style Donchian breakout, 8-ETF basket, long-only</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>1</td><td>None</td></tr><tr><td>SB23</td><td>TTM Squeeze breakout (John Carter), daily SPY long</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>SB24</td><td>Ichimoku TK cross above cloud, daily SPY</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>SB25</td><td>Golden cross 50/200 (Robinhood Learn / Investing.com)</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>SB27</td><td>TheStrat 2-1-2 bullish reversal (Rob Smith), daily SPY</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>SB28</td><td>Alpha Architect ROBUST trend (50% TSMOM + 50% 12m MA)</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>ST01</td><td>Stocktwits &quot;buy the -4% QQQ dip&quot; bounce</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>ST02</td><td>Stocktwits &quot;gap fill&quot;: buy SPY gap-down open, target prior close</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>ST03</td><td>Stocktwits &quot;BTC daily oversold&quot; RSI bounce</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>2</td><td>None</td></tr><tr><td>SB12</td><td>Kay Capitals 3-step options ORB (0DTE SPY calls/puts) [Black-Scholes approximation]</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>1</td><td>None</td></tr><tr><td>SB30</td><td>The Wheel on SPY (r/options): 30-day cash-secured puts then covered calls [BS approximation]</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>1</td><td>None</td></tr><tr><td>RH01</td><td>Covered call (Robinhood Learn): own 100 SPY, sell ~30-day 2-5% OTM call monthly [BS approximation]</td><td>REJECT</td><td>2026-10-30T17:06:00-04:00</td><td>1</td><td>None</td></tr><tr><td>NC06</td><td>Treasury end-of-month effect (TLT last 5 trading days, T-bills otherwise)</td><td>PAPER_APPROVED</td><td>2026-10-31T02:00:00-04:00</td><td>5</td><td>False</td></tr><tr><td>NE06</td><td>Jason Kelly 9Sig (TQQQ/AGG quarterly rebalance to a 9% growth target)</td><td>REJECT</td><td>2026-10-31T14:05:00-04:00</td><td>4</td><td>None</td></tr><tr><td>CX06B</td><td>CX06 on BTC + ETH only (the two coins Robinhood has listed continuously since its 2018 crypto launch): Turtle-style breakout with stop-defined sizing</td><td>PAPER_APPROVED</td><td>2026-10-31T16:30:00-04:00</td><td>5</td><td>False</td></tr><tr><td>CX06</td><td>Turtle-style breakout on BTC/ETH/SOL with stop-defined risk sizing (Original Turtle Rules, System 2 adapted to daily crypto closes)</td><td>REJECT</td><td>2026-10-31T16:30:00-04:00</td><td>5</td><td>None</td></tr><tr><td>CX02</td><td>Multi-coin trend with inverse-vol risk parity and a portfolio vol cap (6 Robinhood majors: BTC ETH XRP SOL DOGE ADA), weekly</td><td>REJECT</td><td>2026-10-31T16:30:00-04:00</td><td>4</td><td>None</td></tr><tr><td>NH01</td><td>Bitcoin MVRV Z-score cycle (LookIntoBitcoin / Glassnode; Vaasa thesis 2025; X/YouTube on-chain influencers): buy BTC when MVRV-Z &lt; lo, sell when &gt; hi</td><td>REJECT</td><td>2026-11-01T01:15:00-05:00</td><td>5</td><td>None</td></tr><tr><td>NH03</td><td>Bitcoin power-law corridor (Giovanni Santostasi / X &quot;power law&quot; accounts; btcpower.ai; btcpowerlaw.nl): buy BTC when the log-residual vs the power-law trend is below ent sigma, sell above ext sigma (expanding monthly refit)</td><td>REJECT</td><td>2026-11-01T01:15:00-05:00</td><td>5</td><td>None</td></tr><tr><td>SE02</td><td>QQQ 10-month SMA trend (source: antoinersx X article)</td><td>REJECT</td><td>2026-11-06T07:50:00-05:00</td><td>2</td><td>None</td></tr><tr><td>NO01</td><td>None</td><td>REJECT</td><td>2026-11-06T08:10:00-05:00</td><td>1</td><td>None</td></tr><tr><td>NO02</td><td>None</td><td>REJECT</td><td>2026-11-06T08:10:00-05:00</td><td>1</td><td>None</td></tr><tr><td>SE01</td><td>Point-in-time top-5 Nasdaq stocks + QQQ 10-month trend filter (source: antoinersx X article)</td><td>REJECT</td><td>2026-11-06T09:35:00-05:00</td><td>None</td><td>None</td></tr><tr><td>CX11</td><td>None</td><td>REJECT</td><td>2026-11-06T13:20:00-05:00</td><td>2</td><td>None</td></tr><tr><td>CX12</td><td>None</td><td>REJECT</td><td>2026-11-06T13:20:00-05:00</td><td>1</td><td>None</td></tr><tr><td>OP01</td><td>TrendSpider SSO Opus 5.5 15m</td><td>REJECT</td><td>2026-11-09T08:10:00-05:00</td><td>1</td><td>None</td></tr><tr><td>SE03</td><td>Country-ETF lowest-IBS rank (k=3)</td><td>REJECT</td><td>2026-11-09T08:12:00-05:00</td><td>1</td><td>None</td></tr><tr><td>SE04</td><td>Sector correlation-acceleration SPY-to-cash overlay (X=1.15, 20/60)</td><td>REJECT</td><td>2026-11-09T08:12:00-05:00</td><td>2</td><td>None</td></tr><tr><td>SE05</td><td>Floor-pivot SPY/QQQ long-only flat-by-close (entry B / exit X)</td><td>REJECT</td><td>2026-11-09T13:59:00-05:00</td><td>1</td><td>False</td></tr><tr><td>SE06</td><td>Sector alpha + R² filter monthly (FF3 k=3 R²-low)</td><td>REJECT</td><td>2026-11-09T13:59:00-05:00</td><td>1</td><td>False</td></tr><tr><td>SE07</td><td>Weekly multi-asset reversal + volume (vol / p=1 / L=1)</td><td>REJECT</td><td>2026-11-09T13:59:00-05:00</td><td>1</td><td>False</td></tr><tr><td>SE08</td><td>Commodity/K-1 multi-asset basket including delisted DBS (spec blocked)</td><td>REJECT</td><td>2026-11-09T13:59:00-05:00</td><td>None</td><td>False</td></tr></tbody></table></div>
-  </section>
-  <section class="panel"><h2>Watch levels (SETUP_FINDER file)</h2>
-    <p class="dim">generated_at 2026-11-10T12:07:37.096121-05:00 · freshness recent · levels 11</p>
-  </section>
-  <section class="panel"><h2>BRIEFING desk inputs (file heads only)</h2>
-    <p class="dim">daily_regime.md: ok</p>
-    <pre># Daily Regime — Tue Nov 10, 2026
-Written: Tue Nov 10, 2026 ~8:20 AM ET. Prices: Yahoo Finance chart API. For SETUP_FINDER.
-
-## Month-end regime (Oct 2026)
-QQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)
-Compute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)
-Note: matches @antoinersx&#x27;s Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have &gt;=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD
-
-## Regime
-- Structure: **Rebound, trend repair attempt.** Mon +2.35% S&amp;P / +2.74% Nasdaq; QQQ 679.35 back just above Oct 10-month SMA (678.38), cushion ~0.1%.
-- Risk: **Improving but fragile.** VIX ~20 (from 25.6 Fri). NVDA lagging on governance headlines while rest of semis ripped.
-- Rates: 10y ~4.86%. CPI 8:30 (m/m only, no y/y this month).
-
-## Bias
-- Short-term: **NEUTRAL until CPI.** Futures flat ES / soft NQ after Mon&#x27;s rally. Hot print likely retests 7566 then 7477; soft print targets break of 7600.
-- Event risk: CRWV AMC (neocloud/AI debt), AMAT/CSCO Thu AMC, PPI Fri.</pre>
-    <p class="dim">daily_briefing.md: ok</p>
-    <pre># Morning Briefing — Tue Nov 10, 2026
-Written ~8:20 AM ET by BRIEFING. Live futures: Yahoo Finance chart API (~8:05 AM ET). Prior-session closes: Yahoo completed daily bars via desk prefetch cache (observation Nov 9 session). Paper only, no trades placed.
-
-## ES/NQ bias, levels, overnight
-- **Bias: neutral, wait for CPI (8:30).** Monday&#x27;s ripping rebound (S&amp;P +2.35%, Nasdaq +2.74%) is being digested; Dow leads, Nasdaq lags overnight. No y/y CPI this month (BLS lacks Oct 2025 data), so m/m (cons +0.3%, core +0.2%) carries the print.
-- Overnight: ES ~7578.5 (+0.1% vs 7574.25 settle), range 7566–7598.75. NQ ~27913 (-0.4% vs 28014.5), range 27869–28109. VIX ~20.0 (Mon close 19.92). WTI ~$85.0 (-2.2%) on Trump saying Iran action &quot;not necessary&quot;. 10y ~4.86% (Mon).
-- ES: resistance 7599–7600.5 (ON high / Mon high), support 7566 (ON low) then 7469–7477 (Fri high). NQ: resistance 28109–28129, support 27869 then 27425 (Fri high).
-
-## Prior day recap (Mon Nov 9)
-Broad rebound: SPY 752.69 (+2.4%), QQQ 679.35 (+3.5%), VIX 19.92 (from 25.64). SOXX +7.5%, AMD best day in six months, but NVDA closed about -4% on the Huang probe plus a new class action. GLD 379.53 (+1.9%), TLT 81.96 flat. QQQ closed back just above the Oct 10-month SMA ($678.38).
-
-## Desk activity
-- No new fills. SB29 paper basket (SPY/TLT/GLD, $80 notional) marks ~$81.19 at Mon close (+$1.19); portfolio stop $72 far. Next action: Nov 30 rebalance.
-- Watcher: running every 5 min, 0 alerts, 0 delivery failures through 8:15 AM.
-
-## Strategy recap</pre>
-  </section>
-  <section class="panel"><h2>Trading-team scope</h2>
-    <ul><li>STRATEGY_SCANNER</li><li>CRYPTO_TESTER</li><li>STOCKS_ETF_TESTER</li><li>OPTIONS_TESTER</li><li>STRATEGY_APPROVER</li><li>SETUP_FINDER</li><li>RISK_MANAGER</li><li>TRADE_MANAGER</li></ul>
-    <p class="dim">BRIEFING and Reporter appear only as authors of desk files already used above. Excluded: News Bot, Truth Social, Personal Assistant, Marketing Director - Artists, Marketing Director - Events, Website Design Bot, CEO.</p>
-  </section>
-  <p class="dim">Target URL (not updated by this job): https://trading-desk-dashboard-2exs.pages.grok.bot/</p>
+  <div class="eyebrow" id="eyebrow">Trading team</div>
+  <h1 id="title">Trading Desk Dashboard</h1>
+  <p class="sub" id="summary">Loading desk data…</p>
+  <p class="asof" id="asof"></p>
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Dashboard sections"></nav>
+  <div id="app"><p class="dim">Fetching data.json…</p></div>
+  <footer id="footer"></footer>
 </main>
+<script>
+(function(){
+  var TABS = [
+    {id:"overview", label:"Overview"},
+    {id:"operations", label:"Operations"},
+    {id:"strategies", label:"Strategies"},
+    {id:"categories", label:"Categories"},
+    {id:"replay", label:"Replay tests"},
+    {id:"research", label:"Research"},
+    {id:"productivity", label:"Bot productivity"}
+  ];
+  function esc(s){
+    return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+  }
+  function isNum(n){ return typeof n==="number" && isFinite(n); }
+  function toNum(n){
+    if(n==null || n==="") return null;
+    if(typeof n==="number") return isFinite(n)?n:null;
+    var x=Number(n); return isFinite(x)?x:null;
+  }
+  function money(n, d){
+    n=toNum(n); if(n==null) return "—";
+    if(d==null) d=2;
+    var sign=n<0?"−":"";
+    return sign+"$"+Math.abs(n).toLocaleString(undefined,{minimumFractionDigits:d,maximumFractionDigits:d});
+  }
+  function pnl(n, d){
+    n=toNum(n); if(n==null) return "—";
+    if(d==null) d=2;
+    var cls=n>0?"up":n<0?"down":"";
+    var sign=n>0?"+":n<0?"−":"";
+    return '<span class="'+cls+'">'+sign+"$"+Math.abs(n).toLocaleString(undefined,{minimumFractionDigits:d,maximumFractionDigits:d})+"</span>";
+  }
+  function pct(n, d){
+    n=toNum(n); if(n==null) return "—";
+    if(d==null) d=1;
+    var v=Math.abs(n)<=1 && Math.abs(n)!==0 && arguments[2]!=="already" ? n*100 : n;
+    /* If already stored as percent (win_rate_pct etc) caller passes "already".
+       Auto: values with abs<=1 treated as fractions except 0. */
+    if(arguments[2]==="already") v=n;
+    else if(Math.abs(n)<=1) v=n*100;
+    else v=n;
+    var cls=v>0?"up":v<0?"down":"";
+    var sign=v>0?"+":v<0?"−":"";
+    return '<span class="'+cls+'">'+sign+Math.abs(v).toFixed(d)+"%</span>";
+  }
+  function pctAlready(n,d){ n=toNum(n); if(n==null) return "—";
+    var cls=n>0?"up":n<0?"down":"";
+    var sign=n>0?"+":n<0?"−":"";
+    return '<span class="'+cls+'">'+sign+Math.abs(n).toFixed(d==null?1:d)+"%</span>";
+  }
+  function num(n,d){ n=toNum(n); if(n==null) return "—"; return (d==null?String(n):n.toFixed(d)); }
+  function pill(label, kind){
+    return '<span class="pill '+(kind||"muted")+'">'+esc(label||"")+'</span>';
+  }
+  function fmtKpi(item){
+    var v=item.value, f=item.format, html;
+    if(f==="money") html=money(v,2);
+    else if(f==="money0") html=money(v,0);
+    else if(f==="pnl") html=pnl(v,2);
+    else if(f==="int") html=(v==null?"—":String(v));
+    else html=(v==null?"—":esc(v));
+    return '<kpi class="card"><div class="k">'+esc(item.label)+'</div><div class="v">'+html+'</div>'+
+      (item.hint?'<div class="h">'+esc(item.hint)+'</div>':'')+'</kpi>';
+  }
+  function tbl(headers, rows, empty){
+    if(!rows || !rows.length) return '<p class="omit">'+(empty||"No sourced rows.")+'</p>';
+    var h=headers.map(function(x){return "<th>"+esc(x.label||x)+"</th>";}).join("");
+    var body=rows.map(function(r){
+      return "<tr>"+headers.map(function(col,i){
+        var key=col.key!=null?col.key:i;
+        var val=typeof r==="object"&&!Array.isArray(r)?r[key]:r[i];
+        var html=col.html?val:(val==null||val===""?"—":esc(val));
+        return '<td class="'+(col.num?"num":"")+'">'+html+"</td>";
+      }).join("")+"</tr>";
+    }).join("");
+    return '<div class="scroll"><table><thead><tr>'+h+"</tr></thead><tbody>"+body+"</tbody></table></div>";
+  }
+  function bars(items, max, color){
+    if(!items||!items.length) return "";
+    var m=max||Math.max.apply(null, items.map(function(x){return x.count||0;}))||1;
+    return items.map(function(x){
+      var w=Math.max(0, Math.min(100, (x.count||0)/m*100));
+      return '<div class="barrow"><div class="lab">'+esc(x.label)+'</div><div class="track"><div class="fill '+(color||"")+'" style="width:'+w+'%"></div></div><div class="n mono">'+esc(x.count)+"</div></div>";
+    }).join("");
+  }
+  function prop(rows){
+    return '<div class="prop">'+rows.map(function(r){
+      return '<div class="k">'+esc(r[0])+'</div><div>'+r[1]+"</div>";
+    }).join("")+"</div>";
+  }
+  function modePill(mode, real){
+    if(String(mode).toLowerCase()==="live" && real===true) return pill("live","live");
+    return pill(mode||"paper","paper");
+  }
+  function omittedNote(omitted, id){
+    var hit=(omitted||[]).filter(function(x){return x.id===id;})[0];
+    return hit?'<p class="omit">Not shown: '+esc(hit.reason)+"</p>":"";
+  }
+  function posCard(p, kindLabel){
+    var m=p.mark||{};
+    var head='<div class="pos-head"><div><h3>'+esc(p.strategy_id||p.trade_id)+'</h3><div class="dim">'+esc(p.name||p.trade_id||"")+"</div></div><div>"+
+      modePill(p.mode,p.real_order)+" "+pill(p.status||"", kindLabel||"muted")+"</div></div>";
+    var rows=[
+      ["Trade", esc(p.trade_id||"—")],
+      ["Notional", money(p.total_notional_usd)],
+      ["Basket mark", money(m.basket_value_usd)],
+      ["Unrealized", pnl(m.unrealized_pnl_usd)],
+      ["Realized", m.realized_pnl_net_fees_usd==null?"—":pnl(m.realized_pnl_net_fees_usd)],
+      ["Mark source", esc(m.mark_source||"—")],
+      ["Mark as of", esc(m.as_of||"—")],
+      ["Freshness", m.freshness?pill(m.freshness, m.freshness==="recent"?"good":"warn"):"—"]
+    ];
+    if(p.risk_budget_usd!=null) rows.push(["Risk budget", money(p.risk_budget_usd)]);
+    if(p.stop && (p.stop.value!=null||p.stop.near!=null)){
+      rows.push(["Stop", money(p.stop.value)+(p.stop.near!=null?" · near "+money(p.stop.near):"")+(p.stop.basis?" ("+esc(p.stop.basis)+")":"")]);
+    }
+    if(p.time_exits && p.time_exits.length){
+      rows.push(["Time exit", esc(p.time_exits.map(function(x){return [x.date,x.time,x.action].filter(Boolean).join(" ");}).join("; "))]);
+    }
+    if(p.close){
+      rows.push(["Closed at", esc(p.close.closed_at||"—")]);
+      rows.push(["Close reason", esc(p.close.close_reason||"—")]);
+      if(p.close.realized_pnl_net_fees_usd!=null) rows.push(["Close realized", pnl(p.close.realized_pnl_net_fees_usd)]);
+    }
+    var legs=tbl(
+      [
+        {label:"Leg", key:"symbol"},
+        {label:"Side", key:"side"},
+        {label:"Weight", key:"w", html:true, num:true},
+        {label:"Fill", key:"fill", html:true, num:true},
+        {label:"Last", key:"last", html:true, num:true},
+        {label:"Chg", key:"chg", html:true, num:true},
+        {label:"Notional", key:"notional", html:true, num:true}
+      ],
+      (p.legs||[]).map(function(L){
+        return {
+          symbol:L.symbol, side:L.side,
+          w:L.weight_pct==null?"—":Number(L.weight_pct).toFixed(1)+"%",
+          fill:money(L.fill_price, L.fill_price!=null && L.fill_price>=100?2:4),
+          last:L.last_price==null?"—":money(L.last_price, L.last_price>=100?2:4),
+          chg:L.change_pct==null?"—":pctAlready(L.change_pct,2),
+          notional:money(L.notional_usd)
+        };
+      }),
+      "No fill legs in the trade record."
+    );
+    return '<article class="card">'+head+prop(rows)+'<div class="legs">'+legs+"</div></article>";
+  }
+
+  function renderOverview(d){
+    var html="";
+    html+='<div class="grid">'+(d.kpis||[]).map(fmtKpi).join("")+"</div>";
+    if(d.issues && d.issues.length){
+      html+='<div class="note"><b>Data-quality flags</b><ul style="margin:8px 0 0 18px">'+d.issues.map(function(i){return "<li>"+esc(i)+"</li>";}).join("")+"</ul></div>";
+    }
+    html+='<div class="cards">';
+    html+='<section class="card"><h2>Account</h2>'+prop([
+      ["Recorded equity", money(d.account.recorded_equity)],
+      ["Mark-adjusted", money(d.account.mark_adjusted_equity)],
+      ["Open uPnL", pnl(d.account.open_unrealized_pnl)],
+      ["Deployed", money(d.account.deployed_usd)],
+      ["Cash", money(d.account.cash_usd)],
+      ["Open risk", money(d.account.total_open_risk,0)+(d.account.max_open_risk!=null?" of "+money(d.account.max_open_risk,0):"")],
+      ["Mode", pill(d.account.account_mode||"paper","paper")],
+      ["Risk file as of", esc(d.account.updated_at||"—")]
+    ])+'<p class="dim" style="margin-top:10px">Cash is recorded equity minus open production notionals. Mark-adjusted equity is recorded equity plus open production unrealized P&amp;L.</p></section>';
+    if(d.event_flags && d.event_flags.length){
+      html+='<section class="card"><h2>Risk event flags</h2>'+d.event_flags.map(function(ev){
+        return '<p style="margin:0 0 10px"><span class="dim">'+esc(ev.at||"")+"</span><br><b>"+esc(ev.event||"")+"</b><br>"+esc(ev.effect||"")+"</p>";
+      }).join("")+"</section>";
+    }
+    html+="</div>";
+    html+='<section class="panel"><h2>Open production paper</h2>';
+    if(d.open_positions && d.open_positions.length){
+      html+='<div class="cards">'+d.open_positions.map(function(p){return posCard(p,"good");}).join("")+"</div>";
+    } else {
+      html+='<p class="omit">No open production-book trades in paper_trades.json.</p>';
+    }
+    html+="</section>";
+    html+='<section class="panel"><h2>Tester-only book (not production P&amp;L)</h2>';
+    if(d.tester_positions && d.tester_positions.length){
+      html+='<div class="cards">'+d.tester_positions.map(function(p){return posCard(p,"muted");}).join("")+"</div>";
+    } else {
+      html+='<p class="omit">No tester-only trades in the source files.</p>';
+    }
+    html+="</section>";
+    html+='<div class="cards">';
+    html+='<section class="card"><h2>Regime (desk file)</h2>';
+    if(d.regime && d.regime.head) html+="<pre>"+esc(d.regime.head)+"</pre><p class='dim' style='margin-top:8px'>Source: "+esc(d.regime.source)+" — quoted as written, not a live quote board.</p>";
+    else html+='<p class="omit">daily_regime.md was not available.</p>';
+    html+="</section>";
+    html+='<section class="card"><h2>Events on this as-of date</h2>';
+    var evDate=window.__asOfDate;
+    var evAll=(d.regime && d.regime.events) || [];
+    var ev=evAll.filter(function(e){ return evDate && e.date_iso===evDate; });
+    if(ev.length){
+      html+=tbl(
+        [{label:"Time ET",key:"time_et"},{label:"Event",key:"event"},{label:"Impact",key:"impact",html:true},{label:"Source",key:"source"}],
+        ev.map(function(e){
+          var kind=/high/i.test(e.impact||"")?"warn":"muted";
+          return {time_et:e.time_et,event:e.event,impact:pill(e.impact||"",kind),source:e.source};
+        })
+      );
+      if(d.regime.events_updated) html+='<p class="dim">Showing '+esc(evDate)+". Calendar last updated: "+esc(d.regime.events_updated)+"</p>";
+    } else {
+      html+='<p class="omit">No events-calendar rows parsed for '+esc(evDate||"the as-of date")+".</p>";
+    }
+    html+=omittedNote(window.__omitted, "robinhood_listings");
+    html+="</section></div>";
+    return html;
+  }
+
+  function renderOperations(d){
+    var html="";
+    html+='<section class="panel"><h2>Pipeline and roles</h2>';
+    if(d.pipeline && d.pipeline.desk_policy) html+="<p>"+esc(d.pipeline.desk_policy)+"</p>";
+    if(d.pipeline && d.pipeline.roles && d.pipeline.roles.length){
+      html+="<div class='stack'>"+d.pipeline.roles.map(function(r){
+        return '<div><b>'+esc(r.title)+"</b><div class='dim'>"+esc(r.summary||"")+"</div></div>";
+      }).join("")+"</div>";
+      html+='<p class="dim" style="margin-top:10px">Quoted from '+esc(d.pipeline.roles_source)+".</p>";
+    } else html+='<p class="omit">ROLES.md was not available.</p>';
+    html+="</section>";
+    html+='<section class="panel"><h2>Usage rules</h2>';
+    if(d.usage_rules && d.usage_rules.length){
+      html+="<ol>"+d.usage_rules.map(function(r){return "<li>"+esc(r)+"</li>";}).join("")+"</ol>";
+      html+='<p class="dim">From '+esc(d.usage_source)+".</p>";
+    } else html+='<p class="omit">USAGE_RULES.md was not available.</p>';
+    html+=omittedNote(window.__omitted,"weekend_thin_hours_ops");
+    html+="</section>";
+    var w=d.watcher||{};
+    html+='<section class="panel"><h2>Watcher / setup levels</h2>';
+    html+='<p class="dim">generated_at '+esc(w.generated_at||"—")+" · freshness "+esc(w.freshness||"—")+" · "+esc(w.level_count||0)+" levels</p>";
+    if(w.strategies && w.strategies.length){
+      html+=tbl(
+        [{label:"ID",key:"id"},{label:"Status",key:"status",html:true},{label:"Market",key:"market"},{label:"Enabled",key:"enabled"},{label:"Coverage",key:"coverage"}],
+        w.strategies.map(function(s){return {id:s.id,status:pill(s.status||"","paper"),market:s.market,enabled:s.enabled===false?"no":"yes",coverage:s.coverage};})
+      );
+    }
+    if(w.levels && w.levels.length){
+      html+=tbl(
+        [{label:"Strategy",key:"strategy_id"},{label:"Ticker",key:"ticker"},{label:"Kind",key:"kind"},{label:"Level",key:"level",html:true,num:true},{label:"Dir",key:"direction"},{label:"Trigger",key:"trigger"},{label:"Condition",key:"condition"}],
+        w.levels.map(function(lv){return Object.assign({},lv,{level:lv.level==null?"—":esc(String(lv.level))});})
+      );
+    } else html+='<p class="omit">No watch levels in watch_levels.json.</p>';
+    html+="</section>";
+    return html;
+  }
+
+  function renderStrategies(d){
+    var html="";
+    html+='<section class="panel"><h2>Approval status (paper-approved)</h2>';
+    html+=tbl(
+      [{label:"ID",key:"id"},{label:"Name",key:"name"},{label:"Status",key:"st",html:true},{label:"Category",key:"category"},{label:"Score",key:"score",num:true},{label:"live_eligible",key:"live"},{label:"Decided",key:"decided_at"},{label:"Reason",key:"reason"}],
+      (d.approval_status||[]).map(function(a){return {id:a.id,name:a.name,st:pill(a.status,a.kind||"paper"),category:a.category,score:a.score,live:String(a.live_eligible),decided_at:a.decided_at,reason:a.reason};}),
+      "No PAPER_APPROVED rows in approved_strategies.json."
+    );
+    html+="</section>";
+    html+='<section class="panel"><h2>Paper vs backtest (sourced)</h2>';
+    html+='<p class="dim">Backtest columns are OOS figures from results_table.csv. Paper columns come from strategy_performance.json when present. Replay columns come from replay_performance.json. Missing cells are shown as em dashes — nothing is invented.</p>';
+    html+=tbl(
+      [
+        {label:"ID",key:"id"},{label:"Decision",key:"dec",html:true},
+        {label:"Score",key:"score",num:true},
+        {label:"OOS CAGR",key:"cagr",html:true,num:true},
+        {label:"OOS Sharpe",key:"sharpe",html:true,num:true},
+        {label:"OOS MaxDD",key:"dd",html:true,num:true},
+        {label:"OOS win",key:"win",html:true,num:true},
+        {label:"Replay CAGR",key:"rcagr",html:true,num:true},
+        {label:"Replay end eq.",key:"rend",html:true,num:true},
+        {label:"Open now",key:"open"}
+      ],
+      (d.paper_vs_backtest||[]).map(function(r){
+        return {
+          id:r.id, dec:pill(r.decision||"", r.decision==="PAPER_APPROVED"?"paper":"muted"),
+          score:r.score, cagr:pct(r.oos_cagr,1), sharpe:num(r.oos_sharpe,2),
+          dd:pct(r.oos_maxdd,1), win:pct(r.oos_win,1),
+          rcagr:r.replay_cagr_pct==null?"—":pctAlready(r.replay_cagr_pct,2),
+          rend:money(r.replay_end_equity),
+          open:r.has_open_desk_trade?"yes":"no"
+        };
+      })
+    );
+    html+="</section>";
+    html+='<section class="panel"><h2>Scored 4 or 5 but rejected</h2>';
+    html+=tbl(
+      [{label:"ID",key:"id"},{label:"Name",key:"name"},{label:"Score",key:"score",num:true},{label:"Decided",key:"decided_at"},{label:"Reason",key:"reason"}],
+      d.rejected_high_score||[],
+      "No rejected strategies with a recorded backtest score of 4 or 5."
+    );
+    html+="</section>";
+    var p=d.pending||{};
+    html+='<section class="panel"><h2>Pending list (cross-checked)</h2>';
+    html+='<p class="dim">'+esc(p.decided_count||0)+" already decided · "+esc(p.still_count||0)+" still pending. Names still listed in pending_strategies.json that already have a decision are shown as decided, not pending. Desk files are not modified.</p>";
+    var pendingRows=(p.already_decided||[]).concat(p.still_pending||[]);
+    html+=tbl(
+      [{label:"ID",key:"id"},{label:"Name",key:"name"},{label:"Listed as",key:"listed_status"},{label:"Shown as",key:"display_status"},{label:"Decided at",key:"decided_at"},{label:"Decision source",key:"decision_source"}],
+      pendingRows,
+      "No pending_strategies.json entries."
+    );
+    html+="</section>";
+    html+='<section class="panel"><h2>All recorded decisions</h2>';
+    html+='<p class="dim">live_eligible is the recorded field, not a recommendation. Counts: '+esc(JSON.stringify(d.approval_counts||{}))+"</p>";
+    html+=tbl(
+      [{label:"ID",key:"id"},{label:"Name",key:"name"},{label:"Decision",key:"dec",html:true},{label:"Category",key:"category"},{label:"Decided at",key:"decided_at"},{label:"Score",key:"score",num:true},{label:"live_eligible",key:"live"}],
+      (d.approvals_table||[]).map(function(a){
+        var kind=a.decision==="PAPER_APPROVED"?"paper":a.decision==="REJECT"?"muted":"info";
+        return {id:a.id,name:a.name,dec:pill(a.decision||"",kind),category:a.category,decided_at:a.decided_at,score:a.score,live:String(a.live_eligible)};
+      })
+    );
+    html+="</section>";
+    return html;
+  }
+
+  function renderCategories(d){
+    var c=d.categories||{};
+    var tested=["Stocks & ETFs","Crypto","Options"].map(function(k){return {label:k,count:(c.tested||{})[k]||0};});
+    var appr=["Stocks & ETFs","Crypto","Options"].map(function(k){return {label:k,count:(c.paper_approved||{})[k]||0};});
+    var html='<div class="cards">';
+    html+='<section class="card"><h2>Tested by category</h2>'+bars(tested, c.tested_total,'')+'<p class="dim">'+esc(c.tested_total||0)+" rows in results_table.csv</p></section>";
+    html+='<section class="card"><h2>Paper-approved by category</h2>'+bars(appr, Math.max(c.paper_approved_total||1,1),'green')+'<p class="dim">'+esc(c.paper_approved_total||0)+" PAPER_APPROVED</p></section>";
+    html+="</div>";
+    html+='<p class="dim">'+esc(c.rule||"")+"</p>";
+    html+='<section class="panel"><h2>Minimum account tier (results_table.csv)</h2>';
+    html+=bars((d.min_account||[]).map(function(x){return {label:x.label,count:x.count};}), c.tested_total,'amber');
+    if(!(d.min_account||[]).length) html+=omittedNote(window.__omitted,"results_table")||'<p class="omit">No tier counts available.</p>';
+    html+="</section>";
+    return html;
+  }
+
+  function renderReplay(d){
+    var r=d.replay||{};
+    var html="";
+    if(r.meta){
+      html+='<section class="panel"><h2>Replay meta</h2>'+prop([
+        ["Generated", esc(r.meta.generated_at||"—")],
+        ["Mode", esc(r.meta.mode||"—")],
+        ["Engine", esc(r.meta.engine||"—")],
+        ["Start equity", money(r.meta.start_equity)],
+        ["Start source", esc(r.meta.start_equity_source||"—")],
+        ["Risk / trade", money(r.meta.risk_per_trade_usd)],
+        ["Risk source", esc(r.meta.risk_source||"—")],
+        ["Data", esc(r.meta.data||"—")]
+      ])+"</section>";
+    }
+    html+='<section class="panel"><h2>Replay results</h2>';
+    html+=tbl(
+      [
+        {label:"ID",key:"id"},
+        {label:"Trades",key:"trade_count",num:true},
+        {label:"Win %",key:"wr",html:true,num:true},
+        {label:"Avg trade $",key:"avg",html:true,num:true},
+        {label:"PF",key:"pf",html:true,num:true},
+        {label:"End equity",key:"end",html:true,num:true},
+        {label:"Total return",key:"ret",html:true,num:true},
+        {label:"CAGR",key:"cagr",html:true,num:true},
+        {label:"Max DD",key:"dd",html:true,num:true},
+        {label:"Period years",key:"yrs",num:true}
+      ],
+      (r.rows||[]).map(function(x){
+        return {id:x.id,trade_count:x.trade_count,wr:x.win_rate_pct==null?"—":pctAlready(x.win_rate_pct,1),
+          avg:pnl(x.avg_trade_usd,2),pf:num(x.profit_factor,2),end:money(x.end_equity),
+          ret:x.total_return_pct==null?"—":pctAlready(x.total_return_pct,2),
+          cagr:x.cagr_pct==null?"—":pctAlready(x.cagr_pct,2),
+          dd:x.max_drawdown_pct==null?"—":pctAlready(x.max_drawdown_pct,2),
+          yrs:x.period_years==null?"—":Number(x.period_years).toFixed(2)};
+      }),
+      "No replay_performance.json strategies."
+    );
+    html+=omittedNote(window.__omitted,"year_end_equity_chart");
+    html+=omittedNote(window.__omitted,"replay_tests");
+    html+="</section>";
+    return html;
+  }
+
+  function renderResearch(d){
+    var maxFunnel=Math.max.apply(null,(d.funnel||[]).map(function(x){return x.count||0}).concat([1]));
+    var html='<section class="panel"><h2>Research funnel</h2>'+bars((d.funnel||[]).map(function(x){return {label:x.label,count:x.count};}), maxFunnel,'cyan')+"</section>";
+    var scores=Object.keys(d.score_counts||{}).sort().map(function(k){return {label:"Score "+k,count:d.score_counts[k]};});
+    html+='<section class="panel"><h2>Score distribution</h2>'+(scores.length?bars(scores,d.categories&&d.categories.tested_total,'amber"):'<p class="omit">No scores in results_table.csv.</p>')+"</section>";
+    html+='<section class="panel"><h2>Overfit stats on decided names</h2>';
+    html+='<p class="dim">Only rows that already record PBO, DSR, or holdout Sharpe in approved_strategies.json are listed. Dates and missing cells are left blank when the file has no value.</p>';
+    html+=tbl(
+      [{label:"ID",key:"id"},{label:"Decision",key:"decision"},{label:"Score",key:"score",num:true},{label:"PBO",key:"pbo",num:true},{label:"DSR",key:"dsr",num:true},{label:"Holdout Sharpe",key:"holdout_sharpe",num:true},{label:"Failed criteria",key:"failed_criteria"},{label:"Decided",key:"decided_at"}],
+      d.overfit||[],
+      "No decided strategies record PBO/DSR/holdout Sharpe."
+    );
+    html+="</section>";
+    html+='<section class="panel"><h2>Scanner → tester queue</h2>';
+    html+=tbl(
+      [{label:"ID",key:"id"},{label:"Written",key:"written"},{label:"Route",key:"route"},{label:"Status",key:"status"},{label:"Notes",key:"notes"}],
+      d.queue||[],
+      "research/queue.md was missing or had no table rows."
+    );
+    html+="</section>";
+    html+='<section class="panel"><h2>Research batches (results_table.csv)</h2>';
+    html+=tbl([{label:"Batch",key:"batch"},{label:"Rows",key:"count",num:true}], d.research_batches||[], "No batch column values.");
+    html+="</section>";
+    if(d.deterioration){
+      html+='<section class="panel"><h2>Deterioration journal</h2>';
+      html+='<p class="dim">updated '+esc(d.deterioration.updated_at||"—")+" · "+esc(d.deterioration.policy||"")+"</p>";
+      var flagged=d.deterioration.flagged;
+      if(Array.isArray(flagged) && flagged.length){
+        html+="<pre>"+esc(JSON.stringify(flagged,null,2))+"</pre>";
+      } else {
+        html+='<p class="omit">No flagged candidates in journal/deterioration_flags.json.</p>';
+      }
+      html+="</section>";
+    }
+    return html;
+  }
+
+  function renderProductivity(d){
+    var html='<section class="panel"><h2>Desk file freshness</h2>';
+    html+='<p class="dim">These are sourced file timestamps, not bot usage or last-action logs.</p>';
+    html+=tbl(
+      [{label:"Artifact",key:"label"},{label:"As of",key:"as_of"},{label:"Source",key:"source"}],
+      d.file_freshness||[]
+    );
+    html+=omittedNote(window.__omitted,"bot_productivity_activity");
+    html+=omittedNote(window.__omitted,"live_gate_trade_count");
+    html+="</section>";
+    if(d.regime && d.regime.briefing_head){
+      html+='<section class="panel"><h2>Daily briefing (file head)</h2><pre>'+esc(d.regime.briefing_head)+"</pre></section>";
+    }
+    return html;
+  }
+
+  var RENDER = {
+    overview: renderOverview,
+    operations: renderOperations,
+    strategies: renderStrategies,
+    categories: renderCategories,
+    replay: renderReplay,
+    research: renderResearch,
+    productivity: renderProductivity
+  };
+
+  function tabFromHash(){
+    var h=(location.hash||"").replace(/^#/,"");
+    return TABS.some(function(t){return t.id===h;})?h:"overview";
+  }
+  function paintTabs(active){
+    document.getElementById("tabs").innerHTML=TABS.map(function(t){
+      return '<button type="button" class="tab'+(t.id===active?" active":"")+'" role="tab" aria-selected="'+(t.id===active?"true":"false")+'" data-tab="'+t.id+'">'+esc(t.label)+"</button>";
+    }).join("");
+  }
+  function show(data, id){
+    var d=data.dashboard||{};
+    window.__omitted=data.omitted_sections||[];
+    var fn=RENDER[id]||RENDER.overview;
+    document.getElementById("app").innerHTML='<div class="pane active" id="pane-'+id+'">'+fn(d)+"</div>";
+    paintTabs(id);
+  }
+
+  function asOfDate(data){
+    var d=data.dashboard||{};
+    var s=d.as_of || data.as_of || data.built_at || "";
+    var m=String(s).match(/(\d{4}-\d{2}-\d{2})/);
+    return m?m[1]:null;
+  }
+  function boot(data){
+    var d=data.dashboard||{};
+    var b=d.banner||{};
+    window.__asOfDate=asOfDate(data);
+    document.getElementById("eyebrow").textContent=b.eyebrow||"Trading team";
+    document.getElementById("title").textContent=b.title||"Trading Desk Dashboard";
+    document.getElementById("summary").textContent=(b.summary||"")+(b.note?" "+b.note:"");
+    var asof=d.as_of||data.as_of;
+    var built=data.built_at;
+    document.getElementById("asof").innerHTML=asof?('Data as of <b>'+esc(asof)+"</b>"+(d.as_of_source?' · '+esc(d.as_of_source):"")+(built?' · page generated '+esc(built):"")):'Page generated '+esc(built||"");
+    var foot='<div>Trading team only. Excluded: '+esc((data.excluded||[]).join(", "))+"</div>";
+    foot+="<div>Sources</div><ul>"+(d.sources||[]).map(function(s){return "<li>"+esc(s)+"</li>";}).join("")+"</ul>";
+    var om=data.omitted_sections||[];
+    if(om.length){
+      foot+="<div style='margin-top:10px'>Canvas sections omitted because no sourced figure existed</div><ul>"+om.map(function(x){return "<li>"+esc(x.reason)+"</li>";}).join("")+"</ul>";
+    }
+    document.getElementById("footer").innerHTML=foot;
+    var current=tabFromHash();
+    show(data,current);
+    document.getElementById("tabs").addEventListener("click", function(e){
+      var btn=e.target.closest("[data-tab]"); if(!btn) return;
+      var id=btn.getAttribute("data-tab");
+      if(location.hash!=="#"+id) history.replaceState(null,"","#"+id);
+      show(data,id);
+    });
+    window.addEventListener("hashchange", function(){ show(data, tabFromHash()); });
+  }
+
+  function fail(msg){
+    document.getElementById("app").innerHTML='<div class="err">'+esc(msg)+"</div>";
+  }
+
+  fetch("data.json?t="+Date.now(), {cache:"no-store"})
+    .then(function(r){ if(!r.ok) throw new Error("data.json HTTP "+r.status); return r.json(); })
+    .then(boot)
+    .catch(function(err){ fail("Could not load data.json: "+(err && err.message ? err.message : err)); });
+})();
+</script>
+</body>
 </html>
