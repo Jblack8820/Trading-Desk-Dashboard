@@ -15,8 +15,8 @@
     "sha256": "090301a57041b531978faea11939f879f9f17ac8ca11b5d39178ae4ff9a27372",
     "status": "ok"
   },
-  "built_at": "2026-11-10T15:50:02.120294-05:00",
-  "content_hash": "52e4020f6663245c014b175f1795bde577796edc43a135970ccbcdffece8a50a",
+  "built_at": "2026-11-10T16:00:02.350819-05:00",
+  "content_hash": "b51b0085423bb01c2ad3f122afccd0798c9fe9c58f0e701e3ba468ffe446f858",
   "desk_file_authors_included": [
     "BRIEFING",
     "Reporter"
@@ -93,9 +93,9 @@
         "status": "ok"
       },
       {
-        "bytes": 24808,
+        "bytes": 25052,
         "path": "desk/alerts/poll.log",
-        "sha256": "37d381f70a73e4a881e3bbd8bb471ba7630f578d9acf61fc62fd33f1c686124a",
+        "sha256": "6f49ca11e85d06e8e05e1bdd88e1d82ce720ac1e0290160dd2cd64964613f44e",
         "status": "ok"
       }
     ]
@@ -135,21 +135,21 @@
         }
       ],
       "mark": {
-        "as_of": "2026-11-10 15:50:00 ET",
-        "basket_value_usd": 80.2608,
+        "as_of": "2026-11-10 16:00:01 ET",
+        "basket_value_usd": 80.2386,
         "leg_prices": {
-          "GLD": 369.725,
-          "SPY": 750.24,
-          "TLT": 80.875
+          "GLD": 369.425,
+          "SPY": 749.89,
+          "TLT": 80.89
         },
-        "mark_as_of": "2026-11-10 15:50:00 ET",
+        "mark_as_of": "2026-11-10 16:00:01 ET",
         "mark_source": "alerts/poll.log",
         "price_source": "alerts poller output",
-        "unrealized_pnl_usd": 0.2608
+        "unrealized_pnl_usd": 0.2386
       },
       "mark_freshness": {
-        "et": "2026-11-10T15:50:00-05:00",
-        "source": "2026-11-10 15:50:00 ET",
+        "et": "2026-11-10T16:00:01-05:00",
+        "source": "2026-11-10 16:00:01 ET",
         "status": "recent"
       },
       "mode": "paper",
@@ -8111,21 +8111,21 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-10 15:50:00 ET",
-          "basket_value_usd": 80.2608,
+          "as_of": "2026-11-10 16:00:01 ET",
+          "basket_value_usd": 80.2386,
           "leg_prices": {
-            "GLD": 369.725,
-            "SPY": 750.24,
-            "TLT": 80.875
+            "GLD": 369.425,
+            "SPY": 749.89,
+            "TLT": 80.89
           },
-          "mark_as_of": "2026-11-10 15:50:00 ET",
+          "mark_as_of": "2026-11-10 16:00:01 ET",
           "mark_source": "alerts/poll.log",
           "price_source": "alerts poller output",
-          "unrealized_pnl_usd": 0.2608
+          "unrealized_pnl_usd": 0.2386
         },
         "mark_freshness": {
-          "et": "2026-11-10T15:50:00-05:00",
-          "source": "2026-11-10 15:50:00 ET",
+          "et": "2026-11-10T16:00:01-05:00",
+          "source": "2026-11-10 16:00:01 ET",
           "status": "recent"
         },
         "mode": "paper",
