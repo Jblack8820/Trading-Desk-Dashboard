@@ -16,8 +16,8 @@
     "sha256": "69cb3424aa5fa25fbef5a41ff9a4275aca6f622c44e927f5e2d0a2b7061dc2bc",
     "status": "ok"
   },
-  "built_at": "2026-11-11T08:45:01.813786-05:00",
-  "content_hash": "88264e13956a65663c6cdf671114fd7e0e62ce8307a3b5924e301c3903401150",
+  "built_at": "2026-11-11T09:15:01.347844-05:00",
+  "content_hash": "ec991b3942d3a75c5e08467a48bfdf3a28ea025c0154d8ebc11b10de4abb37f0",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -5590,9 +5590,9 @@
         "status": "ok"
       },
       {
-        "bytes": 13490,
+        "bytes": 14395,
         "path": "desk/events_calendar.md",
-        "sha256": "416945bd7d3fbc116f894844a038f04e6e156643fb6050bb2dcc6bfcdb42fcc8",
+        "sha256": "a7c6dce733bd0e8c41ff3e26d70b9bcda1f408fba33216470db07aaa3034f8ac",
         "status": "ok"
       },
       {
