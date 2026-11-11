@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-11 09:30:01 ET",
+  "as_of": "2026-11-11 09:40:01 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,8 +16,8 @@
     "sha256": "69cb3424aa5fa25fbef5a41ff9a4275aca6f622c44e927f5e2d0a2b7061dc2bc",
     "status": "ok"
   },
-  "built_at": "2026-11-11T09:30:01.541639-05:00",
-  "content_hash": "9243d4105d250c3cfbc1e603cf80a6cf4972fbc3abc5e1548eb8d6ea86a3ed77",
+  "built_at": "2026-11-11T09:40:01.663992-05:00",
+  "content_hash": "4c7916e5a53018895c2a1084b1d1f5d053621a93c71499d13ac58ab4e17d1d7c",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -25,9 +25,9 @@
       "cash_usd": 120.0,
       "current_tier": {},
       "deployed_usd": 80.0,
-      "mark_adjusted_equity": 200.4885,
+      "mark_adjusted_equity": 200.4121,
       "max_open_risk": null,
-      "open_unrealized_pnl": 0.4885,
+      "open_unrealized_pnl": 0.4121,
       "recorded_equity": 200.0,
       "recorded_equity_source": "risk_decisions.json account_equity",
       "total_open_risk": 8.0,
@@ -677,7 +677,7 @@
         "score": null
       }
     ],
-    "as_of": "2026-11-11 09:30:01 ET",
+    "as_of": "2026-11-11 09:40:01 ET",
     "as_of_source": "mark PT-SB29-2026-10-30-001",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
@@ -714,7 +714,7 @@
         "source": "risk_decisions.json"
       },
       {
-        "as_of": "2026-11-11T08:21:13.878582-05:00",
+        "as_of": "2026-11-11T09:31:00.939152-05:00",
         "label": "Watch levels",
         "source": "watch_levels.json"
       },
@@ -776,13 +776,13 @@
         "format": "money",
         "hint": "Recorded equity plus open production-book unrealized P&L from the freshest sourced mark. Not a brokerage stream.",
         "label": "Mark-adjusted equity",
-        "value": 200.4885
+        "value": 200.4121
       },
       {
         "format": "pnl",
         "hint": "Open production paper trades only",
         "label": "Open unrealized P&L",
-        "value": 0.4885
+        "value": 0.4121
       },
       {
         "format": "money",
@@ -860,9 +860,9 @@
         "executed_at": null,
         "legs": [
           {
-            "change_pct": 0.6915088251535175,
+            "change_pct": 0.6905774105343067,
             "fill_price": 751.545,
-            "last_price": 756.742,
+            "last_price": 756.735,
             "notional_usd": 33.68,
             "price_time": "2026-10-30T14:43:21-04:00 (latest available Yahoo print; feed stale)",
             "shares": 0.044814,
@@ -871,9 +871,9 @@
             "weight_pct": 42.1
           },
           {
-            "change_pct": -1.0416666666666599,
+            "change_pct": -1.121323529411755,
             "fill_price": 81.6,
-            "last_price": 80.75,
+            "last_price": 80.685,
             "notional_usd": 31.76,
             "price_time": "2026-10-30T15:44:57-04:00",
             "shares": 0.389216,
@@ -882,9 +882,9 @@
             "weight_pct": 39.7
           },
           {
-            "change_pct": 4.030418250950571,
+            "change_pct": 3.6811716659625384,
             "fill_price": 355.05,
-            "last_price": 369.36,
+            "last_price": 368.12,
             "notional_usd": 14.56,
             "price_time": "2026-10-30T15:44:04-04:00",
             "shares": 0.041008,
@@ -894,12 +894,12 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-11 09:30:01 ET",
-          "basket_value_usd": 80.4885,
+          "as_of": "2026-11-11 09:40:01 ET",
+          "basket_value_usd": 80.4121,
           "freshness": "recent",
           "mark_source": "alerts/poll.log",
           "realized_pnl_net_fees_usd": null,
-          "unrealized_pnl_usd": 0.4885
+          "unrealized_pnl_usd": 0.4121
         },
         "mode": "paper",
         "name": null,
@@ -5351,7 +5351,7 @@
     "usage_source": "USAGE_RULES.md",
     "watcher": {
       "freshness": "recent",
-      "generated_at": "2026-11-11T08:21:13.878582-05:00",
+      "generated_at": "2026-11-11T09:31:00.939152-05:00",
       "level_count": 11,
       "levels": [
         {
@@ -5395,9 +5395,9 @@
           "condition": "NQ=F touches overnight_high; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
           "direction": "SHORT",
           "enabled": true,
-          "id": "SB11-NQ=F-overnight_high-2026-11-10",
+          "id": "SB11-NQ=F-overnight_high-2026-11-11",
           "kind": "sweep",
-          "level": 28109.0,
+          "level": 28406.25,
           "strategy_id": "SB11",
           "ticker": "NQ=F",
           "trigger": "cross_above"
@@ -5407,9 +5407,9 @@
           "condition": "NQ=F touches overnight_low; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
           "direction": "LONG",
           "enabled": true,
-          "id": "SB11-NQ=F-overnight_low-2026-11-10",
+          "id": "SB11-NQ=F-overnight_low-2026-11-11",
           "kind": "sweep",
-          "level": 27590.0,
+          "level": 27850.75,
           "strategy_id": "SB11",
           "ticker": "NQ=F",
           "trigger": "cross_below"
@@ -5419,9 +5419,9 @@
           "condition": "ES=F touches overnight_high; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
           "direction": "SHORT",
           "enabled": true,
-          "id": "SB11-ES=F-overnight_high-2026-11-10",
+          "id": "SB11-ES=F-overnight_high-2026-11-11",
           "kind": "confirmation_sweep",
-          "level": 7598.75,
+          "level": 7620.0,
           "strategy_id": "SB11",
           "ticker": "ES=F",
           "trigger": "touch"
@@ -5431,9 +5431,9 @@
           "condition": "ES=F touches overnight_low; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
           "direction": "LONG",
           "enabled": true,
-          "id": "SB11-ES=F-overnight_low-2026-11-10",
+          "id": "SB11-ES=F-overnight_low-2026-11-11",
           "kind": "confirmation_sweep",
-          "level": 7509.0,
+          "level": 7548.0,
           "strategy_id": "SB11",
           "ticker": "ES=F",
           "trigger": "touch"
@@ -5445,7 +5445,7 @@
           "enabled": true,
           "id": "NC06-TLT-WINDOW-2026-11-23",
           "kind": "calendar_window",
-          "level": 81.96,
+          "level": 80.88,
           "strategy_id": "NC06",
           "ticker": "TLT",
           "trigger": "calendar"
@@ -5457,7 +5457,7 @@
           "enabled": true,
           "id": "SB29-SPY-REBALANCE-20261130",
           "kind": "monthly_rebalance_window",
-          "level": 752.690002,
+          "level": 749.919983,
           "strategy_id": "SB29",
           "ticker": "SPY",
           "trigger": "calendar"
@@ -5469,7 +5469,7 @@
           "enabled": true,
           "id": "SB29-TLT-REBALANCE-20261130",
           "kind": "monthly_rebalance_window",
-          "level": 81.959999,
+          "level": 80.879997,
           "strategy_id": "SB29",
           "ticker": "TLT",
           "trigger": "calendar"
@@ -5481,7 +5481,7 @@
           "enabled": true,
           "id": "SB29-GLD-REBALANCE-20261130",
           "kind": "monthly_rebalance_window",
-          "level": 379.529999,
+          "level": 369.359985,
           "strategy_id": "SB29",
           "ticker": "GLD",
           "trigger": "calendar"
@@ -5560,9 +5560,9 @@
         "status": "ok"
       },
       {
-        "bytes": 12758,
+        "bytes": 12760,
         "path": "desk/watch_levels.json",
-        "sha256": "044f00806cc3646cd9bb3a397969971f850f98892b366f3ed64c90b8751da68e",
+        "sha256": "fedc62aaa4aedde3c4b1664507e5233e41249d7792aac36bdc62a2aef220a471",
         "status": "ok"
       },
       {
@@ -5644,9 +5644,9 @@
         "status": "ok"
       },
       {
-        "bytes": 25413,
+        "bytes": 25659,
         "path": "desk/alerts/poll.log",
-        "sha256": "b8d946d1767df74420d8ae25f0b99e87ea6e9a22360af05ddc982dd2607e492c",
+        "sha256": "b54973bad57e27e3d0cf1408cb2e0a5a1de626dd55d7a0112b6dc6ded0dc88e0",
         "status": "ok"
       },
       {
@@ -5714,21 +5714,21 @@
         }
       ],
       "mark": {
-        "as_of": "2026-11-11 09:30:01 ET",
-        "basket_value_usd": 80.4885,
+        "as_of": "2026-11-11 09:40:01 ET",
+        "basket_value_usd": 80.4121,
         "leg_prices": {
-          "GLD": 369.36,
-          "SPY": 756.742,
-          "TLT": 80.75
+          "GLD": 368.12,
+          "SPY": 756.735,
+          "TLT": 80.685
         },
-        "mark_as_of": "2026-11-11 09:30:01 ET",
+        "mark_as_of": "2026-11-11 09:40:01 ET",
         "mark_source": "alerts/poll.log",
         "price_source": "alerts poller output",
-        "unrealized_pnl_usd": 0.4885
+        "unrealized_pnl_usd": 0.4121
       },
       "mark_freshness": {
-        "et": "2026-11-11T09:30:01-05:00",
-        "source": "2026-11-11 09:30:01 ET",
+        "et": "2026-11-11T09:40:01-05:00",
+        "source": "2026-11-11 09:40:01 ET",
         "status": "recent"
       },
       "mode": "paper",
@@ -13690,21 +13690,21 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-11 09:30:01 ET",
-          "basket_value_usd": 80.4885,
+          "as_of": "2026-11-11 09:40:01 ET",
+          "basket_value_usd": 80.4121,
           "leg_prices": {
-            "GLD": 369.36,
-            "SPY": 756.742,
-            "TLT": 80.75
+            "GLD": 368.12,
+            "SPY": 756.735,
+            "TLT": 80.685
           },
-          "mark_as_of": "2026-11-11 09:30:01 ET",
+          "mark_as_of": "2026-11-11 09:40:01 ET",
           "mark_source": "alerts/poll.log",
           "price_source": "alerts poller output",
-          "unrealized_pnl_usd": 0.4885
+          "unrealized_pnl_usd": 0.4121
         },
         "mark_freshness": {
-          "et": "2026-11-11T09:30:01-05:00",
-          "source": "2026-11-11 09:30:01 ET",
+          "et": "2026-11-11T09:40:01-05:00",
+          "source": "2026-11-11 09:40:01 ET",
           "status": "recent"
         },
         "mode": "paper",
@@ -13910,12 +13910,12 @@
     "watch": {
       "coverage_complete": null,
       "freshness": {
-        "et": "2026-11-11T08:21:13.878582-05:00",
-        "source": "2026-11-11T08:21:13.878582-05:00",
+        "et": "2026-11-11T09:31:00.939152-05:00",
+        "source": "2026-11-11T09:31:00.939152-05:00",
         "status": "recent"
       },
       "gaps": null,
-      "generated_at": "2026-11-11T08:21:13.878582-05:00",
+      "generated_at": "2026-11-11T09:31:00.939152-05:00",
       "levels": [
         {
           "bar": "daily_close",
@@ -13979,15 +13979,15 @@
           "condition": "NQ=F touches overnight_high; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
           "direction": "SHORT",
           "enabled": true,
-          "end": "2026-11-10T09:50:00-05:00",
-          "id": "SB11-NQ=F-overnight_high-2026-11-10",
+          "end": "2026-11-11T09:50:00-05:00",
+          "id": "SB11-NQ=F-overnight_high-2026-11-11",
           "invalidation_rule": "Sweep extreme, only after matching SMT and 5m BOS confirms; target 2R, flat 16:00 ET",
           "kind": "sweep",
-          "level": 28109.0,
+          "level": 28406.25,
           "near_pct": 0.002,
           "price_source": "Yahoo",
-          "session_date_et": "2026-11-10",
-          "start": "2026-11-10T09:30:00-05:00",
+          "session_date_et": "2026-11-11",
+          "start": "2026-11-11T09:30:00-05:00",
           "strategy_id": "SB11",
           "ticker": "NQ=F",
           "trigger": "cross_above"
@@ -13997,15 +13997,15 @@
           "condition": "NQ=F touches overnight_low; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
           "direction": "LONG",
           "enabled": true,
-          "end": "2026-11-10T09:50:00-05:00",
-          "id": "SB11-NQ=F-overnight_low-2026-11-10",
+          "end": "2026-11-11T09:50:00-05:00",
+          "id": "SB11-NQ=F-overnight_low-2026-11-11",
           "invalidation_rule": "Sweep extreme, only after matching SMT and 5m BOS confirms; target 2R, flat 16:00 ET",
           "kind": "sweep",
-          "level": 27590.0,
+          "level": 27850.75,
           "near_pct": 0.002,
           "price_source": "Yahoo",
-          "session_date_et": "2026-11-10",
-          "start": "2026-11-10T09:30:00-05:00",
+          "session_date_et": "2026-11-11",
+          "start": "2026-11-11T09:30:00-05:00",
           "strategy_id": "SB11",
           "ticker": "NQ=F",
           "trigger": "cross_below"
@@ -14015,15 +14015,15 @@
           "condition": "ES=F touches overnight_high; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
           "direction": "SHORT",
           "enabled": true,
-          "end": "2026-11-10T09:50:00-05:00",
-          "id": "SB11-ES=F-overnight_high-2026-11-10",
+          "end": "2026-11-11T09:50:00-05:00",
+          "id": "SB11-ES=F-overnight_high-2026-11-11",
           "invalidation_rule": "Sweep extreme, only after matching SMT and 5m BOS confirms; target 2R, flat 16:00 ET",
           "kind": "confirmation_sweep",
-          "level": 7598.75,
+          "level": 7620.0,
           "near_pct": 0.002,
           "price_source": "Yahoo",
-          "session_date_et": "2026-11-10",
-          "start": "2026-11-10T09:30:00-05:00",
+          "session_date_et": "2026-11-11",
+          "start": "2026-11-11T09:30:00-05:00",
           "strategy_id": "SB11",
           "ticker": "ES=F",
           "trigger": "touch"
@@ -14033,15 +14033,15 @@
           "condition": "ES=F touches overnight_low; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
           "direction": "LONG",
           "enabled": true,
-          "end": "2026-11-10T09:50:00-05:00",
-          "id": "SB11-ES=F-overnight_low-2026-11-10",
+          "end": "2026-11-11T09:50:00-05:00",
+          "id": "SB11-ES=F-overnight_low-2026-11-11",
           "invalidation_rule": "Sweep extreme, only after matching SMT and 5m BOS confirms; target 2R, flat 16:00 ET",
           "kind": "confirmation_sweep",
-          "level": 7509.0,
+          "level": 7548.0,
           "near_pct": 0.002,
           "price_source": "Yahoo",
-          "session_date_et": "2026-11-10",
-          "start": "2026-11-10T09:30:00-05:00",
+          "session_date_et": "2026-11-11",
+          "start": "2026-11-11T09:30:00-05:00",
           "strategy_id": "SB11",
           "ticker": "ES=F",
           "trigger": "touch"
@@ -14055,7 +14055,7 @@
           "id": "NC06-TLT-WINDOW-2026-11-23",
           "invalidation_rule": "Always-invested calendar strategy; official last-five-session timing. No fabricated price stop.",
           "kind": "calendar_window",
-          "level": 81.96,
+          "level": 80.88,
           "near_pct": 0,
           "price_source": "Yahoo",
           "start": "2026-11-23T16:00:00-05:00",
@@ -14072,11 +14072,11 @@
           "id": "SB29-SPY-REBALANCE-20261130",
           "invalidation_rule": "Existing allocation weight check; no new price stop or sizing added by watcher.",
           "kind": "monthly_rebalance_window",
-          "level": 752.690002,
+          "level": 749.919983,
           "level_note": "Reference last price; below-200 session SMA filter only. No basket sum or price entry trigger.",
           "near_pct": 0,
           "price_source": "Yahoo",
-          "reference_leg_prices_soft": "SPY=752.69; TLT=81.96; GLD=379.53",
+          "reference_leg_prices_soft": "SPY=749.92; TLT=80.88; GLD=369.36",
           "start": "2026-11-30T16:00:00-05:00",
           "strategy_id": "SB29",
           "ticker": "SPY",
@@ -14091,11 +14091,11 @@
           "id": "SB29-TLT-REBALANCE-20261130",
           "invalidation_rule": "Existing allocation weight check; no new price stop or sizing added by watcher.",
           "kind": "monthly_rebalance_window",
-          "level": 81.959999,
+          "level": 80.879997,
           "level_note": "Reference last price; below-200 session SMA filter only. No basket sum or price entry trigger.",
           "near_pct": 0,
           "price_source": "Yahoo",
-          "reference_leg_prices_soft": "SPY=752.69; TLT=81.96; GLD=379.53",
+          "reference_leg_prices_soft": "SPY=749.92; TLT=80.88; GLD=369.36",
           "start": "2026-11-30T16:00:00-05:00",
           "strategy_id": "SB29",
           "ticker": "TLT",
@@ -14110,11 +14110,11 @@
           "id": "SB29-GLD-REBALANCE-20261130",
           "invalidation_rule": "Existing allocation weight check; no new price stop or sizing added by watcher.",
           "kind": "monthly_rebalance_window",
-          "level": 379.529999,
+          "level": 369.359985,
           "level_note": "Reference last price; below-200 session SMA filter only. No basket sum or price entry trigger.",
           "near_pct": 0,
           "price_source": "Yahoo",
-          "reference_leg_prices_soft": "SPY=752.69; TLT=81.96; GLD=379.53",
+          "reference_leg_prices_soft": "SPY=749.92; TLT=80.88; GLD=369.36",
           "start": "2026-11-30T16:00:00-05:00",
           "strategy_id": "SB29",
           "ticker": "GLD",
