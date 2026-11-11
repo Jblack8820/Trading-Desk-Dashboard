@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-11 08:21:13 ET",
+  "as_of": "2026-11-11 09:30:01 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,8 +16,8 @@
     "sha256": "69cb3424aa5fa25fbef5a41ff9a4275aca6f622c44e927f5e2d0a2b7061dc2bc",
     "status": "ok"
   },
-  "built_at": "2026-11-11T09:15:01.347844-05:00",
-  "content_hash": "ec991b3942d3a75c5e08467a48bfdf3a28ea025c0154d8ebc11b10de4abb37f0",
+  "built_at": "2026-11-11T09:30:01.541639-05:00",
+  "content_hash": "9243d4105d250c3cfbc1e603cf80a6cf4972fbc3abc5e1548eb8d6ea86a3ed77",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -25,9 +25,9 @@
       "cash_usd": 120.0,
       "current_tier": {},
       "deployed_usd": 80.0,
-      "mark_adjusted_equity": 200.2391,
+      "mark_adjusted_equity": 200.4885,
       "max_open_risk": null,
-      "open_unrealized_pnl": 0.2391,
+      "open_unrealized_pnl": 0.4885,
       "recorded_equity": 200.0,
       "recorded_equity_source": "risk_decisions.json account_equity",
       "total_open_risk": 8.0,
@@ -677,8 +677,8 @@
         "score": null
       }
     ],
-    "as_of": "2026-11-11 08:21:13 ET",
-    "as_of_source": "watch_levels.json generated_at",
+    "as_of": "2026-11-11 09:30:01 ET",
+    "as_of_source": "mark PT-SB29-2026-10-30-001",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
       "eyebrow": "Trading team",
@@ -776,13 +776,13 @@
         "format": "money",
         "hint": "Recorded equity plus open production-book unrealized P&L from the freshest sourced mark. Not a brokerage stream.",
         "label": "Mark-adjusted equity",
-        "value": 200.2391
+        "value": 200.4885
       },
       {
         "format": "pnl",
         "hint": "Open production paper trades only",
         "label": "Open unrealized P&L",
-        "value": 0.2391
+        "value": 0.4885
       },
       {
         "format": "money",
@@ -860,9 +860,9 @@
         "executed_at": null,
         "legs": [
           {
-            "change_pct": -0.20424592007131553,
+            "change_pct": 0.6915088251535175,
             "fill_price": 751.545,
-            "last_price": 750.01,
+            "last_price": 756.742,
             "notional_usd": 33.68,
             "price_time": "2026-10-30T14:43:21-04:00 (latest available Yahoo print; feed stale)",
             "shares": 0.044814,
@@ -871,9 +871,9 @@
             "weight_pct": 42.1
           },
           {
-            "change_pct": -0.8823529411764692,
+            "change_pct": -1.0416666666666599,
             "fill_price": 81.6,
-            "last_price": 80.88,
+            "last_price": 80.75,
             "notional_usd": 31.76,
             "price_time": "2026-10-30T15:44:57-04:00",
             "shares": 0.389216,
@@ -882,9 +882,9 @@
             "weight_pct": 39.7
           },
           {
-            "change_pct": 4.041684269821142,
+            "change_pct": 4.030418250950571,
             "fill_price": 355.05,
-            "last_price": 369.4,
+            "last_price": 369.36,
             "notional_usd": 14.56,
             "price_time": "2026-10-30T15:44:04-04:00",
             "shares": 0.041008,
@@ -894,12 +894,12 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-10 16:10:00 ET",
-          "basket_value_usd": 80.2391,
+          "as_of": "2026-11-11 09:30:01 ET",
+          "basket_value_usd": 80.4885,
           "freshness": "recent",
           "mark_source": "alerts/poll.log",
           "realized_pnl_net_fees_usd": null,
-          "unrealized_pnl_usd": 0.2391
+          "unrealized_pnl_usd": 0.4885
         },
         "mode": "paper",
         "name": null,
@@ -5590,9 +5590,9 @@
         "status": "ok"
       },
       {
-        "bytes": 14395,
+        "bytes": 14822,
         "path": "desk/events_calendar.md",
-        "sha256": "a7c6dce733bd0e8c41ff3e26d70b9bcda1f408fba33216470db07aaa3034f8ac",
+        "sha256": "db8eccd1b773ffc30602f10547bfc08eafa515601284f4754a916f60fc0a73c4",
         "status": "ok"
       },
       {
@@ -5644,9 +5644,9 @@
         "status": "ok"
       },
       {
-        "bytes": 25291,
+        "bytes": 25413,
         "path": "desk/alerts/poll.log",
-        "sha256": "b136850c92f3bd16ae39d2cadf0808d1e039de522e6a818181eccfe5c92bf777",
+        "sha256": "b8d946d1767df74420d8ae25f0b99e87ea6e9a22360af05ddc982dd2607e492c",
         "status": "ok"
       },
       {
@@ -5714,21 +5714,21 @@
         }
       ],
       "mark": {
-        "as_of": "2026-11-10 16:10:00 ET",
-        "basket_value_usd": 80.2391,
+        "as_of": "2026-11-11 09:30:01 ET",
+        "basket_value_usd": 80.4885,
         "leg_prices": {
-          "GLD": 369.4,
-          "SPY": 750.01,
-          "TLT": 80.88
+          "GLD": 369.36,
+          "SPY": 756.742,
+          "TLT": 80.75
         },
-        "mark_as_of": "2026-11-10 16:10:00 ET",
+        "mark_as_of": "2026-11-11 09:30:01 ET",
         "mark_source": "alerts/poll.log",
         "price_source": "alerts poller output",
-        "unrealized_pnl_usd": 0.2391
+        "unrealized_pnl_usd": 0.4885
       },
       "mark_freshness": {
-        "et": "2026-11-10T16:10:00-05:00",
-        "source": "2026-11-10 16:10:00 ET",
+        "et": "2026-11-11T09:30:01-05:00",
+        "source": "2026-11-11 09:30:01 ET",
         "status": "recent"
       },
       "mode": "paper",
@@ -13690,21 +13690,21 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-10 16:10:00 ET",
-          "basket_value_usd": 80.2391,
+          "as_of": "2026-11-11 09:30:01 ET",
+          "basket_value_usd": 80.4885,
           "leg_prices": {
-            "GLD": 369.4,
-            "SPY": 750.01,
-            "TLT": 80.88
+            "GLD": 369.36,
+            "SPY": 756.742,
+            "TLT": 80.75
           },
-          "mark_as_of": "2026-11-10 16:10:00 ET",
+          "mark_as_of": "2026-11-11 09:30:01 ET",
           "mark_source": "alerts/poll.log",
           "price_source": "alerts poller output",
-          "unrealized_pnl_usd": 0.2391
+          "unrealized_pnl_usd": 0.4885
         },
         "mark_freshness": {
-          "et": "2026-11-10T16:10:00-05:00",
-          "source": "2026-11-10 16:10:00 ET",
+          "et": "2026-11-11T09:30:01-05:00",
+          "source": "2026-11-11 09:30:01 ET",
           "status": "recent"
         },
         "mode": "paper",
