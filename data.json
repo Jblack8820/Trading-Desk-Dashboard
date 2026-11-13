@@ -16,8 +16,8 @@
     "sha256": "921536a46924a3c7e2461abc8511d0c11ccdfb6a6f9e95a5687b2183786b73ab",
     "status": "ok"
   },
-  "built_at": "2026-11-13T08:20:02.176151-05:00",
-  "content_hash": "f161ec8f52628e7be8d6eae22d74343d3c4d830588d77d8ed3f4cac68c239f5f",
+  "built_at": "2026-11-13T09:15:03.096001-05:00",
+  "content_hash": "640c185c4021a6d54658fdd6aec3cddce8ca4a1377e7956e0dae917ba3792f2c",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -5346,7 +5346,7 @@
       "Skip the work when nothing has changed: exit quickly without long analysis or messages.",
       "No chatter between bots. Send messages only when the other bot must act on them, and batch FYIs.",
       "Add no new routine, and no shorter interval on an existing one, without Dwag (Chief of Staff) approving it.",
-      "Keep outputs short. Reuse files instead of recomputing."
+      "Keep outputs short. Reuse files instead of recomputing. # Temporary order (Jaden, 2026-11-13) From 5:00 PM ET Friday Nov 13, 2026 until 8:00 AM ET Monday Nov 16, 2026, all bots must minimize non-essential work. Pause or skip non-essential routines in that window and restore them Monday at 8:00 AM ET. Do not add new routines and do not schedule catch-up runs. Plain no-AI scripts may keep running. One-time exception to the no-weekend rule: TRADE_MANAGER (60b98329-63ca-4596-90ed-dcc456bd38b8) and SETUP_FINDER (33c9fa30-a581-4456-bb58-e0231aabed70) may work crypto paper trades over this weekend only, to build paper-trade data. Crypto only, paper only, still within RISK_MANAGER's limits, using approved crypto strategies only, and kept as lean as practical. RISK_MANAGER's limits still apply to this exception. Normal operations resume Monday Nov 16 at 8:00 AM ET."
     ],
     "usage_source": "USAGE_RULES.md",
     "watcher": {
@@ -5608,9 +5608,9 @@
         "status": "ok"
       },
       {
-        "bytes": 702,
+        "bytes": 1517,
         "path": "desk/USAGE_RULES.md",
-        "sha256": "ea89ce6453c66797900cd890fa8d4b46051dafbbce228d48188f2412bebdd817",
+        "sha256": "61c7a521af9e6f72bb2bcb5a2ade0d22f32ea661985e3f572c58321830030d6f",
         "status": "ok"
       },
       {
