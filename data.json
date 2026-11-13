@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-13 10:45:30 ET",
+  "as_of": "2026-11-13 10:55:01 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,8 +16,8 @@
     "sha256": "921536a46924a3c7e2461abc8511d0c11ccdfb6a6f9e95a5687b2183786b73ab",
     "status": "ok"
   },
-  "built_at": "2026-11-13T10:45:31.272675-05:00",
-  "content_hash": "e4027f43e8220a1ffe5c639a20b9b4363ced0ba3db9264bd046de90b198e59ee",
+  "built_at": "2026-11-13T10:55:02.029882-05:00",
+  "content_hash": "48c17ea20114d96ce68dd512eeac3aed748c809cf92f581444a83287e3231d6a",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -25,9 +25,9 @@
       "cash_usd": 120.0,
       "current_tier": {},
       "deployed_usd": 80.0,
-      "mark_adjusted_equity": 199.1571,
+      "mark_adjusted_equity": 199.1227,
       "max_open_risk": null,
-      "open_unrealized_pnl": -0.8429,
+      "open_unrealized_pnl": -0.8773,
       "recorded_equity": 200.0,
       "recorded_equity_source": "risk_decisions.json account_equity",
       "total_open_risk": 8.0,
@@ -35,7 +35,7 @@
     },
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 59
+      "REJECT": 61
     },
     "approval_status": [
       {
@@ -675,9 +675,27 @@
         "live_eligible": false,
         "name": "Commodity/K-1 multi-asset basket including delisted DBS (spec blocked)",
         "score": null
+      },
+      {
+        "category": "Stocks & ETFs",
+        "decided_at": "2026-11-13T10:56:00-05:00",
+        "decision": "REJECT",
+        "id": "KR01A",
+        "live_eligible": false,
+        "name": "Kronos foundation-model daily forecast signal (A_mini_L400_thr25sd)",
+        "score": 1
+      },
+      {
+        "category": "Stocks & ETFs",
+        "decided_at": "2026-11-13T10:56:00-05:00",
+        "decision": "REJECT",
+        "id": "KR01B",
+        "live_eligible": false,
+        "name": "Kronos foundation-model hourly 10:30 signal (B_mini_1030_thr25sd)",
+        "score": 1
       }
     ],
-    "as_of": "2026-11-13 10:45:30 ET",
+    "as_of": "2026-11-13 10:55:01 ET",
     "as_of_source": "mark PT-SB29-2026-10-30-001",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
@@ -697,9 +715,9 @@
       "tested": {
         "Crypto": 67,
         "Options": 27,
-        "Stocks & ETFs": 142
+        "Stocks & ETFs": 144
       },
-      "tested_total": 236
+      "tested_total": 238
     },
     "deterioration": {
       "flagged": [],
@@ -714,7 +732,7 @@
         "source": "risk_decisions.json"
       },
       {
-        "as_of": "2026-11-13T09:31:00.743195-05:00",
+        "as_of": "2026-11-13T10:54:44.528285-05:00",
         "label": "Watch levels",
         "source": "watch_levels.json"
       },
@@ -736,12 +754,12 @@
     ],
     "funnel": [
       {
-        "count": 236,
+        "count": 238,
         "label": "Tested (results_table.csv)",
         "source": "research/results_table.csv"
       },
       {
-        "count": 64,
+        "count": 66,
         "label": "Reviewed (approved_strategies.json)",
         "source": "approved_strategies.json"
       },
@@ -776,13 +794,13 @@
         "format": "money",
         "hint": "Recorded equity plus open production-book unrealized P&L from the freshest sourced mark. Not a brokerage stream.",
         "label": "Mark-adjusted equity",
-        "value": 199.1571
+        "value": 199.1227
       },
       {
         "format": "pnl",
         "hint": "Open production paper trades only",
         "label": "Open unrealized P&L",
-        "value": -0.8429
+        "value": -0.8773
       },
       {
         "format": "money",
@@ -799,7 +817,7 @@
       },
       {
         "format": "int",
-        "hint": "59 rejected in approved_strategies.json",
+        "hint": "61 rejected in approved_strategies.json",
         "label": "Paper approved",
         "value": 5
       },
@@ -818,7 +836,7 @@
     ],
     "min_account": [
       {
-        "count": 173,
+        "count": 175,
         "label": "Under $500",
         "tier": "under_500"
       },
@@ -860,9 +878,9 @@
         "executed_at": null,
         "legs": [
           {
-            "change_pct": -0.15767518911042527,
+            "change_pct": -0.18561762768696244,
             "fill_price": 751.545,
-            "last_price": 750.36,
+            "last_price": 750.15,
             "notional_usd": 33.68,
             "price_time": "2026-10-30T14:43:21-04:00 (latest available Yahoo print; feed stale)",
             "shares": 0.044814,
@@ -871,9 +889,9 @@
             "weight_pct": 42.1
           },
           {
-            "change_pct": -2.5245098039215543,
+            "change_pct": -2.5612745098039085,
             "fill_price": 81.6,
-            "last_price": 79.54,
+            "last_price": 79.51,
             "notional_usd": 31.76,
             "price_time": "2026-10-30T15:44:57-04:00",
             "shares": 0.389216,
@@ -882,9 +900,9 @@
             "weight_pct": 39.7
           },
           {
-            "change_pct": 0.08449514152936526,
+            "change_pct": -0.00704126179412311,
             "fill_price": 355.05,
-            "last_price": 355.35,
+            "last_price": 355.025,
             "notional_usd": 14.56,
             "price_time": "2026-10-30T15:44:04-04:00",
             "shares": 0.041008,
@@ -894,12 +912,12 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-13 10:45:30 ET",
-          "basket_value_usd": 79.1571,
+          "as_of": "2026-11-13 10:55:01 ET",
+          "basket_value_usd": 79.1227,
           "freshness": "recent",
           "mark_source": "alerts/poll.log",
           "realized_pnl_net_fees_usd": null,
-          "unrealized_pnl_usd": -0.8429
+          "unrealized_pnl_usd": -0.8773
         },
         "mode": "paper",
         "name": null,
@@ -5181,6 +5199,10 @@
         "count": 4
       },
       {
+        "batch": "2026-11-13_KR01",
+        "count": 2
+      },
+      {
         "batch": "2026-10-31e",
         "count": 1
       },
@@ -5230,7 +5252,7 @@
       }
     ],
     "score_counts": {
-      "1": 91,
+      "1": 93,
       "2": 131,
       "3": 7,
       "4": 2,
@@ -5351,7 +5373,7 @@
     "usage_source": "USAGE_RULES.md",
     "watcher": {
       "freshness": "recent",
-      "generated_at": "2026-11-13T09:31:00.743195-05:00",
+      "generated_at": "2026-11-13T10:54:44.528285-05:00",
       "level_count": 11,
       "levels": [
         {
@@ -5554,15 +5576,15 @@
         "status": "ok"
       },
       {
-        "bytes": 39574,
+        "bytes": 42698,
         "path": "desk/approved_strategies.json",
-        "sha256": "71a31531308040d0081247f5be6f045a2abfabad46acbad76096ee611959fe84",
+        "sha256": "6a810e53410b7968516bdc8f2ecf001568929c4e0408a0b3d60f062f88a6e641",
         "status": "ok"
       },
       {
         "bytes": 12762,
         "path": "desk/watch_levels.json",
-        "sha256": "3d8ca754f447b95407eee8496749c9285131f84e11fff7ce263714defb47ffc9",
+        "sha256": "55e0d7d9d74aaa3185152b97de5adec43aba540f4ee388755ce21b2fc4f23646",
         "status": "ok"
       },
       {
@@ -5620,9 +5642,9 @@
         "status": "ok"
       },
       {
-        "bytes": 144528,
+        "bytes": 145834,
         "path": "desk/research/results_table.csv",
-        "sha256": "b4f0304aaa0707ddfe8e40890e5b2d610f33a57c7438d0d3149c6b8dc6d7e5f0",
+        "sha256": "f7af4ac4578cff5c592efffbb61f449a26265e6aac19ae8a641f0af663b9f009",
         "status": "ok"
       },
       {
@@ -5644,9 +5666,9 @@
         "status": "ok"
       },
       {
-        "bytes": 34300,
+        "bytes": 34545,
         "path": "desk/alerts/poll.log",
-        "sha256": "603a26f8b1f713d99a689b22404d84094446376d27f11a8f93d02649f800d86b",
+        "sha256": "09d944ba34037276523f3b47d3fda95bafd5405f307dcd8b5df6215c3439449f",
         "status": "ok"
       },
       {
@@ -5714,21 +5736,21 @@
         }
       ],
       "mark": {
-        "as_of": "2026-11-13 10:45:30 ET",
-        "basket_value_usd": 79.1571,
+        "as_of": "2026-11-13 10:55:01 ET",
+        "basket_value_usd": 79.1227,
         "leg_prices": {
-          "GLD": 355.35,
-          "SPY": 750.36,
-          "TLT": 79.54
+          "GLD": 355.025,
+          "SPY": 750.15,
+          "TLT": 79.51
         },
-        "mark_as_of": "2026-11-13 10:45:30 ET",
+        "mark_as_of": "2026-11-13 10:55:01 ET",
         "mark_source": "alerts/poll.log",
         "price_source": "alerts poller output",
-        "unrealized_pnl_usd": -0.8429
+        "unrealized_pnl_usd": -0.8773
       },
       "mark_freshness": {
-        "et": "2026-11-13T10:45:30-05:00",
-        "source": "2026-11-13 10:45:30 ET",
+        "et": "2026-11-13T10:55:01-05:00",
+        "source": "2026-11-13 10:55:01 ET",
         "status": "recent"
       },
       "mode": "paper",
@@ -13120,7 +13142,7 @@
   "snapshot": {
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 59
+      "REJECT": 61
     },
     "approvals": [
       {
@@ -13634,6 +13656,22 @@
         "id": "SE08",
         "live_eligible": false,
         "name": "Commodity/K-1 multi-asset basket including delisted DBS (spec blocked)"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-13T10:56:00-05:00",
+        "decision": "REJECT",
+        "id": "KR01A",
+        "live_eligible": false,
+        "name": "Kronos foundation-model daily forecast signal (A_mini_L400_thr25sd)"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-13T10:56:00-05:00",
+        "decision": "REJECT",
+        "id": "KR01B",
+        "live_eligible": false,
+        "name": "Kronos foundation-model hourly 10:30 signal (B_mini_1030_thr25sd)"
       }
     ],
     "calculation_notes": [
@@ -13690,21 +13728,21 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-13 10:45:30 ET",
-          "basket_value_usd": 79.1571,
+          "as_of": "2026-11-13 10:55:01 ET",
+          "basket_value_usd": 79.1227,
           "leg_prices": {
-            "GLD": 355.35,
-            "SPY": 750.36,
-            "TLT": 79.54
+            "GLD": 355.025,
+            "SPY": 750.15,
+            "TLT": 79.51
           },
-          "mark_as_of": "2026-11-13 10:45:30 ET",
+          "mark_as_of": "2026-11-13 10:55:01 ET",
           "mark_source": "alerts/poll.log",
           "price_source": "alerts poller output",
-          "unrealized_pnl_usd": -0.8429
+          "unrealized_pnl_usd": -0.8773
         },
         "mark_freshness": {
-          "et": "2026-11-13T10:45:30-05:00",
-          "source": "2026-11-13 10:45:30 ET",
+          "et": "2026-11-13T10:55:01-05:00",
+          "source": "2026-11-13 10:55:01 ET",
           "status": "recent"
         },
         "mode": "paper",
@@ -13910,12 +13948,12 @@
     "watch": {
       "coverage_complete": null,
       "freshness": {
-        "et": "2026-11-13T09:31:00.743195-05:00",
-        "source": "2026-11-13T09:31:00.743195-05:00",
+        "et": "2026-11-13T10:54:44.528285-05:00",
+        "source": "2026-11-13T10:54:44.528285-05:00",
         "status": "recent"
       },
       "gaps": null,
-      "generated_at": "2026-11-13T09:31:00.743195-05:00",
+      "generated_at": "2026-11-13T10:54:44.528285-05:00",
       "levels": [
         {
           "bar": "daily_close",
