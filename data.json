@@ -16,8 +16,8 @@
     "sha256": "921536a46924a3c7e2461abc8511d0c11ccdfb6a6f9e95a5687b2183786b73ab",
     "status": "ok"
   },
-  "built_at": "2026-11-13T16:15:01.660160-05:00",
-  "content_hash": "f8832a3f9baec5e52c431064bdb30cf819ced4f35a493673e11c5229e3e306b4",
+  "built_at": "2026-11-14T11:25:39.184059-05:00",
+  "content_hash": "469d1e08e4cd890687834d9ab8c46753257ca9123abcaa17477bd85badde69c9",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -5372,7 +5372,7 @@
     ],
     "usage_source": "USAGE_RULES.md",
     "watcher": {
-      "freshness": "recent",
+      "freshness": "stale",
       "generated_at": "2026-11-13T10:54:44.528285-05:00",
       "level_count": 11,
       "levels": [
@@ -13950,7 +13950,7 @@
       "freshness": {
         "et": "2026-11-13T10:54:44.528285-05:00",
         "source": "2026-11-13T10:54:44.528285-05:00",
-        "status": "recent"
+        "status": "stale"
       },
       "gaps": null,
       "generated_at": "2026-11-13T10:54:44.528285-05:00",
