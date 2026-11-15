@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-13 15:50:15 ET",
+  "as_of": "2026-11-14 19:24:20 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,8 +16,8 @@
     "sha256": "921536a46924a3c7e2461abc8511d0c11ccdfb6a6f9e95a5687b2183786b73ab",
     "status": "ok"
   },
-  "built_at": "2026-11-14T16:20:01.503881-05:00",
-  "content_hash": "efcda4f4ba48deaf8c3de183a2f93f7768af48c75fa6e66a7d862f138b33918b",
+  "built_at": "2026-11-14T19:25:02.161734-05:00",
+  "content_hash": "5dff88cd0222c46c8fde84729f9be266d468d3c8800e30c32e9db31f8cde23e5",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -695,8 +695,8 @@
         "score": 1
       }
     ],
-    "as_of": "2026-11-13 15:50:15 ET",
-    "as_of_source": "mark PT-SB29-2026-10-30-001",
+    "as_of": "2026-11-14 19:24:20 ET",
+    "as_of_source": "watch_levels.json generated_at",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
       "eyebrow": "Trading team",
@@ -732,7 +732,7 @@
         "source": "risk_decisions.json"
       },
       {
-        "as_of": "2026-11-13T10:54:44.528285-05:00",
+        "as_of": "2026-11-14T19:24:20.784345-05:00",
         "label": "Watch levels",
         "source": "watch_levels.json"
       },
@@ -5372,8 +5372,8 @@
     ],
     "usage_source": "USAGE_RULES.md",
     "watcher": {
-      "freshness": "stale",
-      "generated_at": "2026-11-13T10:54:44.528285-05:00",
+      "freshness": "recent",
+      "generated_at": "2026-11-14T19:24:20.784345-05:00",
       "level_count": 11,
       "levels": [
         {
@@ -5381,7 +5381,7 @@
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-BTC-USD-ENTRY-20261112",
+          "id": "CX06B-BTC-USD-ENTRY-20261113",
           "kind": "entry",
           "level": 86602.914,
           "strategy_id": "CX06B",
@@ -5393,7 +5393,7 @@
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-ETH-USD-ENTRY-20261112",
+          "id": "CX06B-ETH-USD-ENTRY-20261113",
           "kind": "entry",
           "level": 2776.468,
           "strategy_id": "CX06B",
@@ -5467,7 +5467,7 @@
           "enabled": true,
           "id": "NC06-TLT-WINDOW-2026-11-23",
           "kind": "calendar_window",
-          "level": 79.72,
+          "level": 79.38,
           "strategy_id": "NC06",
           "ticker": "TLT",
           "trigger": "calendar"
@@ -5479,7 +5479,7 @@
           "enabled": true,
           "id": "SB29-SPY-REBALANCE-20261130",
           "kind": "monthly_rebalance_window",
-          "level": 757.119995,
+          "level": 754.369995,
           "strategy_id": "SB29",
           "ticker": "SPY",
           "trigger": "calendar"
@@ -5491,7 +5491,7 @@
           "enabled": true,
           "id": "SB29-TLT-REBALANCE-20261130",
           "kind": "monthly_rebalance_window",
-          "level": 79.720001,
+          "level": 79.379997,
           "strategy_id": "SB29",
           "ticker": "TLT",
           "trigger": "calendar"
@@ -5503,7 +5503,7 @@
           "enabled": true,
           "id": "SB29-GLD-REBALANCE-20261130",
           "kind": "monthly_rebalance_window",
-          "level": 354.890015,
+          "level": 355.450012,
           "strategy_id": "SB29",
           "ticker": "GLD",
           "trigger": "calendar"
@@ -5582,9 +5582,9 @@
         "status": "ok"
       },
       {
-        "bytes": 12762,
+        "bytes": 12758,
         "path": "desk/watch_levels.json",
-        "sha256": "55e0d7d9d74aaa3185152b97de5adec43aba540f4ee388755ce21b2fc4f23646",
+        "sha256": "7809f1b81f685a39fe71040efae8c238899bc8790633763ae9b3b66b6b8c8026",
         "status": "ok"
       },
       {
@@ -5624,9 +5624,9 @@
         "status": "ok"
       },
       {
-        "bytes": 2410,
+        "bytes": 3067,
         "path": "desk/setups_rejected.jsonl",
-        "sha256": "8eca86d6e9b2cd6f3acdc387905310076b7cbb59053a2f010532af6d4aab9a02",
+        "sha256": "d136baf5f4d632789f99323f5f9ec4e9ef80b48c702c45a4094bf358979d80a6",
         "status": "ok"
       },
       {
@@ -13948,52 +13948,52 @@
     "watch": {
       "coverage_complete": null,
       "freshness": {
-        "et": "2026-11-13T10:54:44.528285-05:00",
-        "source": "2026-11-13T10:54:44.528285-05:00",
-        "status": "stale"
+        "et": "2026-11-14T19:24:20.784345-05:00",
+        "source": "2026-11-14T19:24:20.784345-05:00",
+        "status": "recent"
       },
       "gaps": null,
-      "generated_at": "2026-11-13T10:54:44.528285-05:00",
+      "generated_at": "2026-11-14T19:24:20.784345-05:00",
       "levels": [
         {
           "bar": "daily_close",
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-BTC-USD-ENTRY-20261112",
+          "id": "CX06B-BTC-USD-ENTRY-20261113",
           "invalidation_rule": "After a genuine entry, daily close below entry close - 2*N (N = 20-day mean absolute daily change), or below prior-20-day close low",
           "kind": "entry",
-          "last_full_close_utc": "2026-11-12T00:00:00+00:00",
+          "last_full_close_utc": "2026-11-13T00:00:00+00:00",
           "level": 86602.914,
           "near_atr_multiple": 0.5,
           "near_pct": 0.01,
           "price_source": "Yahoo",
-          "reference_atr": 1178.827,
+          "reference_atr": 1319.345,
           "strategy_id": "CX06B",
           "target_rule": "None; exit uses closing stop or channel exit. 25% per coin cap.",
           "ticker": "BTC-USD",
           "trigger": "cross_above",
-          "valid_from_utc": "2026-11-12T00:00:00+00:00"
+          "valid_from_utc": "2026-11-13T00:00:00+00:00"
         },
         {
           "bar": "daily_close",
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-ETH-USD-ENTRY-20261112",
+          "id": "CX06B-ETH-USD-ENTRY-20261113",
           "invalidation_rule": "After a genuine entry, daily close below entry close - 2*N (N = 20-day mean absolute daily change), or below prior-20-day close low",
           "kind": "entry",
-          "last_full_close_utc": "2026-11-12T00:00:00+00:00",
+          "last_full_close_utc": "2026-11-13T00:00:00+00:00",
           "level": 2776.468,
           "near_atr_multiple": 0.5,
           "near_pct": 0.01,
           "price_source": "Yahoo",
-          "reference_atr": 44.444,
+          "reference_atr": 47.5,
           "strategy_id": "CX06B",
           "target_rule": "None; exit uses closing stop or channel exit. 25% per coin cap.",
           "ticker": "ETH-USD",
           "trigger": "cross_above",
-          "valid_from_utc": "2026-11-12T00:00:00+00:00"
+          "valid_from_utc": "2026-11-13T00:00:00+00:00"
         },
         {
           "bar": "weekly_close",
@@ -14007,7 +14007,7 @@
           "near_atr_multiple": 0.5,
           "near_pct": 0.01,
           "price_source": "Yahoo",
-          "reference_atr": 1178.827,
+          "reference_atr": 1319.345,
           "strategy_id": "SB26",
           "ticker": "BTC-USD",
           "trigger": "cross_below"
@@ -14093,7 +14093,7 @@
           "id": "NC06-TLT-WINDOW-2026-11-23",
           "invalidation_rule": "Always-invested calendar strategy; official last-five-session timing. No fabricated price stop.",
           "kind": "calendar_window",
-          "level": 79.72,
+          "level": 79.38,
           "near_pct": 0,
           "price_source": "Yahoo",
           "start": "2026-11-23T16:00:00-05:00",
@@ -14110,11 +14110,11 @@
           "id": "SB29-SPY-REBALANCE-20261130",
           "invalidation_rule": "Existing allocation weight check; no new price stop or sizing added by watcher.",
           "kind": "monthly_rebalance_window",
-          "level": 757.119995,
+          "level": 754.369995,
           "level_note": "Reference last price; below-200 session SMA filter only. No basket sum or price entry trigger.",
           "near_pct": 0,
           "price_source": "Yahoo",
-          "reference_leg_prices_soft": "SPY=757.12; TLT=79.72; GLD=354.89",
+          "reference_leg_prices_soft": "SPY=754.37; TLT=79.38; GLD=355.45",
           "start": "2026-11-30T16:00:00-05:00",
           "strategy_id": "SB29",
           "ticker": "SPY",
@@ -14129,11 +14129,11 @@
           "id": "SB29-TLT-REBALANCE-20261130",
           "invalidation_rule": "Existing allocation weight check; no new price stop or sizing added by watcher.",
           "kind": "monthly_rebalance_window",
-          "level": 79.720001,
+          "level": 79.379997,
           "level_note": "Reference last price; below-200 session SMA filter only. No basket sum or price entry trigger.",
           "near_pct": 0,
           "price_source": "Yahoo",
-          "reference_leg_prices_soft": "SPY=757.12; TLT=79.72; GLD=354.89",
+          "reference_leg_prices_soft": "SPY=754.37; TLT=79.38; GLD=355.45",
           "start": "2026-11-30T16:00:00-05:00",
           "strategy_id": "SB29",
           "ticker": "TLT",
@@ -14148,11 +14148,11 @@
           "id": "SB29-GLD-REBALANCE-20261130",
           "invalidation_rule": "Existing allocation weight check; no new price stop or sizing added by watcher.",
           "kind": "monthly_rebalance_window",
-          "level": 354.890015,
+          "level": 355.450012,
           "level_note": "Reference last price; below-200 session SMA filter only. No basket sum or price entry trigger.",
           "near_pct": 0,
           "price_source": "Yahoo",
-          "reference_leg_prices_soft": "SPY=757.12; TLT=79.72; GLD=354.89",
+          "reference_leg_prices_soft": "SPY=754.37; TLT=79.38; GLD=355.45",
           "start": "2026-11-30T16:00:00-05:00",
           "strategy_id": "SB29",
           "ticker": "GLD",
