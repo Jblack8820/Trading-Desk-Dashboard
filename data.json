@@ -16,8 +16,8 @@
     "sha256": "921536a46924a3c7e2461abc8511d0c11ccdfb6a6f9e95a5687b2183786b73ab",
     "status": "ok"
   },
-  "built_at": "2026-11-16T08:10:01.556304-05:00",
-  "content_hash": "439d0821077f94d7ec88ba7e966d75130af801e302f13efb4333ef6b4335b771",
+  "built_at": "2026-11-16T08:20:16.107086-05:00",
+  "content_hash": "3cf1c473980e89f7f49290e76c7e34ce843502d7c1e578b3b052c7c7dff36353",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -35,7 +35,7 @@
     },
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 61
+      "REJECT": 63
     },
     "approval_status": [
       {
@@ -693,6 +693,24 @@
         "live_eligible": false,
         "name": "Kronos foundation-model hourly 10:30 signal (B_mini_1030_thr25sd)",
         "score": 1
+      },
+      {
+        "category": "Crypto",
+        "decided_at": "2026-11-16T08:14:00-05:00",
+        "decision": "REJECT",
+        "id": "CX13",
+        "live_eligible": false,
+        "name": "BTC overnight-session MAX(10) (Vojtko-Dujava SSRN 5021138), Fri/Mon/Tue nights, exit 10:00",
+        "score": 1
+      },
+      {
+        "category": "Stocks & ETFs",
+        "decided_at": "2026-11-16T08:15:00-05:00",
+        "decision": "REJECT",
+        "id": "SE10",
+        "live_eligible": false,
+        "name": "S&P 500 end-of-day reversal (k5_x80_fnone_bar)",
+        "score": 1
       }
     ],
     "as_of": "2026-11-15 19:40:02 ET",
@@ -759,7 +777,7 @@
         "source": "research/results_table.csv"
       },
       {
-        "count": 66,
+        "count": 68,
         "label": "Reviewed (approved_strategies.json)",
         "source": "approved_strategies.json"
       },
@@ -817,7 +835,7 @@
       },
       {
         "format": "int",
-        "hint": "61 rejected in approved_strategies.json",
+        "hint": "63 rejected in approved_strategies.json",
         "label": "Paper approved",
         "value": 5
       },
@@ -5584,9 +5602,9 @@
         "status": "ok"
       },
       {
-        "bytes": 42698,
+        "bytes": 44969,
         "path": "desk/approved_strategies.json",
-        "sha256": "6a810e53410b7968516bdc8f2ecf001568929c4e0408a0b3d60f062f88a6e641",
+        "sha256": "c325bcf82ea073eae0a6dc6b27ee82f59802ce8d81c53b6667dd18e3ed7944c2",
         "status": "ok"
       },
       {
@@ -13150,7 +13168,7 @@
   "snapshot": {
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 61
+      "REJECT": 63
     },
     "approvals": [
       {
@@ -13680,6 +13698,22 @@
         "id": "KR01B",
         "live_eligible": false,
         "name": "Kronos foundation-model hourly 10:30 signal (B_mini_1030_thr25sd)"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-16T08:14:00-05:00",
+        "decision": "REJECT",
+        "id": "CX13",
+        "live_eligible": false,
+        "name": "BTC overnight-session MAX(10) (Vojtko-Dujava SSRN 5021138), Fri/Mon/Tue nights, exit 10:00"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-16T08:15:00-05:00",
+        "decision": "REJECT",
+        "id": "SE10",
+        "live_eligible": false,
+        "name": "S&P 500 end-of-day reversal (k5_x80_fnone_bar)"
       }
     ],
     "calculation_notes": [
