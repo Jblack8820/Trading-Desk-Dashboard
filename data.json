@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-16 14:00:01 ET",
+  "as_of": "2026-11-16 14:10:01 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,8 +16,8 @@
     "sha256": "19451644f9d773a898e85f6bdad944a98f4f751e6dcb8094f3cc59ae0a77afe4",
     "status": "ok"
   },
-  "built_at": "2026-11-16T14:00:01.776188-05:00",
-  "content_hash": "faa1dcb02401d1834210b48fc9d7afbaa98dce78a813246b11fa9d3531e27ee8",
+  "built_at": "2026-11-16T14:10:02.261632-05:00",
+  "content_hash": "533b31f54645c55ea100642512d6e70ca8db0d9a278caf6720df72c654acffc8",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -25,9 +25,9 @@
       "cash_usd": 120.0,
       "current_tier": {},
       "deployed_usd": 80.0,
-      "mark_adjusted_equity": 198.661,
+      "mark_adjusted_equity": 198.6395,
       "max_open_risk": null,
-      "open_unrealized_pnl": -1.339,
+      "open_unrealized_pnl": -1.3605,
       "recorded_equity": 200.0,
       "recorded_equity_source": "risk_decisions.json account_equity",
       "total_open_risk": 8.0,
@@ -35,7 +35,7 @@
     },
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 63
+      "REJECT": 64
     },
     "approval_status": [
       {
@@ -711,9 +711,18 @@
         "live_eligible": false,
         "name": "S&P 500 end-of-day reversal (k5_x80_fnone_bar)",
         "score": 1
+      },
+      {
+        "category": "Stocks & ETFs",
+        "decided_at": "2026-11-16T14:12:00-05:00",
+        "decision": "REJECT",
+        "id": "SE11",
+        "live_eligible": false,
+        "name": "SPY hourly ML ensemble long-short (ens_th05_ls)",
+        "score": 1
       }
     ],
-    "as_of": "2026-11-16 14:00:01 ET",
+    "as_of": "2026-11-16 14:10:01 ET",
     "as_of_source": "mark PT-SB29-2026-10-30-001",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
@@ -733,9 +742,9 @@
       "tested": {
         "Crypto": 68,
         "Options": 27,
-        "Stocks & ETFs": 145
+        "Stocks & ETFs": 146
       },
-      "tested_total": 240
+      "tested_total": 241
     },
     "deterioration": {
       "flagged": [],
@@ -772,12 +781,12 @@
     ],
     "funnel": [
       {
-        "count": 240,
+        "count": 241,
         "label": "Tested (results_table.csv)",
         "source": "research/results_table.csv"
       },
       {
-        "count": 68,
+        "count": 69,
         "label": "Reviewed (approved_strategies.json)",
         "source": "approved_strategies.json"
       },
@@ -812,13 +821,13 @@
         "format": "money",
         "hint": "Recorded equity plus open production-book unrealized P&L from the freshest sourced mark. Not a brokerage stream.",
         "label": "Mark-adjusted equity",
-        "value": 198.661
+        "value": 198.6395
       },
       {
         "format": "pnl",
         "hint": "Open production paper trades only",
         "label": "Open unrealized P&L",
-        "value": -1.339
+        "value": -1.3605
       },
       {
         "format": "money",
@@ -835,7 +844,7 @@
       },
       {
         "format": "int",
-        "hint": "63 rejected in approved_strategies.json",
+        "hint": "64 rejected in approved_strategies.json",
         "label": "Paper approved",
         "value": 5
       },
@@ -854,7 +863,7 @@
     ],
     "min_account": [
       {
-        "count": 177,
+        "count": 178,
         "label": "Under $500",
         "tier": "under_500"
       },
@@ -896,9 +905,9 @@
         "executed_at": null,
         "legs": [
           {
-            "change_pct": -1.3006539861219193,
+            "change_pct": -1.3898036711041835,
             "fill_price": 751.545,
-            "last_price": 741.77,
+            "last_price": 741.1,
             "notional_usd": 33.68,
             "price_time": "2026-10-30T14:43:21-04:00 (latest available Yahoo print; feed stale)",
             "shares": 0.044814,
@@ -907,9 +916,9 @@
             "weight_pct": 42.1
           },
           {
-            "change_pct": -2.598039215686263,
+            "change_pct": -2.5919117647058765,
             "fill_price": 81.6,
-            "last_price": 79.48,
+            "last_price": 79.485,
             "notional_usd": 31.76,
             "price_time": "2026-10-30T15:44:57-04:00",
             "shares": 0.389216,
@@ -918,9 +927,9 @@
             "weight_pct": 39.7
           },
           {
-            "change_pct": -0.5182368680467629,
+            "change_pct": -0.47317279256442946,
             "fill_price": 355.05,
-            "last_price": 353.21,
+            "last_price": 353.37,
             "notional_usd": 14.56,
             "price_time": "2026-10-30T15:44:04-04:00",
             "shares": 0.041008,
@@ -930,12 +939,12 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-16 14:00:01 ET",
-          "basket_value_usd": 78.661,
+          "as_of": "2026-11-16 14:10:01 ET",
+          "basket_value_usd": 78.6395,
           "freshness": "recent",
           "mark_source": "alerts/poll.log",
           "realized_pnl_net_fees_usd": null,
-          "unrealized_pnl_usd": -1.339
+          "unrealized_pnl_usd": -1.3605
         },
         "mode": "paper",
         "name": null,
@@ -4748,6 +4757,20 @@
         "route": "STOCKS_ETF_TESTER `37d050cd-df6d-4caa-a09b-4c37f807fed0`",
         "status": "SPEC_WRITTEN",
         "written": "2026-11-10 ~08:00 ET"
+      },
+      {
+        "id": "SE11",
+        "notes": "Intraday ML timing of SPY from lagged sector-ETF 1h returns, flat by the close. `research/specs/SE11.md`. Adaptation of Huddleston/Liu/Stentoft. Not approved. No trades.",
+        "route": "STOCKS_ETF_TESTER `37d050cd-df6d-4caa-a09b-4c37f807fed0`",
+        "status": "SPEC_WRITTEN",
+        "written": "2026-11-16 ~13:58 ET"
+      },
+      {
+        "id": "SE12",
+        "notes": "Open-to-close ML ranker on the nine original sector SPDRs (Krauss/Fischer features, day-trade adaptation). `research/specs/SE12.md`. Not approved. No trades.",
+        "route": "STOCKS_ETF_TESTER `37d050cd-df6d-4caa-a09b-4c37f807fed0`",
+        "status": "SPEC_WRITTEN",
+        "written": "2026-11-16 ~13:58 ET"
       }
     ],
     "regime": {
@@ -5235,10 +5258,14 @@
       {
         "batch": "2026-11-16_SE10",
         "count": 1
+      },
+      {
+        "batch": "2026-11-16_SE11",
+        "count": 1
       }
     ],
     "score_counts": {
-      "1": 95,
+      "1": 96,
       "2": 131,
       "3": 7,
       "4": 2,
@@ -5562,9 +5589,9 @@
         "status": "ok"
       },
       {
-        "bytes": 44969,
+        "bytes": 46043,
         "path": "desk/approved_strategies.json",
-        "sha256": "c325bcf82ea073eae0a6dc6b27ee82f59802ce8d81c53b6667dd18e3ed7944c2",
+        "sha256": "031452124a78e5643d4b6f8f9d1fa0e7c12a5fbeefbde8f4e5072b96b9d33d69",
         "status": "ok"
       },
       {
@@ -5628,15 +5655,15 @@
         "status": "ok"
       },
       {
-        "bytes": 147209,
+        "bytes": 148051,
         "path": "desk/research/results_table.csv",
-        "sha256": "b7f798ec4cfeb40542bcab5abf9127b60c48d224c005bb7c8aaba7b1593ecb5b",
+        "sha256": "9558063038177afd7049fb8bf8021826fdc08eabba0fde95af22a1ba40676952",
         "status": "ok"
       },
       {
-        "bytes": 727,
+        "bytes": 1271,
         "path": "desk/research/queue.md",
-        "sha256": "a5a6254828363a06121e3da9adfdf68dc9d15a5d8626fb9f2b198858499b4799",
+        "sha256": "505ca22390bf6a5d2b050afdfb2619371fd18ee94f9c0026b44561689846790d",
         "status": "ok"
       },
       {
@@ -5652,9 +5679,9 @@
         "status": "ok"
       },
       {
-        "bytes": 37946,
+        "bytes": 38188,
         "path": "desk/alerts/poll.log",
-        "sha256": "1007913339de78b720d335e1b8d079df97ec88752d3d4d1254bac937f732b604",
+        "sha256": "ae331af3e818820cea8b42d3b56009e9fe82eef6077c92235d0ffdb9ba5b4a0e",
         "status": "ok"
       },
       {
@@ -5722,21 +5749,21 @@
         }
       ],
       "mark": {
-        "as_of": "2026-11-16 14:00:01 ET",
-        "basket_value_usd": 78.661,
+        "as_of": "2026-11-16 14:10:01 ET",
+        "basket_value_usd": 78.6395,
         "leg_prices": {
-          "GLD": 353.21,
-          "SPY": 741.77,
-          "TLT": 79.48
+          "GLD": 353.37,
+          "SPY": 741.1,
+          "TLT": 79.485
         },
-        "mark_as_of": "2026-11-16 14:00:01 ET",
+        "mark_as_of": "2026-11-16 14:10:01 ET",
         "mark_source": "alerts/poll.log",
         "price_source": "alerts poller output",
-        "unrealized_pnl_usd": -1.339
+        "unrealized_pnl_usd": -1.3605
       },
       "mark_freshness": {
-        "et": "2026-11-16T14:00:01-05:00",
-        "source": "2026-11-16 14:00:01 ET",
+        "et": "2026-11-16T14:10:01-05:00",
+        "source": "2026-11-16 14:10:01 ET",
         "status": "recent"
       },
       "mode": "paper",
@@ -13128,7 +13155,7 @@
   "snapshot": {
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 63
+      "REJECT": 64
     },
     "approvals": [
       {
@@ -13674,6 +13701,14 @@
         "id": "SE10",
         "live_eligible": false,
         "name": "S&P 500 end-of-day reversal (k5_x80_fnone_bar)"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-16T14:12:00-05:00",
+        "decision": "REJECT",
+        "id": "SE11",
+        "live_eligible": false,
+        "name": "SPY hourly ML ensemble long-short (ens_th05_ls)"
       }
     ],
     "calculation_notes": [
@@ -13730,21 +13765,21 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-16 14:00:01 ET",
-          "basket_value_usd": 78.661,
+          "as_of": "2026-11-16 14:10:01 ET",
+          "basket_value_usd": 78.6395,
           "leg_prices": {
-            "GLD": 353.21,
-            "SPY": 741.77,
-            "TLT": 79.48
+            "GLD": 353.37,
+            "SPY": 741.1,
+            "TLT": 79.485
           },
-          "mark_as_of": "2026-11-16 14:00:01 ET",
+          "mark_as_of": "2026-11-16 14:10:01 ET",
           "mark_source": "alerts/poll.log",
           "price_source": "alerts poller output",
-          "unrealized_pnl_usd": -1.339
+          "unrealized_pnl_usd": -1.3605
         },
         "mark_freshness": {
-          "et": "2026-11-16T14:00:01-05:00",
-          "source": "2026-11-16 14:00:01 ET",
+          "et": "2026-11-16T14:10:01-05:00",
+          "source": "2026-11-16 14:10:01 ET",
           "status": "recent"
         },
         "mode": "paper",
