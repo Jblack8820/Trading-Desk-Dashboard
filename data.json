@@ -16,8 +16,8 @@
     "sha256": "921536a46924a3c7e2461abc8511d0c11ccdfb6a6f9e95a5687b2183786b73ab",
     "status": "ok"
   },
-  "built_at": "2026-11-15T19:40:32.941742-05:00",
-  "content_hash": "424347dc9b508f1bd4b41423ed510237f16fc9f60827fbd1aa7a55f7f30f3555",
+  "built_at": "2026-11-16T08:10:01.556304-05:00",
+  "content_hash": "439d0821077f94d7ec88ba7e966d75130af801e302f13efb4333ef6b4335b771",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -713,11 +713,11 @@
       "paper_approved_total": 5,
       "rule": "results_table.csv has no category column. Classification used here: Crypto if the strategy id letter-prefix is CX or NH, or the name contains crypto/bitcoin/btc/eth/coin keywords; Options if the letter-prefix is NO or OP, or the name contains 'option'; everything else is Stocks & ETFs.",
       "tested": {
-        "Crypto": 67,
+        "Crypto": 68,
         "Options": 27,
-        "Stocks & ETFs": 144
+        "Stocks & ETFs": 145
       },
-      "tested_total": 238
+      "tested_total": 240
     },
     "deterioration": {
       "flagged": [],
@@ -754,7 +754,7 @@
     ],
     "funnel": [
       {
-        "count": 238,
+        "count": 240,
         "label": "Tested (results_table.csv)",
         "source": "research/results_table.csv"
       },
@@ -836,7 +836,7 @@
     ],
     "min_account": [
       {
-        "count": 175,
+        "count": 177,
         "label": "Under $500",
         "tier": "under_500"
       },
@@ -5249,10 +5249,18 @@
       {
         "batch": "2026-11-09_SE07",
         "count": 1
+      },
+      {
+        "batch": "2026-11-16_CX13",
+        "count": 1
+      },
+      {
+        "batch": "2026-11-16_SE10",
+        "count": 1
       }
     ],
     "score_counts": {
-      "1": 93,
+      "1": 95,
       "2": 131,
       "3": 7,
       "4": 2,
@@ -5642,9 +5650,9 @@
         "status": "ok"
       },
       {
-        "bytes": 145834,
+        "bytes": 147209,
         "path": "desk/research/results_table.csv",
-        "sha256": "f7af4ac4578cff5c592efffbb61f449a26265e6aac19ae8a641f0af663b9f009",
+        "sha256": "b7f798ec4cfeb40542bcab5abf9127b60c48d224c005bb7c8aaba7b1593ecb5b",
         "status": "ok"
       },
       {
