@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-16 10:35:56 ET",
+  "as_of": "2026-11-16 10:45:01 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,8 +16,8 @@
     "sha256": "19451644f9d773a898e85f6bdad944a98f4f751e6dcb8094f3cc59ae0a77afe4",
     "status": "ok"
   },
-  "built_at": "2026-11-16T10:35:57.407223-05:00",
-  "content_hash": "f32cef5cd9c427cd84313bdffd73ef807d6041d05790643649792ad27ff9ba24",
+  "built_at": "2026-11-16T10:45:02.085914-05:00",
+  "content_hash": "d655550646b8d60996dd2269d6c8ef5b1e29fc734a2689c87bd3808887f8630b",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -25,9 +25,9 @@
       "cash_usd": 120.0,
       "current_tier": {},
       "deployed_usd": 80.0,
-      "mark_adjusted_equity": 198.8847,
+      "mark_adjusted_equity": 198.8777,
       "max_open_risk": null,
-      "open_unrealized_pnl": -1.1153,
+      "open_unrealized_pnl": -1.1223,
       "recorded_equity": 200.0,
       "recorded_equity_source": "risk_decisions.json account_equity",
       "total_open_risk": 8.0,
@@ -713,7 +713,7 @@
         "score": 1
       }
     ],
-    "as_of": "2026-11-16 10:35:56 ET",
+    "as_of": "2026-11-16 10:45:01 ET",
     "as_of_source": "mark PT-SB29-2026-10-30-001",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
@@ -750,7 +750,7 @@
         "source": "risk_decisions.json"
       },
       {
-        "as_of": "2026-11-16T08:29:54.668739-05:00",
+        "as_of": "2026-11-16T10:36:01.635655-05:00",
         "label": "Watch levels",
         "source": "watch_levels.json"
       },
@@ -812,13 +812,13 @@
         "format": "money",
         "hint": "Recorded equity plus open production-book unrealized P&L from the freshest sourced mark. Not a brokerage stream.",
         "label": "Mark-adjusted equity",
-        "value": 198.8847
+        "value": 198.8777
       },
       {
         "format": "pnl",
         "hint": "Open production paper trades only",
         "label": "Open unrealized P&L",
-        "value": -1.1153
+        "value": -1.1223
       },
       {
         "format": "money",
@@ -896,9 +896,9 @@
         "executed_at": null,
         "legs": [
           {
-            "change_pct": -0.9413940615664973,
+            "change_pct": -0.8985489890824807,
             "fill_price": 751.545,
-            "last_price": 744.47,
+            "last_price": 744.792,
             "notional_usd": 33.68,
             "price_time": "2026-10-30T14:43:21-04:00 (latest available Yahoo print; feed stale)",
             "shares": 0.044814,
@@ -907,9 +907,9 @@
             "weight_pct": 42.1
           },
           {
-            "change_pct": -2.3897058823529274,
+            "change_pct": -2.481617647058813,
             "fill_price": 81.6,
-            "last_price": 79.65,
+            "last_price": 79.575,
             "notional_usd": 31.76,
             "price_time": "2026-10-30T15:44:57-04:00",
             "shares": 0.389216,
@@ -918,9 +918,9 @@
             "weight_pct": 39.7
           },
           {
-            "change_pct": -0.26756794817630997,
+            "change_pct": -0.214054358541048,
             "fill_price": 355.05,
-            "last_price": 354.1,
+            "last_price": 354.29,
             "notional_usd": 14.56,
             "price_time": "2026-10-30T15:44:04-04:00",
             "shares": 0.041008,
@@ -930,12 +930,12 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-16 10:35:56 ET",
-          "basket_value_usd": 78.8847,
+          "as_of": "2026-11-16 10:45:01 ET",
+          "basket_value_usd": 78.8777,
           "freshness": "recent",
           "mark_source": "alerts/poll.log",
           "realized_pnl_net_fees_usd": null,
-          "unrealized_pnl_usd": -1.1153
+          "unrealized_pnl_usd": -1.1223
         },
         "mode": "paper",
         "name": null,
@@ -5359,8 +5359,8 @@
     "usage_source": "USAGE_RULES.md",
     "watcher": {
       "freshness": "recent",
-      "generated_at": "2026-11-16T08:29:54.668739-05:00",
-      "level_count": 7,
+      "generated_at": "2026-11-16T10:36:01.635655-05:00",
+      "level_count": 11,
       "levels": [
         {
           "bar": "daily_close",
@@ -5397,6 +5397,54 @@
           "strategy_id": "SB26",
           "ticker": "BTC-USD",
           "trigger": "cross_below"
+        },
+        {
+          "bar": "intraday",
+          "condition": "NQ=F touches overnight_high; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
+          "direction": "SHORT",
+          "enabled": true,
+          "id": "SB11-NQ=F-overnight_high-2026-11-16",
+          "kind": "sweep",
+          "level": 28279.25,
+          "strategy_id": "SB11",
+          "ticker": "NQ=F",
+          "trigger": "cross_above"
+        },
+        {
+          "bar": "intraday",
+          "condition": "NQ=F touches overnight_low; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
+          "direction": "LONG",
+          "enabled": true,
+          "id": "SB11-NQ=F-overnight_low-2026-11-16",
+          "kind": "sweep",
+          "level": 27554.0,
+          "strategy_id": "SB11",
+          "ticker": "NQ=F",
+          "trigger": "cross_below"
+        },
+        {
+          "bar": "intraday",
+          "condition": "ES=F touches overnight_high; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
+          "direction": "SHORT",
+          "enabled": true,
+          "id": "SB11-ES=F-overnight_high-2026-11-16",
+          "kind": "confirmation_sweep",
+          "level": 7614.25,
+          "strategy_id": "SB11",
+          "ticker": "ES=F",
+          "trigger": "touch"
+        },
+        {
+          "bar": "intraday",
+          "condition": "ES=F touches overnight_low; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
+          "direction": "LONG",
+          "enabled": true,
+          "id": "SB11-ES=F-overnight_low-2026-11-16",
+          "kind": "confirmation_sweep",
+          "level": 7520.0,
+          "strategy_id": "SB11",
+          "ticker": "ES=F",
+          "trigger": "touch"
         },
         {
           "bar": "scheduled_close",
@@ -5520,9 +5568,9 @@
         "status": "ok"
       },
       {
-        "bytes": 9498,
+        "bytes": 12760,
         "path": "desk/watch_levels.json",
-        "sha256": "bec88d840f42197fcca5c77f9345042ab77dab4a26da06119d099e286fc3ee86",
+        "sha256": "e16f07987786ec04ccfeaad2729e0ec952f76ad55a170fd83f785f2065611ea8",
         "status": "ok"
       },
       {
@@ -5562,9 +5610,9 @@
         "status": "ok"
       },
       {
-        "bytes": 3067,
+        "bytes": 3965,
         "path": "desk/setups_rejected.jsonl",
-        "sha256": "d136baf5f4d632789f99323f5f9ec4e9ef80b48c702c45a4094bf358979d80a6",
+        "sha256": "e0b643daccfa8cceecd2fe7d01a5f5c400c3e3f3f9823bb922c50cb23f09bc09",
         "status": "ok"
       },
       {
@@ -5604,9 +5652,9 @@
         "status": "ok"
       },
       {
-        "bytes": 36124,
+        "bytes": 36371,
         "path": "desk/alerts/poll.log",
-        "sha256": "7e76822017d774a6c71497533f5af34146b157fd341e5cd4570957e093d42e3d",
+        "sha256": "f5c5c114f66713a72088399fa15e4508fbd2736ce296e1da46a7dc6b19ce80e6",
         "status": "ok"
       },
       {
@@ -5674,21 +5722,21 @@
         }
       ],
       "mark": {
-        "as_of": "2026-11-16 10:35:56 ET",
-        "basket_value_usd": 78.8847,
+        "as_of": "2026-11-16 10:45:01 ET",
+        "basket_value_usd": 78.8777,
         "leg_prices": {
-          "GLD": 354.1,
-          "SPY": 744.47,
-          "TLT": 79.65
+          "GLD": 354.29,
+          "SPY": 744.792,
+          "TLT": 79.575
         },
-        "mark_as_of": "2026-11-16 10:35:56 ET",
+        "mark_as_of": "2026-11-16 10:45:01 ET",
         "mark_source": "alerts/poll.log",
         "price_source": "alerts poller output",
-        "unrealized_pnl_usd": -1.1153
+        "unrealized_pnl_usd": -1.1223
       },
       "mark_freshness": {
-        "et": "2026-11-16T10:35:56-05:00",
-        "source": "2026-11-16 10:35:56 ET",
+        "et": "2026-11-16T10:45:01-05:00",
+        "source": "2026-11-16 10:45:01 ET",
         "status": "recent"
       },
       "mode": "paper",
@@ -13682,21 +13730,21 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-16 10:35:56 ET",
-          "basket_value_usd": 78.8847,
+          "as_of": "2026-11-16 10:45:01 ET",
+          "basket_value_usd": 78.8777,
           "leg_prices": {
-            "GLD": 354.1,
-            "SPY": 744.47,
-            "TLT": 79.65
+            "GLD": 354.29,
+            "SPY": 744.792,
+            "TLT": 79.575
           },
-          "mark_as_of": "2026-11-16 10:35:56 ET",
+          "mark_as_of": "2026-11-16 10:45:01 ET",
           "mark_source": "alerts/poll.log",
           "price_source": "alerts poller output",
-          "unrealized_pnl_usd": -1.1153
+          "unrealized_pnl_usd": -1.1223
         },
         "mark_freshness": {
-          "et": "2026-11-16T10:35:56-05:00",
-          "source": "2026-11-16 10:35:56 ET",
+          "et": "2026-11-16T10:45:01-05:00",
+          "source": "2026-11-16 10:45:01 ET",
           "status": "recent"
         },
         "mode": "paper",
@@ -13902,12 +13950,12 @@
     "watch": {
       "coverage_complete": null,
       "freshness": {
-        "et": "2026-11-16T08:29:54.668739-05:00",
-        "source": "2026-11-16T08:29:54.668739-05:00",
+        "et": "2026-11-16T10:36:01.635655-05:00",
+        "source": "2026-11-16T10:36:01.635655-05:00",
         "status": "recent"
       },
       "gaps": null,
-      "generated_at": "2026-11-16T08:29:54.668739-05:00",
+      "generated_at": "2026-11-16T10:36:01.635655-05:00",
       "levels": [
         {
           "bar": "daily_close",
@@ -13965,6 +14013,78 @@
           "strategy_id": "SB26",
           "ticker": "BTC-USD",
           "trigger": "cross_below"
+        },
+        {
+          "bar": "intraday",
+          "condition": "NQ=F touches overnight_high; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
+          "direction": "SHORT",
+          "enabled": true,
+          "end": "2026-11-16T09:50:00-05:00",
+          "id": "SB11-NQ=F-overnight_high-2026-11-16",
+          "invalidation_rule": "Sweep extreme, only after matching SMT and 5m BOS confirms; target 2R, flat 16:00 ET",
+          "kind": "sweep",
+          "level": 28279.25,
+          "near_pct": 0.002,
+          "price_source": "Yahoo",
+          "session_date_et": "2026-11-16",
+          "start": "2026-11-16T09:30:00-05:00",
+          "strategy_id": "SB11",
+          "ticker": "NQ=F",
+          "trigger": "cross_above"
+        },
+        {
+          "bar": "intraday",
+          "condition": "NQ=F touches overnight_low; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
+          "direction": "LONG",
+          "enabled": true,
+          "end": "2026-11-16T09:50:00-05:00",
+          "id": "SB11-NQ=F-overnight_low-2026-11-16",
+          "invalidation_rule": "Sweep extreme, only after matching SMT and 5m BOS confirms; target 2R, flat 16:00 ET",
+          "kind": "sweep",
+          "level": 27554.0,
+          "near_pct": 0.002,
+          "price_source": "Yahoo",
+          "session_date_et": "2026-11-16",
+          "start": "2026-11-16T09:30:00-05:00",
+          "strategy_id": "SB11",
+          "ticker": "NQ=F",
+          "trigger": "cross_below"
+        },
+        {
+          "bar": "intraday",
+          "condition": "ES=F touches overnight_high; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
+          "direction": "SHORT",
+          "enabled": true,
+          "end": "2026-11-16T09:50:00-05:00",
+          "id": "SB11-ES=F-overnight_high-2026-11-16",
+          "invalidation_rule": "Sweep extreme, only after matching SMT and 5m BOS confirms; target 2R, flat 16:00 ET",
+          "kind": "confirmation_sweep",
+          "level": 7614.25,
+          "near_pct": 0.002,
+          "price_source": "Yahoo",
+          "session_date_et": "2026-11-16",
+          "start": "2026-11-16T09:30:00-05:00",
+          "strategy_id": "SB11",
+          "ticker": "ES=F",
+          "trigger": "touch"
+        },
+        {
+          "bar": "intraday",
+          "condition": "ES=F touches overnight_low; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
+          "direction": "LONG",
+          "enabled": true,
+          "end": "2026-11-16T09:50:00-05:00",
+          "id": "SB11-ES=F-overnight_low-2026-11-16",
+          "invalidation_rule": "Sweep extreme, only after matching SMT and 5m BOS confirms; target 2R, flat 16:00 ET",
+          "kind": "confirmation_sweep",
+          "level": 7520.0,
+          "near_pct": 0.002,
+          "price_source": "Yahoo",
+          "session_date_et": "2026-11-16",
+          "start": "2026-11-16T09:30:00-05:00",
+          "strategy_id": "SB11",
+          "ticker": "ES=F",
+          "trigger": "touch"
         },
         {
           "bar": "scheduled_close",
