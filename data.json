@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-15 19:40:02 ET",
+  "as_of": "2026-11-16 08:29:54 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -11,13 +11,13 @@
     "TRADE_MANAGER"
   ],
   "briefing_head": {
-    "head": "# Morning Briefing — Fri Nov 13, 2026\nWritten ~8:20 AM ET by BRIEFING. Live futures/VIX/WTI/10y/BTC: Yahoo Finance chart API (~8:07 AM ET, may be delayed). Prior-session closes for SPY/TLT/GLD/ES/NQ/VIX: Yahoo completed daily bars via desk prefetch cache (Nov 12 session, built 8:10 AM ET). Paper only, no trades placed.\n\n## ES/NQ bias, levels, overnight\n- **Bias: neutral to mildly bullish into PPI (8:30 AM).** Futures firm as NVDA stabilizes (+2% premarket, AP) and CSCO/AMAT beat-and-raise. A hot PPI (cons +0.4% m/m, core +0.3%) would push yields and cap it, as CPI did Tuesday.\n- Overnight: ES ~7637.25 (+0.3% vs 7615.25 settle), NQ ~28402.75 (+0.1% vs 28384.5). VIX ~18.3 (Thu close 18.70). WTI ~$88.55. 10y ~5.10% (Thu close, +10bp). BTC ~69.1k (-3% on the day, Stocktwits flags a support break and liquidations).\n- ES: resistance 7639.5 (ON high), then 7674.75 (Thu high); support 7615 (settle), 7598.5 (ON low), 7572 (Thu low). NQ: resistance 28469.75 (ON high), 28652.25 (Thu high); support 28243.25 (ON low), 28013.75 (Thu low).\n\n## Prior day recap (Thu Nov 12)\nJensen Huang resigned as NVDA CEO; CFO Colette Kress is interim CEO. NVDA -4.3% to $166.19 (was -12% intraday, record retail dip-buy), but AMD +5.9% and AVGO +5.5%. NBIS -16.8% on results/outlook, CRWV -6.9%. S&P -0.35% to 7,592.40, Nasdaq -0.39%, Dow -0.36%. Energy +1.5% after Trump said the US doesn't need an Iran deal. Decliners beat advancers 3.4:1 on the NYSE (Reuters). SPY 757.12, TLT 79.72, GLD 354.89, VIX 18.70 (Yahoo).\n\n## Desk activity\nNo new trades since the last briefing. SB29 paper basket (SPY/TLT/GLD) marks ~$79.51 vs $80 cost (-$0.49), well above the $72.00 stop (computed from Yahoo Nov 12 closes). Next action: Nov 30 month-end rebalance. SE01 remains closed, tester-only.\n\n## Strategy recap\n- SB29: 1 open, 0 closed, win rate n/a (no closed trades), unrealized ~-$0.49. Not proven. No pause/retire flag.",
+    "head": "# Morning Briefing — Mon Nov 16, 2026\nWritten ~8:25 AM ET by BRIEFING. Live futures/VIX/WTI/BTC/ETH: Yahoo Finance chart API (~8:10 AM ET, may be delayed). Prior-session closes (Fri Nov 13) for SPY/TLT/GLD/ES/NQ/VIX and BTC daily bar (Nov 15 UTC day): Yahoo completed bars via desk prefetch cache (built 8:10 AM ET). Paper only, no trades placed.\n\n## ES/NQ bias, levels, overnight\n- **Bias: BEARISH-leaning, tech-led.** AI/semis sold again overnight ahead of NVDA earnings (Tue AMC) and the Anthropic IPO (prices Wed, trades Thu). FT reports Huang may return as CEO, adding uncertainty (Reuters). Crypto rout weighs on MSTR/COIN/miners.\n- Overnight: ES ~7541.25 (-0.55% vs 7583 Fri settle), NQ ~27686.5 (-1.24% vs 28034.75). VIX ~20.55 (Fri close 19.30). WTI ~$87.85. 10y ~5.14% (Stocktwits, Sun night); 2y -2bp Monday (Reuters). BTC ~64.1k, ETH ~1,799.\n- ES: resistance 7570.75 (ON high), 7583 (settle), 7669.25 (Fri high); support 7520 (ON low), 7519.25 (Fri low). NQ: resistance 27853.25 (ON high), 28034.75 (settle); support 27695.25 (Fri low, now being tested), 27554 (ON low).\n\n## Prior day recap (Fri Nov 13)\nPPI (Oct) +0.3% m/m vs +0.4% expected, core +0.3% in line; but +6.5% y/y, highest since Nov 2022 (CNBC). Early pop faded on tech: S&P -0.4% to 7,561.67, Nasdaq -0.91% to 25,136.27, Dow +0.1% to 52,347.55. Still the best week since August (S&P +2.5%). AMD -8.8%, AVGO -4.8%, CSCO -6.2% (Kiplinger). Dec hike ~90% priced. SPY 754.37 (-0.36%), TLT 79.38 (-0.43%), GLD 355.45 (+0.16%), VIX 19.30 (Yahoo).\n\n## Desk activity\nNo new trades. STRATEGY_APPROVER rejected CX13 (BTC overnight MAX(10)) and SE10 (S&P EOD reversal) this morning, both score 1, not live-eligible. SB29 paper basket (SPY/TLT/GLD) marks ~$79.28 vs $80 cost (-$0.72) at Fri closes, well above the $72.00 stop. Next action: Nov 30 month-end rebalance. SE01 remains closed, tester-only.\n\n## Strategy recap\n- SB29: 1 open, 0 closed, win rate n/a (no closed trades), unrealized ~-$0.72. Not proven. No pause/retire flag.",
     "path": "desk/daily_briefing.md",
-    "sha256": "921536a46924a3c7e2461abc8511d0c11ccdfb6a6f9e95a5687b2183786b73ab",
+    "sha256": "19451644f9d773a898e85f6bdad944a98f4f751e6dcb8094f3cc59ae0a77afe4",
     "status": "ok"
   },
-  "built_at": "2026-11-16T08:20:16.107086-05:00",
-  "content_hash": "3cf1c473980e89f7f49290e76c7e34ce843502d7c1e578b3b052c7c7dff36353",
+  "built_at": "2026-11-16T08:30:01.773919-05:00",
+  "content_hash": "fe2a4d834c6ad2d32a40d0ab5cca85e9f2602156b35dd48b676b1cd589390867",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -713,7 +713,7 @@
         "score": 1
       }
     ],
-    "as_of": "2026-11-15 19:40:02 ET",
+    "as_of": "2026-11-16 08:29:54 ET",
     "as_of_source": "watch_levels.json generated_at",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
@@ -750,17 +750,17 @@
         "source": "risk_decisions.json"
       },
       {
-        "as_of": "2026-11-15T19:40:02.097077-05:00",
+        "as_of": "2026-11-16T08:29:54.668739-05:00",
         "label": "Watch levels",
         "source": "watch_levels.json"
       },
       {
-        "as_of": "Fri Nov 13, 2026 ~8:20 AM ET. Prices: Yahoo Finance chart API. For SETUP_FINDER.",
+        "as_of": "Mon Nov 16, 2026 ~8:25 AM ET. Prices: Yahoo Finance chart API. For SETUP_FINDER.",
         "label": "Daily regime",
         "source": "daily_regime.md"
       },
       {
-        "as_of": "Mon Nov 9, 2026, ~8:17 AM ET (by BRIEFING). Next refresh: Mon Nov 16 (weekly).",
+        "as_of": "Mon Nov 16, 2026, ~8:25 AM ET (by BRIEFING). Next refresh: Mon Nov 23 (weekly).",
         "label": "Events calendar",
         "source": "events_calendar.md"
       },
@@ -4751,236 +4751,196 @@
       }
     ],
     "regime": {
-      "briefing_head": "# Morning Briefing — Fri Nov 13, 2026\nWritten ~8:20 AM ET by BRIEFING. Live futures/VIX/WTI/10y/BTC: Yahoo Finance chart API (~8:07 AM ET, may be delayed). Prior-session closes for SPY/TLT/GLD/ES/NQ/VIX: Yahoo completed daily bars via desk prefetch cache (Nov 12 session, built 8:10 AM ET). Paper only, no trades placed.\n\n## ES/NQ bias, levels, overnight\n- **Bias: neutral to mildly bullish into PPI (8:30 AM).** Futures firm as NVDA stabilizes (+2% premarket, AP) and CSCO/AMAT beat-and-raise. A hot PPI (cons +0.4% m/m, core +0.3%) would push yields and cap it, as CPI did Tuesday.\n- Overnight: ES ~7637.25 (+0.3% vs 7615.25 settle), NQ ~28402.75 (+0.1% vs 28384.5). VIX ~18.3 (Thu close 18.70). WTI ~$88.55. 10y ~5.10% (Thu close, +10bp). BTC ~69.1k (-3% on the day, Stocktwits flags a support break and liquidations).\n- ES: resistance 7639.5 (ON high), then 7674.75 (Thu high); support 7615 (settle), 7598.5 (ON low), 7572 (Thu low). NQ: resistance 28469.75 (ON high), 28652.25 (Thu high); support 28243.25 (ON low), 28013.75 (Thu low).\n\n## Prior day recap (Thu Nov 12)\nJensen Huang resigned as NVDA CEO; CFO Colette Kress is interim CEO. NVDA -4.3% to $166.19 (was -12% intraday, record retail dip-buy), but AMD +5.9% and AVGO +5.5%. NBIS -16.8% on results/outlook, CRWV -6.9%. S&P -0.35% to 7,592.40, Nasdaq -0.39%, Dow -0.36%. Energy +1.5% after Trump said the US doesn't need an Iran deal. Decliners beat advancers 3.4:1 on the NYSE (Reuters). SPY 757.12, TLT 79.72, GLD 354.89, VIX 18.70 (Yahoo).\n\n## Desk activity\nNo new trades since the last briefing. SB29 paper basket (SPY/TLT/GLD) marks ~$79.51 vs $80 cost (-$0.49), well above the $72.00 stop (computed from Yahoo Nov 12 closes). Next action: Nov 30 month-end rebalance. SE01 remains closed, tester-only.\n\n## Strategy recap\n- SB29: 1 open, 0 closed, win rate n/a (no closed trades), unrealized ~-$0.49. Not proven. No pause/retire flag.\n- SE01 (tester-only, not desk-approved): 1 closed win, +$3.51; 100% on n=1, not meaningful. No flag.\n\n## News and earnings for held names\n- SPY: risk tied to PPI, yields at ~5.1%, NVDA leadership fallout. TLT: under pressure, 10y +10bp Thu and 50bp-hike tail. GLD: spot gold bounced to ~$3,902 after a 13-month low, still down 4%+ on the week (Investing.com).\n- NVDA earnings call is still slated Nov 17 per Motley Fool [UNVERIFIED: date not confirmed with Nvidia].\n\n## Today's high-impact events (ET)\n- 8:30 AM: **PPI (Oct)**, cons +0.4% m/m, core +0.3% (High).",
+      "briefing_head": "# Morning Briefing — Mon Nov 16, 2026\nWritten ~8:25 AM ET by BRIEFING. Live futures/VIX/WTI/BTC/ETH: Yahoo Finance chart API (~8:10 AM ET, may be delayed). Prior-session closes (Fri Nov 13) for SPY/TLT/GLD/ES/NQ/VIX and BTC daily bar (Nov 15 UTC day): Yahoo completed bars via desk prefetch cache (built 8:10 AM ET). Paper only, no trades placed.\n\n## ES/NQ bias, levels, overnight\n- **Bias: BEARISH-leaning, tech-led.** AI/semis sold again overnight ahead of NVDA earnings (Tue AMC) and the Anthropic IPO (prices Wed, trades Thu). FT reports Huang may return as CEO, adding uncertainty (Reuters). Crypto rout weighs on MSTR/COIN/miners.\n- Overnight: ES ~7541.25 (-0.55% vs 7583 Fri settle), NQ ~27686.5 (-1.24% vs 28034.75). VIX ~20.55 (Fri close 19.30). WTI ~$87.85. 10y ~5.14% (Stocktwits, Sun night); 2y -2bp Monday (Reuters). BTC ~64.1k, ETH ~1,799.\n- ES: resistance 7570.75 (ON high), 7583 (settle), 7669.25 (Fri high); support 7520 (ON low), 7519.25 (Fri low). NQ: resistance 27853.25 (ON high), 28034.75 (settle); support 27695.25 (Fri low, now being tested), 27554 (ON low).\n\n## Prior day recap (Fri Nov 13)\nPPI (Oct) +0.3% m/m vs +0.4% expected, core +0.3% in line; but +6.5% y/y, highest since Nov 2022 (CNBC). Early pop faded on tech: S&P -0.4% to 7,561.67, Nasdaq -0.91% to 25,136.27, Dow +0.1% to 52,347.55. Still the best week since August (S&P +2.5%). AMD -8.8%, AVGO -4.8%, CSCO -6.2% (Kiplinger). Dec hike ~90% priced. SPY 754.37 (-0.36%), TLT 79.38 (-0.43%), GLD 355.45 (+0.16%), VIX 19.30 (Yahoo).\n\n## Desk activity\nNo new trades. STRATEGY_APPROVER rejected CX13 (BTC overnight MAX(10)) and SE10 (S&P EOD reversal) this morning, both score 1, not live-eligible. SB29 paper basket (SPY/TLT/GLD) marks ~$79.28 vs $80 cost (-$0.72) at Fri closes, well above the $72.00 stop. Next action: Nov 30 month-end rebalance. SE01 remains closed, tester-only.\n\n## Strategy recap\n- SB29: 1 open, 0 closed, win rate n/a (no closed trades), unrealized ~-$0.72. Not proven. No pause/retire flag.\n- SE01 (tester-only, not desk-approved): 1 closed win, +$3.51; 100% on n=1, not meaningful. No flag.\n\n## News and earnings for held names\n- SPY: AI-led drawdown risk into NVDA (Tue AMC) and ANT debut (Thu); retail sales Tue 8:30. TLT: 10y >5.1%, FOMC minutes Wed 2:00 PM may show hawkish split (BofA). GLD: flat Fri; no fresh catalyst found.\n\n## Today's high-impact events (ET)\n- 8:30 AM: Empire State Mfg (Nov), cons 16.7, prior 25.5 (Med).\n- 12:00 PM: **Fed Chair Warsh speaks** (High). Hammack also speaks today, time not confirmed [UNVERIFIED].",
       "briefing_source": "daily_briefing.md",
       "events": [
         {
-          "date": "Mon Nov 9",
-          "date_iso": "2026-11-09",
-          "event": "Fed's Bowman speaks",
+          "date": "Mon Nov 16",
+          "date_iso": "2026-11-16",
+          "event": "Empire State Mfg (Nov), cons 16.7, prior 25.5",
           "impact": "Med",
-          "source": "Bent Pine [UNVERIFIED]",
-          "time_et": "8:40 AM"
+          "source": "MarketWatch",
+          "time_et": "8:30 AM"
         },
         {
-          "date": "Mon Nov 9",
-          "date_iso": "2026-11-09",
-          "event": "Wholesale Inventories (Sep); Fed's Goolsbee Q&A",
-          "impact": "Med",
-          "source": "TD Economics; Schwab",
-          "time_et": "10:00 AM"
-        },
-        {
-          "date": "Mon Nov 9",
-          "date_iso": "2026-11-09",
-          "event": "NY Fed 1-yr consumer inflation expectations (Oct)",
-          "impact": "Med",
-          "source": "Bent Pine [UNVERIFIED]",
-          "time_et": "11:00 AM"
-        },
-        {
-          "date": "Mon Nov 9",
-          "date_iso": "2026-11-09",
-          "event": "Fed's Barkin speaks",
-          "impact": "Med",
-          "source": "TD Economics; Schwab",
-          "time_et": "12:15 PM"
-        },
-        {
-          "date": "Mon Nov 9",
-          "date_iso": "2026-11-09",
-          "event": "3-yr note auction",
-          "impact": "Med",
-          "source": "Wrightson (prior cal); Stocktwits",
-          "time_et": "1:00 PM"
-        },
-        {
-          "date": "Mon Nov 9",
-          "date_iso": "2026-11-09",
-          "event": "Earnings: Constellation (CEG), KKR, Barrick (B)",
-          "impact": "Med",
-          "source": "Schwab; Reuters",
-          "time_et": "BMO"
-        },
-        {
-          "date": "Mon Nov 9",
-          "date_iso": "2026-11-09",
-          "event": "Earnings: TTWO, OXY, RKLB, ASTS, TTD, HIMS, MARA, SKYD",
-          "impact": "Med",
-          "source": "Schwab; CNBC via Quartz",
-          "time_et": "AMC"
-        },
-        {
-          "date": "Tue Nov 10",
-          "date_iso": "2026-11-10",
-          "event": "Fed's Waller keynote",
-          "impact": "Med",
-          "source": "TD Economics; Bent Pine",
-          "time_et": "4:00 AM"
-        },
-        {
-          "date": "Tue Nov 10",
-          "date_iso": "2026-11-10",
-          "event": "NFIB Small Business Optimism (Oct), cons 98.2",
-          "impact": "Med",
-          "source": "TD Economics",
-          "time_et": "6:00 AM"
-        },
-        {
-          "date": "Tue Nov 10",
-          "date_iso": "2026-11-10",
-          "event": "CPI (Oct), cons +0.3% m/m (prior +0.6%); Cleveland Fed nowcast 0.24% / core 0.21%",
+          "date": "Mon Nov 16",
+          "date_iso": "2026-11-16",
+          "event": "Fed Chair Warsh speaks (Fed AI/productivity event)",
           "impact": "High",
-          "source": "BLS; TD; Yardeni",
-          "time_et": "8:30 AM"
-        },
-        {
-          "date": "Tue Nov 10",
-          "date_iso": "2026-11-10",
-          "event": "Fed's Logan speaks",
-          "impact": "Med",
-          "source": "Bent Pine [UNVERIFIED]",
-          "time_et": "9:35 AM"
-        },
-        {
-          "date": "Tue Nov 10",
-          "date_iso": "2026-11-10",
-          "event": "10-yr note auction",
-          "impact": "Med",
-          "source": "Wrightson (prior cal)",
-          "time_et": "1:00 PM"
-        },
-        {
-          "date": "Tue Nov 10",
-          "date_iso": "2026-11-10",
-          "event": "Fed's Schmid; Fed's Paulson",
-          "impact": "Med",
-          "source": "TD Economics; Schwab",
-          "time_et": "1:30 PM / 6:30 PM"
-        },
-        {
-          "date": "Tue Nov 10",
-          "date_iso": "2026-11-10",
-          "event": "Earnings: TransDigm (TDG), Sea (SE), On (ONON)",
-          "impact": "Med",
-          "source": "Schwab",
-          "time_et": "BMO"
-        },
-        {
-          "date": "Tue Nov 10",
-          "date_iso": "2026-11-10",
-          "event": "Earnings: CoreWeave (CRWV), cons rev ~$3.54B; Rigetti (RGTI)",
-          "impact": "High (AI)",
-          "source": "Schwab; Stocktwits (Koyfin)",
-          "time_et": "AMC"
-        },
-        {
-          "date": "Wed Nov 11",
-          "date_iso": "2026-11-11",
-          "event": "Veterans Day: stocks open, bond market closed",
-          "impact": "Med",
-          "source": "BLS; Yardeni",
-          "time_et": "all day"
-        },
-        {
-          "date": "Wed Nov 11",
-          "date_iso": "2026-11-11",
-          "event": "Earnings: Corteva (CTVA)",
-          "impact": "Med",
-          "source": "Schwab",
-          "time_et": "AMC"
-        },
-        {
-          "date": "Thu Nov 12",
-          "date_iso": "2026-11-12",
-          "event": "Initial Jobless Claims, cons 195K",
-          "impact": "Med",
-          "source": "TD Economics",
-          "time_et": "8:30 AM"
-        },
-        {
-          "date": "Thu Nov 12",
-          "date_iso": "2026-11-12",
-          "event": "Fed's Hammack (voter)",
-          "impact": "Med",
-          "source": "TD; Schwab",
-          "time_et": "9:00 AM"
-        },
-        {
-          "date": "Thu Nov 12",
-          "date_iso": "2026-11-12",
-          "event": "Existing Home Sales (Oct), cons 3.9M",
-          "impact": "Med",
-          "source": "TD Economics",
-          "time_et": "10:00 AM"
-        },
-        {
-          "date": "Thu Nov 12",
-          "date_iso": "2026-11-12",
-          "event": "Fed's Goolsbee; Daly; Williams",
-          "impact": "Med",
-          "source": "TD Economics",
-          "time_et": "11:30 AM / 1:10 PM / 6:30 PM"
-        },
-        {
-          "date": "Thu Nov 12",
-          "date_iso": "2026-11-12",
-          "event": "EIA crude inventories (holiday-shifted)",
-          "impact": "Med",
-          "source": "Bent Pine [UNVERIFIED]",
+          "source": "MarketWatch; Gotrade; Reuters",
           "time_et": "12:00 PM"
         },
         {
-          "date": "Thu Nov 12",
-          "date_iso": "2026-11-12",
-          "event": "Federal budget (Oct)",
+          "date": "Mon Nov 16",
+          "date_iso": "2026-11-16",
+          "event": "Fed's Hammack speaks",
           "impact": "Med",
-          "source": "Bent Pine [UNVERIFIED]",
-          "time_et": "2:00 PM"
+          "source": "Reuters [UNVERIFIED time]",
+          "time_et": "TBA"
         },
         {
-          "date": "Thu Nov 12",
-          "date_iso": "2026-11-12",
-          "event": "Earnings: Nebius (NBIS)",
+          "date": "Mon Nov 16",
+          "date_iso": "2026-11-16",
+          "event": "HELP Phase 3 topline",
           "impact": "Med",
-          "source": "Schwab",
-          "time_et": "BMO"
+          "source": "Stocktwits",
+          "time_et": "premarket"
         },
         {
-          "date": "Thu Nov 12",
-          "date_iso": "2026-11-12",
-          "event": "Earnings: Applied Materials (AMAT), Cisco (CSCO), Cerebras (CBRS)",
-          "impact": "High (semis/AI)",
-          "source": "Schwab; Bent Pine",
-          "time_et": "AMC"
-        },
-        {
-          "date": "Fri Nov 13",
-          "date_iso": "2026-11-13",
-          "event": "PPI (Oct), cons +0.4% m/m, core +0.3%",
+          "date": "Tue Nov 17",
+          "date_iso": "2026-11-17",
+          "event": "Retail Sales (Oct), cons +0.2% (prior +0.8%); Import Prices, cons +0.7%",
           "impact": "High",
-          "source": "BLS; TD Economics",
+          "source": "MarketWatch",
           "time_et": "8:30 AM"
         },
         {
-          "date": "Fri Nov 13",
-          "date_iso": "2026-11-13",
-          "event": "Fed's Daly; Fed's Jefferson",
+          "date": "Tue Nov 17",
+          "date_iso": "2026-11-17",
+          "event": "Fed's Waller; Hammack (Brookings)",
           "impact": "Med",
-          "source": "TD; Schwab",
-          "time_et": "12:00 PM / 7:00 PM"
+          "source": "MarketWatch",
+          "time_et": "9:10 AM / 9:30 AM"
         },
         {
-          "date": "Fri Nov 13",
-          "date_iso": "2026-11-13",
-          "event": "Fed's Collins; Bowman",
+          "date": "Tue Nov 17",
+          "date_iso": "2026-11-17",
+          "event": "Industrial Production (Oct), cons +0.1%",
           "impact": "Med",
-          "source": "Bent Pine [UNVERIFIED]",
-          "time_et": "9:10 AM / 10:50 AM"
+          "source": "MarketWatch",
+          "time_et": "9:15 AM"
+        },
+        {
+          "date": "Tue Nov 17",
+          "date_iso": "2026-11-17",
+          "event": "NAHB Housing Index, cons 29; Business Inventories",
+          "impact": "Med",
+          "source": "MarketWatch",
+          "time_et": "10:00 AM"
+        },
+        {
+          "date": "Tue Nov 17",
+          "date_iso": "2026-11-17",
+          "event": "Fed's Williams",
+          "impact": "Med",
+          "source": "MarketWatch (Investing.com says Mon) [UNVERIFIED day]",
+          "time_et": "2:25 PM"
+        },
+        {
+          "date": "Tue Nov 17",
+          "date_iso": "2026-11-17",
+          "event": "Earnings: Home Depot (HD), Disney (DIS), JD, Klarna (KLAR)",
+          "impact": "Med",
+          "source": "TradeDeck; Newsquawk",
+          "time_et": "BMO"
+        },
+        {
+          "date": "Tue Nov 17",
+          "date_iso": "2026-11-17",
+          "event": "Earnings: NVIDIA (NVDA), rev est ~$109.1B",
+          "impact": "High",
+          "source": "TradeDeck; Investing.com; Reuters",
+          "time_et": "AMC"
+        },
+        {
+          "date": "Wed Nov 18",
+          "date_iso": "2026-11-18",
+          "event": "Housing Starts (Oct), cons 1.3M",
+          "impact": "Med",
+          "source": "MarketWatch",
+          "time_et": "8:30 AM"
+        },
+        {
+          "date": "Wed Nov 18",
+          "date_iso": "2026-11-18",
+          "event": "Pending Home Sales (Oct), cons -1.4%",
+          "impact": "Med",
+          "source": "MarketWatch",
+          "time_et": "10:00 AM"
+        },
+        {
+          "date": "Wed Nov 18",
+          "date_iso": "2026-11-18",
+          "event": "Fed's Barr",
+          "impact": "Med",
+          "source": "MarketWatch",
+          "time_et": "1:35 PM"
+        },
+        {
+          "date": "Wed Nov 18",
+          "date_iso": "2026-11-18",
+          "event": "FOMC minutes (Oct 27-28)",
+          "impact": "High",
+          "source": "MarketWatch; Gotrade",
+          "time_et": "2:00 PM"
+        },
+        {
+          "date": "Wed Nov 18",
+          "date_iso": "2026-11-18",
+          "event": "Fed's Williams; Kashkari",
+          "impact": "Med",
+          "source": "MarketWatch",
+          "time_et": "2:30 PM / 4:15 PM"
+        },
+        {
+          "date": "Wed Nov 18",
+          "date_iso": "2026-11-18",
+          "event": "Anthropic IPO pricing, range $70-78",
+          "impact": "High (AI)",
+          "source": "CNBC; Yahoo Finance",
+          "time_et": "evening"
+        },
+        {
+          "date": "Thu Nov 19",
+          "date_iso": "2026-11-19",
+          "event": "Earnings: Walmart (WMT), release 6 AM CT",
+          "impact": "Med",
+          "source": "Business Wire",
+          "time_et": "8:00 AM"
+        },
+        {
+          "date": "Thu Nov 19",
+          "date_iso": "2026-11-19",
+          "event": "Initial Jobless Claims; Philly Fed Mfg",
+          "impact": "Med",
+          "source": "Gotrade [UNVERIFIED time]",
+          "time_et": "8:30 AM"
+        },
+        {
+          "date": "Thu Nov 19",
+          "date_iso": "2026-11-19",
+          "event": "Anthropic (ANT) begins trading on Nasdaq",
+          "impact": "High (AI)",
+          "source": "Yahoo Finance; The Verge",
+          "time_et": "open"
+        },
+        {
+          "date": "Thu Nov 19",
+          "date_iso": "2026-11-19",
+          "event": "GTA VI launch (TTWO)",
+          "impact": "Med",
+          "source": "prior calendar [UNVERIFIED]",
+          "time_et": "all day"
+        },
+        {
+          "date": "Fri Nov 20",
+          "date_iso": "2026-11-20",
+          "event": "UMich Sentiment (Nov final)",
+          "impact": "Med",
+          "source": "Gotrade [UNVERIFIED time]",
+          "time_et": "10:00 AM"
+        },
+        {
+          "date": "Fri Nov 20",
+          "date_iso": "2026-11-20",
+          "event": "Fed Gov. Cook speaks",
+          "impact": "Med",
+          "source": "Gotrade",
+          "time_et": "TBA"
         }
       ],
-      "events_updated": "Mon Nov 9, 2026, ~8:17 AM ET (by BRIEFING). Next refresh: Mon Nov 16 (weekly).",
-      "head": "# Daily Regime — Fri Nov 13, 2026\nWritten: Fri Nov 13, 2026 ~8:20 AM ET. Prices: Yahoo Finance chart API. For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n\n## Regime\n- Structure: **Choppy, rates vs AI, leadership rotating.** Thu S&P -0.35% (7,592.40), Nasdaq -0.39%; NVDA -4.3% on Huang resignation but AMD +5.9%, AVGO +5.5% (Reuters). Breadth weak: NYSE decliners 3.4:1.\n- Risk: **Neutral, rate-capped.** VIX ~18.3 (Thu 18.70). 10y ~5.10% (+10bp Thu). Dec hike priced, 50bp tail live. BTC broke down ~-3% to ~69.1k.\n- Event: PPI (Oct) 8:30 AM today, cons +0.4% m/m, core +0.3%; result not in this note.\n\n## Bias\n- Short-term: **NEUTRAL-to-mild BULLISH pre-PPI.** ES +0.3% overnight; a hot PPI reverses that via yields.\n\n## Key levels (ES=F / NQ=F)\nES: Thu settle 7615.25 | ON H/L 7639.5 / 7598.5 | last ~7637.25 | Thu H/L 7674.75 / 7572\nNQ: Thu settle 28384.5 | ON H/L 28469.75 / 28243.25 | last ~28402.75 | Thu H/L 28652.25 / 28013.75\n\n## Notes for SETUP_FINDER\n1. Wait for the PPI reaction and the first 30 min; don't front-run the print.\n2. AI rotation: NVDA (leadership risk) vs AMD/AVGO/CSCO (beneficiaries); NBIS/CRWV neocloud under pressure.\n3. Energy strongest sector (4 straight gains); oil ~$88.5.\n4. SB29/SE01 are month-end baskets, not intraday signals.",
+      "events_updated": "Mon Nov 16, 2026, ~8:25 AM ET (by BRIEFING). Next refresh: Mon Nov 23 (weekly).",
+      "head": "# Daily Regime — Mon Nov 16, 2026\nWritten: Mon Nov 16, 2026 ~8:25 AM ET. Prices: Yahoo Finance chart API. For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n\n## Regime\n- Structure: **Risk-off, AI unwind.** Fri S&P -0.4% (7,561.67), Nasdaq -0.9%; AMD -8.8%, AVGO -4.8%. Semis/neoclouds -3 to -5% premarket (Reuters).\n- Risk: **Elevated.** VIX ~20.55 (Fri 19.30). 10y ~5.14%. Dec hike ~fully priced. BTC ~64.1k after a ~62k 4-month low.\n- Events: Warsh 12 PM today; NVDA Tue AMC; FOMC minutes Wed 2 PM; ANT IPO trades Thu.\n\n## Bias\n- Short-term: **BEARISH-leaning for NQ, neutral-bearish for ES.** Dow flat, so it's rotation out of tech rather than broad liquidation.\n\n## Key levels (ES=F / NQ=F)\nES: Fri settle 7583 | ON H/L 7570.75 / 7520 | last ~7541.25 | Fri H/L 7669.25 / 7519.25\nNQ: Fri settle 28034.75 | ON H/L 27853.25 / 27554 | last ~27686.5 | Fri H/L 28607.75 / 27695.25\n\n## Notes for SETUP_FINDER\n1. Expect pre-NVDA chop; avoid sizing into semis before Tue AMC.\n2. Watch the NQ 27695/27554 break vs reclaim at the open.\n3. Crypto-linked equities (MSTR, COIN, miners) track BTC 62k support.\n4. SB29/SE01 are month-end baskets, not intraday signals.",
       "source": "daily_regime.md"
     },
     "rejected_high_score": [
@@ -5399,15 +5359,15 @@
     "usage_source": "USAGE_RULES.md",
     "watcher": {
       "freshness": "recent",
-      "generated_at": "2026-11-15T19:40:02.097077-05:00",
-      "level_count": 11,
+      "generated_at": "2026-11-16T08:29:54.668739-05:00",
+      "level_count": 7,
       "levels": [
         {
           "bar": "daily_close",
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-BTC-USD-ENTRY-20261114",
+          "id": "CX06B-BTC-USD-ENTRY-20261115",
           "kind": "entry",
           "level": 86602.914,
           "strategy_id": "CX06B",
@@ -5419,7 +5379,7 @@
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-ETH-USD-ENTRY-20261114",
+          "id": "CX06B-ETH-USD-ENTRY-20261115",
           "kind": "entry",
           "level": 2776.468,
           "strategy_id": "CX06B",
@@ -5437,54 +5397,6 @@
           "strategy_id": "SB26",
           "ticker": "BTC-USD",
           "trigger": "cross_below"
-        },
-        {
-          "bar": "intraday",
-          "condition": "NQ=F touches overnight_high; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
-          "direction": "SHORT",
-          "enabled": true,
-          "id": "SB11-NQ=F-overnight_high-2026-11-13",
-          "kind": "sweep",
-          "level": 28607.75,
-          "strategy_id": "SB11",
-          "ticker": "NQ=F",
-          "trigger": "cross_above"
-        },
-        {
-          "bar": "intraday",
-          "condition": "NQ=F touches overnight_low; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
-          "direction": "LONG",
-          "enabled": true,
-          "id": "SB11-NQ=F-overnight_low-2026-11-13",
-          "kind": "sweep",
-          "level": 28243.25,
-          "strategy_id": "SB11",
-          "ticker": "NQ=F",
-          "trigger": "cross_below"
-        },
-        {
-          "bar": "intraday",
-          "condition": "ES=F touches overnight_high; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
-          "direction": "SHORT",
-          "enabled": true,
-          "id": "SB11-ES=F-overnight_high-2026-11-13",
-          "kind": "confirmation_sweep",
-          "level": 7669.25,
-          "strategy_id": "SB11",
-          "ticker": "ES=F",
-          "trigger": "touch"
-        },
-        {
-          "bar": "intraday",
-          "condition": "ES=F touches overnight_low; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
-          "direction": "LONG",
-          "enabled": true,
-          "id": "SB11-ES=F-overnight_low-2026-11-13",
-          "kind": "confirmation_sweep",
-          "level": 7598.5,
-          "strategy_id": "SB11",
-          "ticker": "ES=F",
-          "trigger": "touch"
         },
         {
           "bar": "scheduled_close",
@@ -5608,9 +5520,9 @@
         "status": "ok"
       },
       {
-        "bytes": 12762,
+        "bytes": 9498,
         "path": "desk/watch_levels.json",
-        "sha256": "1831da87435a5c4ba3d6ecef00cf77213968b57051fc8d15852fca3b8aa1d83d",
+        "sha256": "bec88d840f42197fcca5c77f9345042ab77dab4a26da06119d099e286fc3ee86",
         "status": "ok"
       },
       {
@@ -5626,21 +5538,21 @@
         "status": "ok"
       },
       {
-        "bytes": 3520,
+        "bytes": 4324,
         "path": "desk/daily_briefing.md",
-        "sha256": "921536a46924a3c7e2461abc8511d0c11ccdfb6a6f9e95a5687b2183786b73ab",
+        "sha256": "19451644f9d773a898e85f6bdad944a98f4f751e6dcb8094f3cc59ae0a77afe4",
         "status": "ok"
       },
       {
-        "bytes": 1741,
+        "bytes": 1629,
         "path": "desk/daily_regime.md",
-        "sha256": "44fcbc2eaa0e3364137c5ba75304fba4641ef0c6af08c53c931cbebeeda11c66",
+        "sha256": "fe2c8d11a408b825605c39095e9b345db131a1f212d3762fa1d0ff0b3b79a40f",
         "status": "ok"
       },
       {
-        "bytes": 20138,
+        "bytes": 2842,
         "path": "desk/events_calendar.md",
-        "sha256": "73deac3eda2e6967b094a76a0ca4bebe1dfc51476b47a99ad123b4cee30dbec9",
+        "sha256": "a0401e09cfa798373aa95e53f11a095a0f6151deeffae12987e371e159680dc4",
         "status": "ok"
       },
       {
@@ -13159,9 +13071,9 @@
   "publish_blocker": "No non-AI publish path: pages.grok.bot Pages are updated only by a Bot (official docs: https://cursor.com/help/grok-bot/pages). No wrangler/CLI or stored publish credential found on this box. Live URL is login-gated (HTTP 302 apps-gate). Canvas a875f485 is private and must not be modified. Local generator is ready; republish remains a parent/Bot-in-chat step.",
   "publish_status": "blocked_no_non_ai_path",
   "regime_head": {
-    "head": "# Daily Regime — Fri Nov 13, 2026\nWritten: Fri Nov 13, 2026 ~8:20 AM ET. Prices: Yahoo Finance chart API. For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n\n## Regime\n- Structure: **Choppy, rates vs AI, leadership rotating.** Thu S&P -0.35% (7,592.40), Nasdaq -0.39%; NVDA -4.3% on Huang resignation but AMD +5.9%, AVGO +5.5% (Reuters). Breadth weak: NYSE decliners 3.4:1.\n- Risk: **Neutral, rate-capped.** VIX ~18.3 (Thu 18.70). 10y ~5.10% (+10bp Thu). Dec hike priced, 50bp tail live. BTC broke down ~-3% to ~69.1k.\n- Event: PPI (Oct) 8:30 AM today, cons +0.4% m/m, core +0.3%; result not in this note.\n\n## Bias\n- Short-term: **NEUTRAL-to-mild BULLISH pre-PPI.** ES +0.3% overnight; a hot PPI reverses that via yields.\n",
+    "head": "# Daily Regime — Mon Nov 16, 2026\nWritten: Mon Nov 16, 2026 ~8:25 AM ET. Prices: Yahoo Finance chart API. For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n\n## Regime\n- Structure: **Risk-off, AI unwind.** Fri S&P -0.4% (7,561.67), Nasdaq -0.9%; AMD -8.8%, AVGO -4.8%. Semis/neoclouds -3 to -5% premarket (Reuters).\n- Risk: **Elevated.** VIX ~20.55 (Fri 19.30). 10y ~5.14%. Dec hike ~fully priced. BTC ~64.1k after a ~62k 4-month low.\n- Events: Warsh 12 PM today; NVDA Tue AMC; FOMC minutes Wed 2 PM; ANT IPO trades Thu.\n\n## Bias\n- Short-term: **BEARISH-leaning for NQ, neutral-bearish for ES.** Dow flat, so it's rotation out of tech rather than broad liquidation.\n",
     "path": "desk/daily_regime.md",
-    "sha256": "44fcbc2eaa0e3364137c5ba75304fba4641ef0c6af08c53c931cbebeeda11c66",
+    "sha256": "fe2c8d11a408b825605c39095e9b345db131a1f212d3762fa1d0ff0b3b79a40f",
     "status": "ok"
   },
   "schema_version": 2,
@@ -13990,52 +13902,52 @@
     "watch": {
       "coverage_complete": null,
       "freshness": {
-        "et": "2026-11-15T19:40:02.097077-05:00",
-        "source": "2026-11-15T19:40:02.097077-05:00",
+        "et": "2026-11-16T08:29:54.668739-05:00",
+        "source": "2026-11-16T08:29:54.668739-05:00",
         "status": "recent"
       },
       "gaps": null,
-      "generated_at": "2026-11-15T19:40:02.097077-05:00",
+      "generated_at": "2026-11-16T08:29:54.668739-05:00",
       "levels": [
         {
           "bar": "daily_close",
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-BTC-USD-ENTRY-20261114",
+          "id": "CX06B-BTC-USD-ENTRY-20261115",
           "invalidation_rule": "After a genuine entry, daily close below entry close - 2*N (N = 20-day mean absolute daily change), or below prior-20-day close low",
           "kind": "entry",
-          "last_full_close_utc": "2026-11-14T00:00:00+00:00",
+          "last_full_close_utc": "2026-11-15T00:00:00+00:00",
           "level": 86602.914,
           "near_atr_multiple": 0.5,
           "near_pct": 0.01,
           "price_source": "Yahoo",
-          "reference_atr": 1487.064,
+          "reference_atr": 1545.047,
           "strategy_id": "CX06B",
           "target_rule": "None; exit uses closing stop or channel exit. 25% per coin cap.",
           "ticker": "BTC-USD",
           "trigger": "cross_above",
-          "valid_from_utc": "2026-11-14T00:00:00+00:00"
+          "valid_from_utc": "2026-11-15T00:00:00+00:00"
         },
         {
           "bar": "daily_close",
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-ETH-USD-ENTRY-20261114",
+          "id": "CX06B-ETH-USD-ENTRY-20261115",
           "invalidation_rule": "After a genuine entry, daily close below entry close - 2*N (N = 20-day mean absolute daily change), or below prior-20-day close low",
           "kind": "entry",
-          "last_full_close_utc": "2026-11-14T00:00:00+00:00",
+          "last_full_close_utc": "2026-11-15T00:00:00+00:00",
           "level": 2776.468,
           "near_atr_multiple": 0.5,
           "near_pct": 0.01,
           "price_source": "Yahoo",
-          "reference_atr": 53.972,
+          "reference_atr": 56.959,
           "strategy_id": "CX06B",
           "target_rule": "None; exit uses closing stop or channel exit. 25% per coin cap.",
           "ticker": "ETH-USD",
           "trigger": "cross_above",
-          "valid_from_utc": "2026-11-14T00:00:00+00:00"
+          "valid_from_utc": "2026-11-15T00:00:00+00:00"
         },
         {
           "bar": "weekly_close",
@@ -14049,82 +13961,10 @@
           "near_atr_multiple": 0.5,
           "near_pct": 0.01,
           "price_source": "Yahoo",
-          "reference_atr": 1487.064,
+          "reference_atr": 1545.047,
           "strategy_id": "SB26",
           "ticker": "BTC-USD",
           "trigger": "cross_below"
-        },
-        {
-          "bar": "intraday",
-          "condition": "NQ=F touches overnight_high; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
-          "direction": "SHORT",
-          "enabled": true,
-          "end": "2026-11-13T09:50:00-05:00",
-          "id": "SB11-NQ=F-overnight_high-2026-11-13",
-          "invalidation_rule": "Sweep extreme, only after matching SMT and 5m BOS confirms; target 2R, flat 16:00 ET",
-          "kind": "sweep",
-          "level": 28607.75,
-          "near_pct": 0.002,
-          "price_source": "Yahoo",
-          "session_date_et": "2026-11-13",
-          "start": "2026-11-13T09:30:00-05:00",
-          "strategy_id": "SB11",
-          "ticker": "NQ=F",
-          "trigger": "cross_above"
-        },
-        {
-          "bar": "intraday",
-          "condition": "NQ=F touches overnight_low; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
-          "direction": "LONG",
-          "enabled": true,
-          "end": "2026-11-13T09:50:00-05:00",
-          "id": "SB11-NQ=F-overnight_low-2026-11-13",
-          "invalidation_rule": "Sweep extreme, only after matching SMT and 5m BOS confirms; target 2R, flat 16:00 ET",
-          "kind": "sweep",
-          "level": 28243.25,
-          "near_pct": 0.002,
-          "price_source": "Yahoo",
-          "session_date_et": "2026-11-13",
-          "start": "2026-11-13T09:30:00-05:00",
-          "strategy_id": "SB11",
-          "ticker": "NQ=F",
-          "trigger": "cross_below"
-        },
-        {
-          "bar": "intraday",
-          "condition": "ES=F touches overnight_high; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
-          "direction": "SHORT",
-          "enabled": true,
-          "end": "2026-11-13T09:50:00-05:00",
-          "id": "SB11-ES=F-overnight_high-2026-11-13",
-          "invalidation_rule": "Sweep extreme, only after matching SMT and 5m BOS confirms; target 2R, flat 16:00 ET",
-          "kind": "confirmation_sweep",
-          "level": 7669.25,
-          "near_pct": 0.002,
-          "price_source": "Yahoo",
-          "session_date_et": "2026-11-13",
-          "start": "2026-11-13T09:30:00-05:00",
-          "strategy_id": "SB11",
-          "ticker": "ES=F",
-          "trigger": "touch"
-        },
-        {
-          "bar": "intraday",
-          "condition": "ES=F touches overnight_low; requires matching NQ+ES sweep and later 5m BOS between 09:50 and 10:30 ET; not an order trigger",
-          "direction": "LONG",
-          "enabled": true,
-          "end": "2026-11-13T09:50:00-05:00",
-          "id": "SB11-ES=F-overnight_low-2026-11-13",
-          "invalidation_rule": "Sweep extreme, only after matching SMT and 5m BOS confirms; target 2R, flat 16:00 ET",
-          "kind": "confirmation_sweep",
-          "level": 7598.5,
-          "near_pct": 0.002,
-          "price_source": "Yahoo",
-          "session_date_et": "2026-11-13",
-          "start": "2026-11-13T09:30:00-05:00",
-          "strategy_id": "SB11",
-          "ticker": "ES=F",
-          "trigger": "touch"
         },
         {
           "bar": "scheduled_close",
