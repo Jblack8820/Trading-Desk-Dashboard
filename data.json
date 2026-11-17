@@ -11,13 +11,13 @@
     "TRADE_MANAGER"
   ],
   "briefing_head": {
-    "head": "# Morning Briefing — Mon Nov 16, 2026\nWritten ~8:25 AM ET by BRIEFING. Live futures/VIX/WTI/BTC/ETH: Yahoo Finance chart API (~8:10 AM ET, may be delayed). Prior-session closes (Fri Nov 13) for SPY/TLT/GLD/ES/NQ/VIX and BTC daily bar (Nov 15 UTC day): Yahoo completed bars via desk prefetch cache (built 8:10 AM ET). Paper only, no trades placed.\n\n## ES/NQ bias, levels, overnight\n- **Bias: BEARISH-leaning, tech-led.** AI/semis sold again overnight ahead of NVDA earnings (Tue AMC) and the Anthropic IPO (prices Wed, trades Thu). FT reports Huang may return as CEO, adding uncertainty (Reuters). Crypto rout weighs on MSTR/COIN/miners.\n- Overnight: ES ~7541.25 (-0.55% vs 7583 Fri settle), NQ ~27686.5 (-1.24% vs 28034.75). VIX ~20.55 (Fri close 19.30). WTI ~$87.85. 10y ~5.14% (Stocktwits, Sun night); 2y -2bp Monday (Reuters). BTC ~64.1k, ETH ~1,799.\n- ES: resistance 7570.75 (ON high), 7583 (settle), 7669.25 (Fri high); support 7520 (ON low), 7519.25 (Fri low). NQ: resistance 27853.25 (ON high), 28034.75 (settle); support 27695.25 (Fri low, now being tested), 27554 (ON low).\n\n## Prior day recap (Fri Nov 13)\nPPI (Oct) +0.3% m/m vs +0.4% expected, core +0.3% in line; but +6.5% y/y, highest since Nov 2022 (CNBC). Early pop faded on tech: S&P -0.4% to 7,561.67, Nasdaq -0.91% to 25,136.27, Dow +0.1% to 52,347.55. Still the best week since August (S&P +2.5%). AMD -8.8%, AVGO -4.8%, CSCO -6.2% (Kiplinger). Dec hike ~90% priced. SPY 754.37 (-0.36%), TLT 79.38 (-0.43%), GLD 355.45 (+0.16%), VIX 19.30 (Yahoo).\n\n## Desk activity\nNo new trades. STRATEGY_APPROVER rejected CX13 (BTC overnight MAX(10)) and SE10 (S&P EOD reversal) this morning, both score 1, not live-eligible. SB29 paper basket (SPY/TLT/GLD) marks ~$79.28 vs $80 cost (-$0.72) at Fri closes, well above the $72.00 stop. Next action: Nov 30 month-end rebalance. SE01 remains closed, tester-only.\n\n## Strategy recap\n- SB29: 1 open, 0 closed, win rate n/a (no closed trades), unrealized ~-$0.72. Not proven. No pause/retire flag.",
+    "head": "# Morning Briefing — Tue Nov 17, 2026\nWritten ~8:20 AM ET by BRIEFING. Live futures: Yahoo chart API (ES/NQ ~8:05 AM ET, VIX 8:00 AM ET). Prior-session bars: Yahoo cache, observation 2026-11-16 (completed bars). Retail Sales prints 8:30, after this was written.\n\n## ES/NQ bias, levels, overnight\n- **Bias: neutral-bearish ES, neutral NQ into NVDA (AMC).** Bounce attempt after a 3-day slide; NQ +0.4% vs settle, ES flat. Dow futs -0.3% (Yahoo Finance). VIX 22.71 (Mon close 22.91).\n- ES: Mon settle 7439 | ON H/L 7456 / 7395.25 | last ~7436.5 | Mon H/L 7614.25 / 7420.25\n- NQ: Mon settle 27284.25 | ON H/L 27467.75 / 27085 | last ~27399.75 | Mon H/L 28279.25 / 27234.75\n- Overnight: new Commerce rule restricting AI-chip shipments to China hit BABA/BIDU ADRs; NVDA board rebuffed reinstating Huang, NVDA -0.4% premarket; INTC still weak; oil lower again; dollar near a 19-month high; yields slightly lower (Dow Jones/Morningstar, Reuters).\n\n## Prior day (Mon Nov 16)\nS&P 500 -1.92% to 7,416.59, Nasdaq -2.49% to 24,509.76 (in correction, >10% off Oct 6 high), Dow -1.41%. SOX -5.3%; NVDA -4.1%, MU/INTC -7%+, DELL -7.0%, SMCI -6.9%, NBIS -7.6%, CRWV -6.1%. NYSE breadth 1:3.45, 590 new lows. Warsh laid out an AI-bust scenario; 10y fell ~3bp to 5.12%; Dec hike ~95.7% priced (CME via Reuters). Empire Mfg 7.8 vs cons 16.7. ES -1.9%, NQ -2.7% on the day; VIX 19.30 -> 22.91.\n\n## Desk activity\n- No trades, no new setups. SB29 (paper) is the only open position.\n- SE13 (Dutch STDV QQQ open fade) REJECTED 8:17 AM today: holdout Sharpe ~0 base, -0.60 at 2x costs. SE11 and SE12 rejected yesterday.\n",
     "path": "desk/daily_briefing.md",
-    "sha256": "19451644f9d773a898e85f6bdad944a98f4f751e6dcb8094f3cc59ae0a77afe4",
+    "sha256": "1af919b99f2b7485479aa24facd9587fb5952d7f5ce905b5a46bd0c977945c79",
     "status": "ok"
   },
-  "built_at": "2026-11-17T08:15:01.936978-05:00",
-  "content_hash": "0cf23655acd2b621e28140bb8bf4ba7d6c7d39bb5e6d7e3ca41ca0828374bfef",
+  "built_at": "2026-11-17T08:30:02.311612-05:00",
+  "content_hash": "74dd5208d65882db13e6a1b6e9b24a6e27e9e13ae3c110ddeca1533ee904bee5",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -35,7 +35,7 @@
     },
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 66
+      "REJECT": 67
     },
     "approval_status": [
       {
@@ -738,6 +738,15 @@
         "live_eligible": false,
         "name": "Dutch STDV 09:30 fade on QQQ (k=2.25, s=0.5U, exit 11:00, body)",
         "score": 1
+      },
+      {
+        "category": "Crypto",
+        "decided_at": "2026-11-17T08:18:00-05:00",
+        "decision": "REJECT",
+        "id": "CX14",
+        "live_eligible": false,
+        "name": "STDV midnight-open fade on BTC (primary) / ETH",
+        "score": 1
       }
     ],
     "as_of": "2026-11-16 14:30:01 ET",
@@ -782,7 +791,7 @@
         "source": "watch_levels.json"
       },
       {
-        "as_of": "Mon Nov 16, 2026 ~8:25 AM ET. Prices: Yahoo Finance chart API. For SETUP_FINDER.",
+        "as_of": "Tue Nov 17, 2026 ~8:20 AM ET. Prices: Yahoo Finance chart API. For SETUP_FINDER.",
         "label": "Daily regime",
         "source": "daily_regime.md"
       },
@@ -804,7 +813,7 @@
         "source": "research/results_table.csv"
       },
       {
-        "count": 71,
+        "count": 72,
         "label": "Reviewed (approved_strategies.json)",
         "source": "approved_strategies.json"
       },
@@ -862,7 +871,7 @@
       },
       {
         "format": "int",
-        "hint": "66 rejected in approved_strategies.json",
+        "hint": "67 rejected in approved_strategies.json",
         "label": "Paper approved",
         "value": 5
       },
@@ -4792,7 +4801,7 @@
       }
     ],
     "regime": {
-      "briefing_head": "# Morning Briefing — Mon Nov 16, 2026\nWritten ~8:25 AM ET by BRIEFING. Live futures/VIX/WTI/BTC/ETH: Yahoo Finance chart API (~8:10 AM ET, may be delayed). Prior-session closes (Fri Nov 13) for SPY/TLT/GLD/ES/NQ/VIX and BTC daily bar (Nov 15 UTC day): Yahoo completed bars via desk prefetch cache (built 8:10 AM ET). Paper only, no trades placed.\n\n## ES/NQ bias, levels, overnight\n- **Bias: BEARISH-leaning, tech-led.** AI/semis sold again overnight ahead of NVDA earnings (Tue AMC) and the Anthropic IPO (prices Wed, trades Thu). FT reports Huang may return as CEO, adding uncertainty (Reuters). Crypto rout weighs on MSTR/COIN/miners.\n- Overnight: ES ~7541.25 (-0.55% vs 7583 Fri settle), NQ ~27686.5 (-1.24% vs 28034.75). VIX ~20.55 (Fri close 19.30). WTI ~$87.85. 10y ~5.14% (Stocktwits, Sun night); 2y -2bp Monday (Reuters). BTC ~64.1k, ETH ~1,799.\n- ES: resistance 7570.75 (ON high), 7583 (settle), 7669.25 (Fri high); support 7520 (ON low), 7519.25 (Fri low). NQ: resistance 27853.25 (ON high), 28034.75 (settle); support 27695.25 (Fri low, now being tested), 27554 (ON low).\n\n## Prior day recap (Fri Nov 13)\nPPI (Oct) +0.3% m/m vs +0.4% expected, core +0.3% in line; but +6.5% y/y, highest since Nov 2022 (CNBC). Early pop faded on tech: S&P -0.4% to 7,561.67, Nasdaq -0.91% to 25,136.27, Dow +0.1% to 52,347.55. Still the best week since August (S&P +2.5%). AMD -8.8%, AVGO -4.8%, CSCO -6.2% (Kiplinger). Dec hike ~90% priced. SPY 754.37 (-0.36%), TLT 79.38 (-0.43%), GLD 355.45 (+0.16%), VIX 19.30 (Yahoo).\n\n## Desk activity\nNo new trades. STRATEGY_APPROVER rejected CX13 (BTC overnight MAX(10)) and SE10 (S&P EOD reversal) this morning, both score 1, not live-eligible. SB29 paper basket (SPY/TLT/GLD) marks ~$79.28 vs $80 cost (-$0.72) at Fri closes, well above the $72.00 stop. Next action: Nov 30 month-end rebalance. SE01 remains closed, tester-only.\n\n## Strategy recap\n- SB29: 1 open, 0 closed, win rate n/a (no closed trades), unrealized ~-$0.72. Not proven. No pause/retire flag.\n- SE01 (tester-only, not desk-approved): 1 closed win, +$3.51; 100% on n=1, not meaningful. No flag.\n\n## News and earnings for held names\n- SPY: AI-led drawdown risk into NVDA (Tue AMC) and ANT debut (Thu); retail sales Tue 8:30. TLT: 10y >5.1%, FOMC minutes Wed 2:00 PM may show hawkish split (BofA). GLD: flat Fri; no fresh catalyst found.\n\n## Today's high-impact events (ET)\n- 8:30 AM: Empire State Mfg (Nov), cons 16.7, prior 25.5 (Med).\n- 12:00 PM: **Fed Chair Warsh speaks** (High). Hammack also speaks today, time not confirmed [UNVERIFIED].",
+      "briefing_head": "# Morning Briefing — Tue Nov 17, 2026\nWritten ~8:20 AM ET by BRIEFING. Live futures: Yahoo chart API (ES/NQ ~8:05 AM ET, VIX 8:00 AM ET). Prior-session bars: Yahoo cache, observation 2026-11-16 (completed bars). Retail Sales prints 8:30, after this was written.\n\n## ES/NQ bias, levels, overnight\n- **Bias: neutral-bearish ES, neutral NQ into NVDA (AMC).** Bounce attempt after a 3-day slide; NQ +0.4% vs settle, ES flat. Dow futs -0.3% (Yahoo Finance). VIX 22.71 (Mon close 22.91).\n- ES: Mon settle 7439 | ON H/L 7456 / 7395.25 | last ~7436.5 | Mon H/L 7614.25 / 7420.25\n- NQ: Mon settle 27284.25 | ON H/L 27467.75 / 27085 | last ~27399.75 | Mon H/L 28279.25 / 27234.75\n- Overnight: new Commerce rule restricting AI-chip shipments to China hit BABA/BIDU ADRs; NVDA board rebuffed reinstating Huang, NVDA -0.4% premarket; INTC still weak; oil lower again; dollar near a 19-month high; yields slightly lower (Dow Jones/Morningstar, Reuters).\n\n## Prior day (Mon Nov 16)\nS&P 500 -1.92% to 7,416.59, Nasdaq -2.49% to 24,509.76 (in correction, >10% off Oct 6 high), Dow -1.41%. SOX -5.3%; NVDA -4.1%, MU/INTC -7%+, DELL -7.0%, SMCI -6.9%, NBIS -7.6%, CRWV -6.1%. NYSE breadth 1:3.45, 590 new lows. Warsh laid out an AI-bust scenario; 10y fell ~3bp to 5.12%; Dec hike ~95.7% priced (CME via Reuters). Empire Mfg 7.8 vs cons 16.7. ES -1.9%, NQ -2.7% on the day; VIX 19.30 -> 22.91.\n\n## Desk activity\n- No trades, no new setups. SB29 (paper) is the only open position.\n- SE13 (Dutch STDV QQQ open fade) REJECTED 8:17 AM today: holdout Sharpe ~0 base, -0.60 at 2x costs. SE11 and SE12 rejected yesterday.\n\n## Strategy recap\n| Strategy | Status | Trades (W/L) | Win rate | P&L | Flag |\n|---|---|---|---|---|---|\n| SB29 inverse-vol SPY/TLT/GLD | PAPER_APPROVED, open | 1 open (0/0) | n/a | basket ~$78.53 at Mon closes (-$1.47 / -1.8%) | None. Stop is $72, about $6.5 away. Rebalance Nov 30 |\n| SE01 Nasdaq top-5 + SMA | CLOSED_TESTER_ONLY | 1 (1/0) | 100% (n=1) | +$3.51 realized | Not desk-approved |\nNote: strategy_performance.json was last marked Nov 6. The $78.53 figure is my own mark from Yahoo Mon closes (SPY 739.95, TLT 79.38, GLD 352.93).\n\n## Held names: news",
       "briefing_source": "daily_briefing.md",
       "events": [
         {
@@ -4981,7 +4990,7 @@
         }
       ],
       "events_updated": "Mon Nov 16, 2026, ~8:25 AM ET (by BRIEFING). Next refresh: Mon Nov 23 (weekly).",
-      "head": "# Daily Regime — Mon Nov 16, 2026\nWritten: Mon Nov 16, 2026 ~8:25 AM ET. Prices: Yahoo Finance chart API. For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n\n## Regime\n- Structure: **Risk-off, AI unwind.** Fri S&P -0.4% (7,561.67), Nasdaq -0.9%; AMD -8.8%, AVGO -4.8%. Semis/neoclouds -3 to -5% premarket (Reuters).\n- Risk: **Elevated.** VIX ~20.55 (Fri 19.30). 10y ~5.14%. Dec hike ~fully priced. BTC ~64.1k after a ~62k 4-month low.\n- Events: Warsh 12 PM today; NVDA Tue AMC; FOMC minutes Wed 2 PM; ANT IPO trades Thu.\n\n## Bias\n- Short-term: **BEARISH-leaning for NQ, neutral-bearish for ES.** Dow flat, so it's rotation out of tech rather than broad liquidation.\n\n## Key levels (ES=F / NQ=F)\nES: Fri settle 7583 | ON H/L 7570.75 / 7520 | last ~7541.25 | Fri H/L 7669.25 / 7519.25\nNQ: Fri settle 28034.75 | ON H/L 27853.25 / 27554 | last ~27686.5 | Fri H/L 28607.75 / 27695.25\n\n## Notes for SETUP_FINDER\n1. Expect pre-NVDA chop; avoid sizing into semis before Tue AMC.\n2. Watch the NQ 27695/27554 break vs reclaim at the open.\n3. Crypto-linked equities (MSTR, COIN, miners) track BTC 62k support.\n4. SB29/SE01 are month-end baskets, not intraday signals.",
+      "head": "# Daily Regime — Tue Nov 17, 2026\nWritten: Tue Nov 17, 2026 ~8:20 AM ET. Prices: Yahoo Finance chart API. For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n\n## Regime\n- Structure: **Risk-off, AI unwind, 3-day losing streak.** Mon S&P -1.9% (7,416.59), Nasdaq -2.5% (correction), SOX -5.3%. Breadth weak (NYSE 590 new lows).\n- Risk: **Elevated.** VIX ~22.7. 10y ~5.12%. Dec hike ~96% priced. BTC ~65.0k. New China chip-export rule.\n- Events: Retail Sales 8:30 AM; NVDA ~4:20 PM AMC; FOMC minutes Wed 2 PM; ANT IPO trades Thu.\n\n## Bias\n- Short-term: **Neutral-bearish ES, neutral NQ** (+0.4% ON bounce) into the binary NVDA print.\n\n## Key levels (ES=F / NQ=F)\nES: Mon settle 7439 | ON H/L 7456 / 7395.25 | last ~7436.5 | Mon H/L 7614.25 / 7420.25\nNQ: Mon settle 27284.25 | ON H/L 27467.75 / 27085 | last ~27399.75 | Mon H/L 28279.25 / 27234.75\n\n## Notes for SETUP_FINDER\n1. Expect chop before NVDA; no semis sizing before AMC. Gap risk overnight.\n2. NQ 27085 ON low is the line; a break below it opens the next leg lower, while holding above 27468 is a relief bid.\n3. China ADRs and INTC are weak on the export rule.\n4. SB29/SE01 are month-end baskets, not intraday signals.",
       "source": "daily_regime.md"
     },
     "rejected_high_score": [
@@ -5619,9 +5628,9 @@
         "status": "ok"
       },
       {
-        "bytes": 47931,
+        "bytes": 48973,
         "path": "desk/approved_strategies.json",
-        "sha256": "eaae0fee7a53419689ab951300dbea53ecdd3a6309944902f4133811bbaacb99",
+        "sha256": "b3a1abc0d275af13c78aae6204a096a201b7260b82e09b62c171ec10a1cd4f77",
         "status": "ok"
       },
       {
@@ -5643,15 +5652,15 @@
         "status": "ok"
       },
       {
-        "bytes": 4324,
+        "bytes": 3762,
         "path": "desk/daily_briefing.md",
-        "sha256": "19451644f9d773a898e85f6bdad944a98f4f751e6dcb8094f3cc59ae0a77afe4",
+        "sha256": "1af919b99f2b7485479aa24facd9587fb5952d7f5ce905b5a46bd0c977945c79",
         "status": "ok"
       },
       {
-        "bytes": 1629,
+        "bytes": 1646,
         "path": "desk/daily_regime.md",
-        "sha256": "fe2c8d11a408b825605c39095e9b345db131a1f212d3762fa1d0ff0b3b79a40f",
+        "sha256": "4ea08ef111de3121b08fd3cfc75a8051f80e24f9d3c87d66e05320cab8783c90",
         "status": "ok"
       },
       {
@@ -13176,16 +13185,16 @@
   "publish_blocker": "No non-AI publish path: pages.grok.bot Pages are updated only by a Bot (official docs: https://cursor.com/help/grok-bot/pages). No wrangler/CLI or stored publish credential found on this box. Live URL is login-gated (HTTP 302 apps-gate). Canvas a875f485 is private and must not be modified. Local generator is ready; republish remains a parent/Bot-in-chat step.",
   "publish_status": "blocked_no_non_ai_path",
   "regime_head": {
-    "head": "# Daily Regime — Mon Nov 16, 2026\nWritten: Mon Nov 16, 2026 ~8:25 AM ET. Prices: Yahoo Finance chart API. For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n\n## Regime\n- Structure: **Risk-off, AI unwind.** Fri S&P -0.4% (7,561.67), Nasdaq -0.9%; AMD -8.8%, AVGO -4.8%. Semis/neoclouds -3 to -5% premarket (Reuters).\n- Risk: **Elevated.** VIX ~20.55 (Fri 19.30). 10y ~5.14%. Dec hike ~fully priced. BTC ~64.1k after a ~62k 4-month low.\n- Events: Warsh 12 PM today; NVDA Tue AMC; FOMC minutes Wed 2 PM; ANT IPO trades Thu.\n\n## Bias\n- Short-term: **BEARISH-leaning for NQ, neutral-bearish for ES.** Dow flat, so it's rotation out of tech rather than broad liquidation.\n",
+    "head": "# Daily Regime — Tue Nov 17, 2026\nWritten: Tue Nov 17, 2026 ~8:20 AM ET. Prices: Yahoo Finance chart API. For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n\n## Regime\n- Structure: **Risk-off, AI unwind, 3-day losing streak.** Mon S&P -1.9% (7,416.59), Nasdaq -2.5% (correction), SOX -5.3%. Breadth weak (NYSE 590 new lows).\n- Risk: **Elevated.** VIX ~22.7. 10y ~5.12%. Dec hike ~96% priced. BTC ~65.0k. New China chip-export rule.\n- Events: Retail Sales 8:30 AM; NVDA ~4:20 PM AMC; FOMC minutes Wed 2 PM; ANT IPO trades Thu.\n\n## Bias\n- Short-term: **Neutral-bearish ES, neutral NQ** (+0.4% ON bounce) into the binary NVDA print.\n",
     "path": "desk/daily_regime.md",
-    "sha256": "fe2c8d11a408b825605c39095e9b345db131a1f212d3762fa1d0ff0b3b79a40f",
+    "sha256": "4ea08ef111de3121b08fd3cfc75a8051f80e24f9d3c87d66e05320cab8783c90",
     "status": "ok"
   },
   "schema_version": 2,
   "snapshot": {
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 66
+      "REJECT": 67
     },
     "approvals": [
       {
@@ -13755,6 +13764,14 @@
         "id": "SE13",
         "live_eligible": false,
         "name": "Dutch STDV 09:30 fade on QQQ (k=2.25, s=0.5U, exit 11:00, body)"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-17T08:18:00-05:00",
+        "decision": "REJECT",
+        "id": "CX14",
+        "live_eligible": false,
+        "name": "STDV midnight-open fade on BTC (primary) / ETH"
       }
     ],
     "calculation_notes": [
