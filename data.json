@@ -16,8 +16,8 @@
     "sha256": "19451644f9d773a898e85f6bdad944a98f4f751e6dcb8094f3cc59ae0a77afe4",
     "status": "ok"
   },
-  "built_at": "2026-11-16T14:30:02.000408-05:00",
-  "content_hash": "17f0dd2f2f8e455ef6d8466c55681f21a46397eb7932f11da0d4df5190a0bf89",
+  "built_at": "2026-11-17T08:15:01.936978-05:00",
+  "content_hash": "0cf23655acd2b621e28140bb8bf4ba7d6c7d39bb5e6d7e3ca41ca0828374bfef",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -35,7 +35,7 @@
     },
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 65
+      "REJECT": 66
     },
     "approval_status": [
       {
@@ -729,6 +729,15 @@
         "live_eligible": false,
         "name": "Sector ETF ML ensemble k=2 long-short 50/50",
         "score": 1
+      },
+      {
+        "category": "Stocks & ETFs",
+        "decided_at": "2026-11-17T08:17:00-05:00",
+        "decision": "REJECT",
+        "id": "SE13",
+        "live_eligible": false,
+        "name": "Dutch STDV 09:30 fade on QQQ (k=2.25, s=0.5U, exit 11:00, body)",
+        "score": 1
       }
     ],
     "as_of": "2026-11-16 14:30:01 ET",
@@ -749,11 +758,11 @@
       "paper_approved_total": 5,
       "rule": "results_table.csv has no category column. Classification used here: Crypto if the strategy id letter-prefix is CX or NH, or the name contains crypto/bitcoin/btc/eth/coin keywords; Options if the letter-prefix is NO or OP, or the name contains 'option'; everything else is Stocks & ETFs.",
       "tested": {
-        "Crypto": 68,
+        "Crypto": 70,
         "Options": 27,
-        "Stocks & ETFs": 147
+        "Stocks & ETFs": 148
       },
-      "tested_total": 242
+      "tested_total": 245
     },
     "deterioration": {
       "flagged": [],
@@ -790,12 +799,12 @@
     ],
     "funnel": [
       {
-        "count": 242,
+        "count": 245,
         "label": "Tested (results_table.csv)",
         "source": "research/results_table.csv"
       },
       {
-        "count": 70,
+        "count": 71,
         "label": "Reviewed (approved_strategies.json)",
         "source": "approved_strategies.json"
       },
@@ -853,7 +862,7 @@
       },
       {
         "format": "int",
-        "hint": "65 rejected in approved_strategies.json",
+        "hint": "66 rejected in approved_strategies.json",
         "label": "Paper approved",
         "value": 5
       },
@@ -872,7 +881,7 @@
     ],
     "min_account": [
       {
-        "count": 178,
+        "count": 181,
         "label": "Under $500",
         "tier": "under_500"
       },
@@ -5213,6 +5222,10 @@
         "count": 2
       },
       {
+        "batch": "2026-11-17_CX14",
+        "count": 2
+      },
+      {
         "batch": "2026-10-31e",
         "count": 1
       },
@@ -5275,10 +5288,14 @@
       {
         "batch": "2026-11-16_SE12",
         "count": 1
+      },
+      {
+        "batch": "2026-11-17_SE13",
+        "count": 1
       }
     ],
     "score_counts": {
-      "1": 97,
+      "1": 100,
       "2": 131,
       "3": 7,
       "4": 2,
@@ -5602,9 +5619,9 @@
         "status": "ok"
       },
       {
-        "bytes": 47045,
+        "bytes": 47931,
         "path": "desk/approved_strategies.json",
-        "sha256": "9bb20d1de3381630875116352adea04489de2de7a446b660d817c1386920703a",
+        "sha256": "eaae0fee7a53419689ab951300dbea53ecdd3a6309944902f4133811bbaacb99",
         "status": "ok"
       },
       {
@@ -5668,9 +5685,9 @@
         "status": "ok"
       },
       {
-        "bytes": 148851,
+        "bytes": 151361,
         "path": "desk/research/results_table.csv",
-        "sha256": "03007c5d908ea9242570bd82c5c2b7471a6cf6999f64541377bb435e98cfe402",
+        "sha256": "6a57c69abd69b5c1240f69327e061c1751b328f6577993a8183a5e63d122dae9",
         "status": "ok"
       },
       {
@@ -13168,7 +13185,7 @@
   "snapshot": {
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 65
+      "REJECT": 66
     },
     "approvals": [
       {
@@ -13730,6 +13747,14 @@
         "id": "SE12",
         "live_eligible": false,
         "name": "Sector ETF ML ensemble k=2 long-short 50/50"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-17T08:17:00-05:00",
+        "decision": "REJECT",
+        "id": "SE13",
+        "live_eligible": false,
+        "name": "Dutch STDV 09:30 fade on QQQ (k=2.25, s=0.5U, exit 11:00, body)"
       }
     ],
     "calculation_notes": [
