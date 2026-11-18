@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-18 10:45:01 ET",
+  "as_of": "2026-11-18 10:50:00 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,21 +16,21 @@
     "sha256": "1c02a26ad06f5c0ca732625f7487434e66fcc792e62f95f9bc61283786a4b080",
     "status": "ok"
   },
-  "built_at": "2026-11-18T10:45:02.434413-05:00",
-  "content_hash": "6ad528f0007e02c7234509a262d9c94c25b7672a63c8691947cc727647844106",
+  "built_at": "2026-11-18T10:50:02.417843-05:00",
+  "content_hash": "1035485be602ec79fc68c07e9ec8f9a2539c3402d5c2a1db6b8d82d32aa66b26",
   "dashboard": {
     "account": {
       "account_mode": "paper",
       "cash_rule": "recorded equity minus open production notionals",
-      "cash_usd": 120.0,
+      "cash_usd": 5.0,
       "current_tier": {},
-      "deployed_usd": 80.0,
-      "mark_adjusted_equity": 197.9677,
+      "deployed_usd": 195.0,
+      "mark_adjusted_equity": 197.8176,
       "max_open_risk": null,
-      "open_unrealized_pnl": -2.0323,
+      "open_unrealized_pnl": -2.1824000000000003,
       "recorded_equity": 200.0,
       "recorded_equity_source": "risk_decisions.json account_equity",
-      "total_open_risk": 8.0,
+      "total_open_risk": 8.69,
       "updated_at": "2026-11-09T13:20:00-05:00"
     },
     "approval_counts": {
@@ -43,12 +43,12 @@
         "decided_at": "2026-10-30T14:40:00-04:00",
         "decision": "PAPER_APPROVED",
         "id": "SB11",
-        "kind": "info",
+        "kind": "good",
         "live_eligible": false,
         "name": "TJR NY-open liquidity sweep + 5m BOS reversal with ES/NQ SMT gate",
         "reason": "",
         "score": 3,
-        "status": "ON WATCH"
+        "status": "TRADING"
       },
       {
         "category": "Crypto",
@@ -758,13 +758,13 @@
         "score": 1
       }
     ],
-    "as_of": "2026-11-18 10:45:01 ET",
+    "as_of": "2026-11-18 10:50:00 ET",
     "as_of_source": "mark PT-SB29-2026-10-30-001",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
       "eyebrow": "Trading team",
       "note": "Values come from desk files and the alerts poller marks (newest timestamp wins). This is not a brokerage stream. Intraday market color is quoted only from desk files and is not updated after those files.",
-      "summary": "Paper-only desk · 1 open production paper trade · 0 live real-order legs · 5 paper-approved strategies.",
+      "summary": "Paper-only desk · 2 open production paper trades · 0 live real-order legs · 5 paper-approved strategies.",
       "title": "Trading Desk Dashboard"
     },
     "categories": {
@@ -832,7 +832,7 @@
         "source": "approved_strategies.json"
       },
       {
-        "count": 1,
+        "count": 2,
         "label": "Traded on the production paper book",
         "source": "paper_trades.json"
       },
@@ -844,7 +844,8 @@
     ],
     "issues": [
       "mark_stale · PT-SB29-2026-10-30-001 · source paper_trades.json",
-      "mark_stale · PT-SE01-2026-11-02-001 · source paper_trades.json"
+      "mark_stale · PT-SE01-2026-11-02-001 · source paper_trades.json",
+      "mark_missing · PT-SB11-2026-11-18-001 · source paper_trades.json"
     ],
     "kpis": [
       {
@@ -857,26 +858,26 @@
         "format": "money",
         "hint": "Recorded equity plus open production-book unrealized P&L from the freshest sourced mark. Not a brokerage stream.",
         "label": "Mark-adjusted equity",
-        "value": 197.9677
+        "value": 197.8176
       },
       {
         "format": "pnl",
         "hint": "Open production paper trades only",
         "label": "Open unrealized P&L",
-        "value": -2.0323
+        "value": -2.1824000000000003
       },
       {
         "format": "money",
-        "hint": "Open notionals $80.00 · cash $120.00 (recorded equity minus deployed)",
+        "hint": "Open notionals $195.00 · cash $5.00 (recorded equity minus deployed)",
         "label": "Deployed / cash",
-        "secondary": 120.0,
-        "value": 80.0
+        "secondary": 5.0,
+        "value": 195.0
       },
       {
         "format": "money0",
         "hint": "from risk_decisions.json",
         "label": "Open risk",
-        "value": 8.0
+        "value": 8.69
       },
       {
         "format": "int",
@@ -888,7 +889,7 @@
         "format": "int",
         "hint": "0 live real-order legs",
         "label": "Open desk trades",
-        "value": 1
+        "value": 2
       },
       {
         "format": "int",
@@ -941,9 +942,9 @@
         "executed_at": null,
         "legs": [
           {
-            "change_pct": -2.9186542389344545,
+            "change_pct": -3.0503828779381084,
             "fill_price": 751.545,
-            "last_price": 729.61,
+            "last_price": 728.62,
             "notional_usd": 33.68,
             "price_time": "2026-10-30T14:43:21-04:00 (latest available Yahoo print; feed stale)",
             "shares": 0.044814,
@@ -952,9 +953,9 @@
             "weight_pct": 42.1
           },
           {
-            "change_pct": -1.8946078431372457,
+            "change_pct": -1.8627450980392108,
             "fill_price": 81.6,
-            "last_price": 80.054,
+            "last_price": 80.08,
             "notional_usd": 31.76,
             "price_time": "2026-10-30T15:44:57-04:00",
             "shares": 0.389216,
@@ -963,9 +964,9 @@
             "weight_pct": 39.7
           },
           {
-            "change_pct": -3.071398394592319,
+            "change_pct": -3.2136318828334107,
             "fill_price": 355.05,
-            "last_price": 344.145,
+            "last_price": 343.64,
             "notional_usd": 14.56,
             "price_time": "2026-10-30T15:44:04-04:00",
             "shares": 0.041008,
@@ -975,12 +976,12 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-18 10:45:01 ET",
-          "basket_value_usd": 77.9677,
+          "as_of": "2026-11-18 10:50:00 ET",
+          "basket_value_usd": 77.9128,
           "freshness": "recent",
           "mark_source": "alerts/poll.log",
           "realized_pnl_net_fees_usd": null,
-          "unrealized_pnl_usd": -2.0323
+          "unrealized_pnl_usd": -2.0872
         },
         "mode": "paper",
         "name": null,
@@ -1005,6 +1006,54 @@
         ],
         "total_notional_usd": 80.0,
         "trade_id": "PT-SB29-2026-10-30-001"
+      },
+      {
+        "book": null,
+        "close": null,
+        "executed_at": null,
+        "legs": [
+          {
+            "change_pct": -0.08307103716858431,
+            "fill_price": 656.065,
+            "last_price": 655.52,
+            "notional_usd": 115.0,
+            "price_time": "2026-11-18T10:45:18-05:00",
+            "shares": 0.175288,
+            "side": "BUY",
+            "symbol": "QQQ",
+            "weight_pct": null
+          }
+        ],
+        "mark": {
+          "as_of": "2026-11-18 10:50:00 ET",
+          "basket_value_usd": 114.9048,
+          "freshness": "recent",
+          "mark_source": "alerts/poll.log",
+          "realized_pnl_net_fees_usd": null,
+          "unrealized_pnl_usd": -0.0952
+        },
+        "mode": "paper",
+        "name": null,
+        "notes": null,
+        "real_order": null,
+        "reporting_group": "desk_record",
+        "risk_budget_usd": 0.69,
+        "risk_model": null,
+        "status": "OPEN",
+        "stop": {
+          "near": 114.4894,
+          "value": 114.3141
+        },
+        "strategy_id": "SB11",
+        "time_exits": [
+          {
+            "action": "flat before FOMC minutes",
+            "date": "2026-11-18",
+            "time": "13:55"
+          }
+        ],
+        "total_notional_usd": 115.0,
+        "trade_id": "PT-SB11-2026-11-18-001"
       }
     ],
     "overfit": [],
@@ -1041,7 +1090,7 @@
       },
       {
         "decision": "PAPER_APPROVED",
-        "has_open_desk_trade": false,
+        "has_open_desk_trade": true,
         "id": "SB11",
         "name": "TJR NY-open liquidity sweep + 5m BOS reversal with ES/NQ SMT gate",
         "oos_cagr": 0.17693202203635727,
@@ -5641,15 +5690,15 @@
   "input_fingerprint": {
     "files": [
       {
-        "bytes": 7484,
+        "bytes": 8430,
         "path": "desk/paper_trades.json",
-        "sha256": "b955c2a9429d725c64d8844d86bf5dc2ad5feec9d886de2a53117227cc1838ab",
+        "sha256": "99044acdef728fdbd255cab92da4195739f5bc5124928fbc59c2e8ab8a456ab7",
         "status": "ok"
       },
       {
-        "bytes": 1747,
+        "bytes": 2187,
         "path": "desk/live_positions.json",
-        "sha256": "0824ae49c7df538f35f06069117c53908e2ec8f9b3134d5781885bed2f9c67e2",
+        "sha256": "e4d3e7102dc33720d0cfab910289c3d21f8c3e9ac2836a36fbf4e688e1665904",
         "status": "ok"
       },
       {
@@ -5671,9 +5720,9 @@
         "status": "ok"
       },
       {
-        "bytes": 5890,
+        "bytes": 6719,
         "path": "desk/risk_decisions.json",
-        "sha256": "fb4cec8bb429b53c72cbaf03d8142cb3dbc780e7c488fbf022656146dbdde628",
+        "sha256": "980676a4e0a40364dd5f6989cacaae220d0437a7758121febd6a6625bcfecdab",
         "status": "ok"
       },
       {
@@ -5743,15 +5792,15 @@
         "status": "ok"
       },
       {
-        "bytes": 42078,
+        "bytes": 42464,
         "path": "desk/alerts/poll.log",
-        "sha256": "5e9544c72bf5b1951ab24ea000fdedbdd0de707ead9109122a05dd5ae80f99ba",
+        "sha256": "94bd35b35054b3998cb8196b8cc42d282120711cb9b4ffe79d38bb2ee48f01fd",
         "status": "ok"
       },
       {
-        "bytes": 662,
+        "bytes": 1176,
         "path": "desk/alerts/alert_levels.json",
-        "sha256": "715255259d5ab3c9cc75d978b1586b88748b2b7527d26ba0141cb857fb36f36d",
+        "sha256": "9d72a14587bd3854ab5c8708ddeac0949a7f2349f2d7c1cea05c89bd7cf1af82",
         "status": "ok"
       }
     ]
@@ -5813,21 +5862,21 @@
         }
       ],
       "mark": {
-        "as_of": "2026-11-18 10:45:01 ET",
-        "basket_value_usd": 77.9677,
+        "as_of": "2026-11-18 10:50:00 ET",
+        "basket_value_usd": 77.9128,
         "leg_prices": {
-          "GLD": 344.145,
-          "SPY": 729.61,
-          "TLT": 80.054
+          "GLD": 343.64,
+          "SPY": 728.62,
+          "TLT": 80.08
         },
-        "mark_as_of": "2026-11-18 10:45:01 ET",
+        "mark_as_of": "2026-11-18 10:50:00 ET",
         "mark_source": "alerts/poll.log",
         "price_source": "alerts poller output",
-        "unrealized_pnl_usd": -2.0323
+        "unrealized_pnl_usd": -2.0872
       },
       "mark_freshness": {
-        "et": "2026-11-18T10:45:01-05:00",
-        "source": "2026-11-18 10:45:01 ET",
+        "et": "2026-11-18T10:50:00-05:00",
+        "source": "2026-11-18 10:50:00 ET",
         "status": "recent"
       },
       "mode": "paper",
@@ -5839,6 +5888,45 @@
       "strategy_id": "SB29",
       "total_notional_usd": 80.0,
       "trade_id": "PT-SB29-2026-10-30-001"
+    },
+    {
+      "book": null,
+      "desk_approved": null,
+      "fills": [
+        {
+          "fill_price": 656.065,
+          "notional_usd": 115.0,
+          "price_time": "2026-11-18T10:45:18-05:00",
+          "shares": 0.175288,
+          "side": "BUY",
+          "symbol": "QQQ"
+        }
+      ],
+      "mark": {
+        "as_of": "2026-11-18 10:50:00 ET",
+        "basket_value_usd": 114.9048,
+        "leg_prices": {
+          "QQQ": 655.52
+        },
+        "mark_as_of": "2026-11-18 10:50:00 ET",
+        "mark_source": "alerts/poll.log",
+        "price_source": "alerts poller output",
+        "unrealized_pnl_usd": -0.0952
+      },
+      "mark_freshness": {
+        "et": "2026-11-18T10:50:00-05:00",
+        "source": "2026-11-18 10:50:00 ET",
+        "status": "recent"
+      },
+      "mode": "paper",
+      "owner": null,
+      "production": null,
+      "reporting_group": "desk_record",
+      "risk_budget_usd": 0.69,
+      "status": "OPEN",
+      "strategy_id": "SB11",
+      "total_notional_usd": 115.0,
+      "trade_id": "PT-SB11-2026-11-18-001"
     }
   ],
   "pending_already_decided": [
@@ -13204,6 +13292,25 @@
       "strategy_id": "SB29",
       "symbol": "GLD",
       "trade_id": "PT-SB29-2026-10-30-001"
+    },
+    {
+      "avg_price": 656.065,
+      "cost_basis_usd": 115.0,
+      "mode": "paper",
+      "next_action": "Flat by 13:55 ET",
+      "opened_at": "2026-11-18T10:45:18-05:00",
+      "setup_id": "SB11-2026-11-18-LONG-001",
+      "shares": 0.175288,
+      "stop": {
+        "alt": "NQ=F <= 26951.75",
+        "level": 652.15,
+        "set_by": "RISK_MANAGER",
+        "type": "price"
+      },
+      "strategy_id": "SB11",
+      "symbol": "QQQ",
+      "target": 663.89,
+      "trade_id": "PT-SB11-2026-11-18-001"
     }
   ],
   "price_semantics": "freshest_sourced_mark_paper_trades_or_alerts_poller",
@@ -13825,6 +13932,11 @@
         "issue": "mark_stale",
         "source": "paper_trades.json",
         "trade_id": "PT-SE01-2026-11-02-001"
+      },
+      {
+        "issue": "mark_missing",
+        "source": "paper_trades.json",
+        "trade_id": "PT-SB11-2026-11-18-001"
       }
     ],
     "paper_trades": [
@@ -13861,21 +13973,21 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-18 10:45:01 ET",
-          "basket_value_usd": 77.9677,
+          "as_of": "2026-11-18 10:50:00 ET",
+          "basket_value_usd": 77.9128,
           "leg_prices": {
-            "GLD": 344.145,
-            "SPY": 729.61,
-            "TLT": 80.054
+            "GLD": 343.64,
+            "SPY": 728.62,
+            "TLT": 80.08
           },
-          "mark_as_of": "2026-11-18 10:45:01 ET",
+          "mark_as_of": "2026-11-18 10:50:00 ET",
           "mark_source": "alerts/poll.log",
           "price_source": "alerts poller output",
-          "unrealized_pnl_usd": -2.0323
+          "unrealized_pnl_usd": -2.0872
         },
         "mark_freshness": {
-          "et": "2026-11-18T10:45:01-05:00",
-          "source": "2026-11-18 10:45:01 ET",
+          "et": "2026-11-18T10:50:00-05:00",
+          "source": "2026-11-18 10:50:00 ET",
           "status": "recent"
         },
         "mode": "paper",
@@ -13965,6 +14077,45 @@
         "strategy_id": "SE01",
         "total_notional_usd": 200.0,
         "trade_id": "PT-SE01-2026-11-02-001"
+      },
+      {
+        "book": null,
+        "desk_approved": null,
+        "fills": [
+          {
+            "fill_price": 656.065,
+            "notional_usd": 115.0,
+            "price_time": "2026-11-18T10:45:18-05:00",
+            "shares": 0.175288,
+            "side": "BUY",
+            "symbol": "QQQ"
+          }
+        ],
+        "mark": {
+          "as_of": "2026-11-18 10:50:00 ET",
+          "basket_value_usd": 114.9048,
+          "leg_prices": {
+            "QQQ": 655.52
+          },
+          "mark_as_of": "2026-11-18 10:50:00 ET",
+          "mark_source": "alerts/poll.log",
+          "price_source": "alerts poller output",
+          "unrealized_pnl_usd": -0.0952
+        },
+        "mark_freshness": {
+          "et": "2026-11-18T10:50:00-05:00",
+          "source": "2026-11-18 10:50:00 ET",
+          "status": "recent"
+        },
+        "mode": "paper",
+        "owner": null,
+        "production": null,
+        "reporting_group": "desk_record",
+        "risk_budget_usd": 0.69,
+        "status": "OPEN",
+        "strategy_id": "SB11",
+        "total_notional_usd": 115.0,
+        "trade_id": "PT-SB11-2026-11-18-001"
       }
     ],
     "performance": {
@@ -14065,6 +14216,25 @@
         "strategy_id": "SB29",
         "symbol": "GLD",
         "trade_id": "PT-SB29-2026-10-30-001"
+      },
+      {
+        "avg_price": 656.065,
+        "cost_basis_usd": 115.0,
+        "mode": "paper",
+        "next_action": "Flat by 13:55 ET",
+        "opened_at": "2026-11-18T10:45:18-05:00",
+        "setup_id": "SB11-2026-11-18-LONG-001",
+        "shares": 0.175288,
+        "stop": {
+          "alt": "NQ=F <= 26951.75",
+          "level": 652.15,
+          "set_by": "RISK_MANAGER",
+          "type": "price"
+        },
+        "strategy_id": "SB11",
+        "symbol": "QQQ",
+        "target": 663.89,
+        "trade_id": "PT-SB11-2026-11-18-001"
       }
     ],
     "risk": {
@@ -14075,7 +14245,7 @@
         "source": "2026-11-09T13:20:00-05:00",
         "status": "stale"
       },
-      "total_open_risk": 8,
+      "total_open_risk": 8.69,
       "updated_at": "2026-11-09T13:20:00-05:00"
     },
     "watch": {
