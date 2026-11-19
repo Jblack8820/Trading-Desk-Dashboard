@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-19 13:25:01 ET",
+  "as_of": "2026-11-19 13:30:00 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,8 +16,8 @@
     "sha256": "19a6782871511f708830f550caa727354af0a80b1edf0f6bc9bc975e16002169",
     "status": "ok"
   },
-  "built_at": "2026-11-19T13:25:02.173176-05:00",
-  "content_hash": "dfe1f0a20b507a40bcdb0c812ba877122e195ce009ecf515b5be79a08f88c4c5",
+  "built_at": "2026-11-19T13:30:02.296056-05:00",
+  "content_hash": "89d3593338cda2ee099e9029dfcc2d6e69f372ce342a28ec4caebbd65ffb2b31",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -25,9 +25,9 @@
       "cash_usd": 120.0,
       "current_tier": {},
       "deployed_usd": 80.0,
-      "mark_adjusted_equity": 197.3782,
+      "mark_adjusted_equity": 197.4199,
       "max_open_risk": null,
-      "open_unrealized_pnl": -2.6218,
+      "open_unrealized_pnl": -2.5801,
       "recorded_equity": 200.0,
       "recorded_equity_source": "risk_decisions.json account_equity",
       "total_open_risk": 8.69,
@@ -758,7 +758,7 @@
         "score": 1
       }
     ],
-    "as_of": "2026-11-19 13:25:01 ET",
+    "as_of": "2026-11-19 13:30:00 ET",
     "as_of_source": "mark PT-SB29-2026-10-30-001",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
@@ -858,13 +858,13 @@
         "format": "money",
         "hint": "Recorded equity plus open production-book unrealized P&L from the freshest sourced mark. Not a brokerage stream.",
         "label": "Mark-adjusted equity",
-        "value": 197.3782
+        "value": 197.4199
       },
       {
         "format": "pnl",
         "hint": "Open production paper trades only",
         "label": "Open unrealized P&L",
-        "value": -2.6218
+        "value": -2.5801
       },
       {
         "format": "money",
@@ -942,9 +942,9 @@
         "executed_at": null,
         "legs": [
           {
-            "change_pct": -4.13215442854386,
+            "change_pct": -3.9611733163017497,
             "fill_price": 751.545,
-            "last_price": 720.49,
+            "last_price": 721.775,
             "notional_usd": 33.68,
             "price_time": "2026-10-30T14:43:21-04:00 (latest available Yahoo print; feed stale)",
             "shares": 0.044814,
@@ -953,9 +953,9 @@
             "weight_pct": 42.1
           },
           {
-            "change_pct": -1.5318627450980393,
+            "change_pct": -1.6482843137254888,
             "fill_price": 81.6,
-            "last_price": 80.35,
+            "last_price": 80.255,
             "notional_usd": 31.76,
             "price_time": "2026-10-30T15:44:57-04:00",
             "shares": 0.389216,
@@ -964,9 +964,9 @@
             "weight_pct": 39.7
           },
           {
-            "change_pct": -5.104914800732291,
+            "change_pct": -4.959864807773557,
             "fill_price": 355.05,
-            "last_price": 336.925,
+            "last_price": 337.44,
             "notional_usd": 14.56,
             "price_time": "2026-10-30T15:44:04-04:00",
             "shares": 0.041008,
@@ -976,12 +976,12 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-19 13:25:01 ET",
-          "basket_value_usd": 77.3782,
+          "as_of": "2026-11-19 13:30:00 ET",
+          "basket_value_usd": 77.4199,
           "freshness": "recent",
           "mark_source": "alerts/poll.log",
           "realized_pnl_net_fees_usd": null,
-          "unrealized_pnl_usd": -2.6218
+          "unrealized_pnl_usd": -2.5801
         },
         "mode": "paper",
         "name": null,
@@ -5752,9 +5752,9 @@
         "status": "ok"
       },
       {
-        "bytes": 45181,
+        "bytes": 45304,
         "path": "desk/alerts/poll.log",
-        "sha256": "a95bd92c9bd13e6b1f3175c4926cb34faee777330d5663c49ca5ab19ce54b871",
+        "sha256": "becd03c65d1feea0b8497d97f82a9ba57a8207fd9dd2687966e25277f4d8a133",
         "status": "ok"
       },
       {
@@ -5822,21 +5822,21 @@
         }
       ],
       "mark": {
-        "as_of": "2026-11-19 13:25:01 ET",
-        "basket_value_usd": 77.3782,
+        "as_of": "2026-11-19 13:30:00 ET",
+        "basket_value_usd": 77.4199,
         "leg_prices": {
-          "GLD": 336.925,
-          "SPY": 720.49,
-          "TLT": 80.35
+          "GLD": 337.44,
+          "SPY": 721.775,
+          "TLT": 80.255
         },
-        "mark_as_of": "2026-11-19 13:25:01 ET",
+        "mark_as_of": "2026-11-19 13:30:00 ET",
         "mark_source": "alerts/poll.log",
         "price_source": "alerts poller output",
-        "unrealized_pnl_usd": -2.6218
+        "unrealized_pnl_usd": -2.5801
       },
       "mark_freshness": {
-        "et": "2026-11-19T13:25:01-05:00",
-        "source": "2026-11-19 13:25:01 ET",
+        "et": "2026-11-19T13:30:00-05:00",
+        "source": "2026-11-19 13:30:00 ET",
         "status": "recent"
       },
       "mode": "paper",
@@ -13875,21 +13875,21 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-19 13:25:01 ET",
-          "basket_value_usd": 77.3782,
+          "as_of": "2026-11-19 13:30:00 ET",
+          "basket_value_usd": 77.4199,
           "leg_prices": {
-            "GLD": 336.925,
-            "SPY": 720.49,
-            "TLT": 80.35
+            "GLD": 337.44,
+            "SPY": 721.775,
+            "TLT": 80.255
           },
-          "mark_as_of": "2026-11-19 13:25:01 ET",
+          "mark_as_of": "2026-11-19 13:30:00 ET",
           "mark_source": "alerts/poll.log",
           "price_source": "alerts poller output",
-          "unrealized_pnl_usd": -2.6218
+          "unrealized_pnl_usd": -2.5801
         },
         "mark_freshness": {
-          "et": "2026-11-19T13:25:01-05:00",
-          "source": "2026-11-19 13:25:01 ET",
+          "et": "2026-11-19T13:30:00-05:00",
+          "source": "2026-11-19 13:30:00 ET",
           "status": "recent"
         },
         "mode": "paper",
