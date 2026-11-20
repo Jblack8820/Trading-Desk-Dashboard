@@ -11,13 +11,13 @@
     "TRADE_MANAGER"
   ],
   "briefing_head": {
-    "head": "# Morning Briefing — Thu Nov 19, 2026\nWritten ~8:25 AM ET by BRIEFING. Live futures/VIX/BTC: Yahoo chart API (ES/NQ 8:07, VIX 8:02, BTC 8:17 AM ET). Prior-session bars: Yahoo cache (built 8:05 AM ET), observation Nov 18 completed bars. Claims and Philly Fed print at 8:30, after this was written.\n\n## ES/NQ bias, levels, overnight\n- **Bias: bullish, NQ > ES.** Anthropic priced its IPO at $83 (above the $70-78 range), raising ~$81B, the largest IPO on record. That reignited the AI trade. VIX 22.2 (Wed 24.56). Risk: a 5-day S&P losing streak plus hawkish Fed speakers. A soft ANT debut could fade the gap.\n- ES: Wed settle 7340.5 | ON H/L 7440.5 / 7382.25 | last 7432.5 (+1.3%) | Wed H/L 7434.75 / 7305.25\n- NQ: Wed settle 27186.75 | ON H/L 27830.5 / 27442 | last 27777.25 (+2.2%) | Wed H/L 27609.75 / 26921.75\n- ON H/L are from Yahoo 5m bars; the session window is unverified.\n- Overnight: chips are up (MU +4.8%, AMD +2.9%, NVDA +1.5-1.7%; INTC, MRVL, LRCX and AMAT +4%+). PANW is up ~10% on a raised FY27 guide and a $4.5B Applied Compute deal, and cyber peers are up 5-6%. PDD +7%; GOOGL +4.3%, AMZN +2.2%. Neoclouds (CRWV, NBIS, IREN, APLD) are up 5-6% (Reuters, Investing.com).\n\n## Prior day (Wed Nov 18)\nS&P 500 -0.23% to 7,323.63 (5th straight loss, the longest streak since June). Dow -1.11% to 50,198.17 (UNH weighed); Nasdaq +0.42% to 24,429.88. The NVDA beat faded. **FOMC minutes were hawkish:** almost all officials see further hikes as likely appropriate, a few raised the possibility of 50bp, and AI was named a material inflation risk. Waller was also hawkish. Dec +25bp is ~fully priced (CNBC, AP, Business Times). Cache closes: SPY 730.20, TLT 80.22, GLD 341.19 (-3.2%), BTC 63,735.\n\n## Desk activity\n- **SB11 first paper trade:** QQQ long at 656.065 (10:45 ET, PASS_REDUCED). It closed at 11:20 ET on the NQ alt-stop at 653.40: **-0.681R / -$0.47**. The plan was followed.\n- SB29 (paper) is still the only open position. No new setups logged since.",
+    "head": "# Morning Briefing — Fri Nov 20, 2026\nWritten ~8:30 AM ET by BRIEFING. Live futures/VIX/BTC/ETH: Yahoo chart API (ES/NQ 8:06, VIX 8:01, BTC/ETH 8:16 AM ET). Thu completed bars: Yahoo cache (built 8:15 AM ET, observation Nov 19 bars). ON H/L are from 18:00 ET Thu onward (5m bars).\n\n## ES/NQ bias, levels, overnight\n- **Bias: bearish, NQ weaker than ES.** The ANT debut was the top for now: indexes hit their session lows the moment it opened, and the selloff is extending. VIX is 30.8 (Thu close 28.44). Dow futures are ~flat, so this is AI/chip-led de-risking. Monthly OpEx today adds pin/whipsaw risk.\n- ES: Thu close 7197.25 | ON H/L 7183.25 / 7123.5 | last 7127.75 (-1.0%) | Thu H/L 7440.5 / 7167.75\n- NQ: Thu close 26600.25 | ON H/L 26447.75 / 26076.75 | last 26110 (-1.8%) | Thu H/L 27838 / 26436\n- Both are pressing their ON lows. Below 7123.5 / 26076.75 is trend continuation; reclaiming the Thu lows (7167.75 / 26436) is the first sign of a squeeze.\n- Premarket: ANT -6 to -9% (Thu close $97.17, +17% vs $83 IPO; opened $111.50). INTU -8 to -11% (Mailchimp sale to Bending Spoons ~$3.68B, FY rev guide trimmed). NVDA -3.3%, CRWV -5%, IREN -5% (Investing.com, Seeking Alpha, Yahoo Finance).\n\n## Prior day (Thu Nov 19)\nA sharp reversal. The S&P 500 fell -2.02% to 7,175.83 (6th straight loss), the Nasdaq -2.25% to 23,879.20 after being +2% intraday, and the Dow -1,101 (-2.19%) to 49,097.06, its first close below 50k since June. AMD lost ~8% on a Hunterbrook short report (alleged China export breaches). NVDA, MU, MSFT and META gave up their gains (CNBC, AP). Cache closes: SPY 715.87, TLT 80.35, GLD 335.18, VIX 28.44, BTC 61,475 (Thu UTC bar).\n\n## Desk activity\n- SB11, Thu: **REJECTED_NEAR_MISS (short).** NQ swept its ON high but ES missed by 4 pts, so there was no SMT. Price then broke lower; that was the correct no-trade under the rules.\n- SB29 (paper) is still the only open position. No trades were placed.",
     "path": "desk/daily_briefing.md",
-    "sha256": "19a6782871511f708830f550caa727354af0a80b1edf0f6bc9bc975e16002169",
+    "sha256": "59620df9dcafcf90f238fa574254b2f58671eccb3314b4744c6e9d9e3fba729b",
     "status": "ok"
   },
-  "built_at": "2026-11-19T15:45:02.031053-05:00",
-  "content_hash": "faffe14b407ee64153f80b2ad4e49daa63a654ed4f3b86a2517a94e1626069e2",
+  "built_at": "2026-11-20T08:20:01.738082-05:00",
+  "content_hash": "fcc6da6fce7676743517241b3f5adad08211c0ff4583f783b4f9d8b4da0a0dd8",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -35,7 +35,7 @@
     },
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 68
+      "REJECT": 69
     },
     "approval_status": [
       {
@@ -756,6 +756,15 @@
         "live_eligible": false,
         "name": "House PTR cluster-buy copy (2+ members within 30d, H=60, N=5, long-only)",
         "score": 1
+      },
+      {
+        "category": "Stocks & ETFs",
+        "decided_at": "2026-11-20T08:17:14-05:00",
+        "decision": "REJECT",
+        "id": "SE15",
+        "live_eligible": false,
+        "name": "ICSM last-half-hour cross-sectional momentum, long-only (k5_L1_fon_x0)",
+        "score": 1
       }
     ],
     "as_of": "2026-11-19 15:45:00 ET",
@@ -778,9 +787,9 @@
       "tested": {
         "Crypto": 70,
         "Options": 27,
-        "Stocks & ETFs": 149
+        "Stocks & ETFs": 150
       },
-      "tested_total": 246
+      "tested_total": 247
     },
     "deterioration": {
       "flagged": [],
@@ -800,7 +809,7 @@
         "source": "watch_levels.json"
       },
       {
-        "as_of": "Thu Nov 19, 2026 ~8:25 AM ET. Live prices: Yahoo chart API (~8:07 AM ET). For SETUP_FINDER.",
+        "as_of": "Fri Nov 20, 2026 ~8:30 AM ET. Live prices: Yahoo chart API (~8:06 AM ET). For SETUP_FINDER.",
         "label": "Daily regime",
         "source": "daily_regime.md"
       },
@@ -817,12 +826,12 @@
     ],
     "funnel": [
       {
-        "count": 246,
+        "count": 247,
         "label": "Tested (results_table.csv)",
         "source": "research/results_table.csv"
       },
       {
-        "count": 73,
+        "count": 74,
         "label": "Reviewed (approved_strategies.json)",
         "source": "approved_strategies.json"
       },
@@ -881,7 +890,7 @@
       },
       {
         "format": "int",
-        "hint": "68 rejected in approved_strategies.json",
+        "hint": "69 rejected in approved_strategies.json",
         "label": "Paper approved",
         "value": 5
       },
@@ -900,7 +909,7 @@
     ],
     "min_account": [
       {
-        "count": 182,
+        "count": 183,
         "label": "Under $500",
         "tier": "under_500"
       },
@@ -4819,7 +4828,7 @@
       }
     ],
     "regime": {
-      "briefing_head": "# Morning Briefing — Thu Nov 19, 2026\nWritten ~8:25 AM ET by BRIEFING. Live futures/VIX/BTC: Yahoo chart API (ES/NQ 8:07, VIX 8:02, BTC 8:17 AM ET). Prior-session bars: Yahoo cache (built 8:05 AM ET), observation Nov 18 completed bars. Claims and Philly Fed print at 8:30, after this was written.\n\n## ES/NQ bias, levels, overnight\n- **Bias: bullish, NQ > ES.** Anthropic priced its IPO at $83 (above the $70-78 range), raising ~$81B, the largest IPO on record. That reignited the AI trade. VIX 22.2 (Wed 24.56). Risk: a 5-day S&P losing streak plus hawkish Fed speakers. A soft ANT debut could fade the gap.\n- ES: Wed settle 7340.5 | ON H/L 7440.5 / 7382.25 | last 7432.5 (+1.3%) | Wed H/L 7434.75 / 7305.25\n- NQ: Wed settle 27186.75 | ON H/L 27830.5 / 27442 | last 27777.25 (+2.2%) | Wed H/L 27609.75 / 26921.75\n- ON H/L are from Yahoo 5m bars; the session window is unverified.\n- Overnight: chips are up (MU +4.8%, AMD +2.9%, NVDA +1.5-1.7%; INTC, MRVL, LRCX and AMAT +4%+). PANW is up ~10% on a raised FY27 guide and a $4.5B Applied Compute deal, and cyber peers are up 5-6%. PDD +7%; GOOGL +4.3%, AMZN +2.2%. Neoclouds (CRWV, NBIS, IREN, APLD) are up 5-6% (Reuters, Investing.com).\n\n## Prior day (Wed Nov 18)\nS&P 500 -0.23% to 7,323.63 (5th straight loss, the longest streak since June). Dow -1.11% to 50,198.17 (UNH weighed); Nasdaq +0.42% to 24,429.88. The NVDA beat faded. **FOMC minutes were hawkish:** almost all officials see further hikes as likely appropriate, a few raised the possibility of 50bp, and AI was named a material inflation risk. Waller was also hawkish. Dec +25bp is ~fully priced (CNBC, AP, Business Times). Cache closes: SPY 730.20, TLT 80.22, GLD 341.19 (-3.2%), BTC 63,735.\n\n## Desk activity\n- **SB11 first paper trade:** QQQ long at 656.065 (10:45 ET, PASS_REDUCED). It closed at 11:20 ET on the NQ alt-stop at 653.40: **-0.681R / -$0.47**. The plan was followed.\n- SB29 (paper) is still the only open position. No new setups logged since.\n\n## Strategy recap\n| Strategy | Status | Trades (W/L) | Win rate | P&L | Flag |\n|---|---|---|---|---|---|\n| SB29 inverse-vol SPY/TLT/GLD | PAPER, open | 1 open (0/0) | n/a | basket ~$77.94 at Wed closes (-$2.06 / -2.6%) | **Watch:** $5.94 above the $72 stop; GLD -3.2% Wed. Rebalance Nov 30 |\n| SB11 TJR NY-open sweep + SMT | PAPER | 1 (0/1) | 0% (n=1) | -$0.47 (-0.68R) | No flag; n=1 is too small |\n| SE01 Nasdaq top-5 + SMA | CLOSED_TESTER_ONLY | 1 (1/0) | 100% (n=1) | +$3.51 | Not desk-approved |\nNote: the SB29 mark is my own, from cache closes. strategy_performance.json last marked SB29 on Nov 6.",
+      "briefing_head": "# Morning Briefing — Fri Nov 20, 2026\nWritten ~8:30 AM ET by BRIEFING. Live futures/VIX/BTC/ETH: Yahoo chart API (ES/NQ 8:06, VIX 8:01, BTC/ETH 8:16 AM ET). Thu completed bars: Yahoo cache (built 8:15 AM ET, observation Nov 19 bars). ON H/L are from 18:00 ET Thu onward (5m bars).\n\n## ES/NQ bias, levels, overnight\n- **Bias: bearish, NQ weaker than ES.** The ANT debut was the top for now: indexes hit their session lows the moment it opened, and the selloff is extending. VIX is 30.8 (Thu close 28.44). Dow futures are ~flat, so this is AI/chip-led de-risking. Monthly OpEx today adds pin/whipsaw risk.\n- ES: Thu close 7197.25 | ON H/L 7183.25 / 7123.5 | last 7127.75 (-1.0%) | Thu H/L 7440.5 / 7167.75\n- NQ: Thu close 26600.25 | ON H/L 26447.75 / 26076.75 | last 26110 (-1.8%) | Thu H/L 27838 / 26436\n- Both are pressing their ON lows. Below 7123.5 / 26076.75 is trend continuation; reclaiming the Thu lows (7167.75 / 26436) is the first sign of a squeeze.\n- Premarket: ANT -6 to -9% (Thu close $97.17, +17% vs $83 IPO; opened $111.50). INTU -8 to -11% (Mailchimp sale to Bending Spoons ~$3.68B, FY rev guide trimmed). NVDA -3.3%, CRWV -5%, IREN -5% (Investing.com, Seeking Alpha, Yahoo Finance).\n\n## Prior day (Thu Nov 19)\nA sharp reversal. The S&P 500 fell -2.02% to 7,175.83 (6th straight loss), the Nasdaq -2.25% to 23,879.20 after being +2% intraday, and the Dow -1,101 (-2.19%) to 49,097.06, its first close below 50k since June. AMD lost ~8% on a Hunterbrook short report (alleged China export breaches). NVDA, MU, MSFT and META gave up their gains (CNBC, AP). Cache closes: SPY 715.87, TLT 80.35, GLD 335.18, VIX 28.44, BTC 61,475 (Thu UTC bar).\n\n## Desk activity\n- SB11, Thu: **REJECTED_NEAR_MISS (short).** NQ swept its ON high but ES missed by 4 pts, so there was no SMT. Price then broke lower; that was the correct no-trade under the rules.\n- SB29 (paper) is still the only open position. No trades were placed.\n\n## Strategy recap\n| Strategy | Status | Trades (W/L) | Win rate | P&L | Flag |\n|---|---|---|---|---|---|\n| SB29 inverse-vol SPY/TLT/GLD | PAPER, open | 1 open | n/a | ~$77.10 at Thu closes (-$2.90 / -3.6%) | **Watch:** $5.10 above the $72 stop. A further ~-6.6% basket drop triggers it. Rebalance Nov 30 |\n| SB11 TJR NY-open sweep + SMT | PAPER | 1 (0/1) | 0% (n=1) | -$0.47 (-0.68R) | No flag; n is too small |\n| SE01 Nasdaq top-5 + SMA | CLOSED_TESTER_ONLY | 1 (1/0) | 100% (n=1) | +$3.51 | Not desk-approved |\nThe SB29 mark is my own, from cache closes. The watcher's last Thu print was $77.16 at 15:45 ET. No pause/retire flags.",
       "briefing_source": "daily_briefing.md",
       "events": [
         {
@@ -5008,7 +5017,7 @@
         }
       ],
       "events_updated": "Mon Nov 16, 2026, ~8:25 AM ET (by BRIEFING). Next refresh: Mon Nov 23 (weekly).",
-      "head": "# Daily Regime — Thu Nov 19, 2026\nWritten: Thu Nov 19, 2026 ~8:25 AM ET. Live prices: Yahoo chart API (~8:07 AM ET). For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n## Regime\n- Structure: **Risk-on relief rally into the ANT debut**, inside a still-fragile tape. S&P has fallen 5 sessions in a row (Wed -0.23% to 7,323.63); Nasdaq +0.42%; Dow -1.11%.\n- Risk: **Elevated but easing.** VIX ~22.2 (Wed 24.56). Hawkish Fed minutes: almost all officials see more hikes; Dec +25bp ~fully priced (LSEG). BTC ~63.7k.\n- Events: 8:30 Claims/Philly Fed; ANT opens on Nasdaq (priced $83, ~$81B raised); Fed speakers through the day.\n\n## Bias\n- Short-term: **Bullish NQ > ES** (NQ +2.2%, ES +1.3% premarket). Gap-and-go only if ANT trades well. A weak debut risks a full gap fade, given the 5-day losing streak.\n\n## Key levels (ES=F / NQ=F)\nES: Wed settle 7340.5 | ON H/L 7440.5 / 7382.25 (Yahoo 5m, window unverified) | last 7432.5 | Wed H/L 7434.75 / 7305.25\nNQ: Wed settle 27186.75 | ON H/L 27830.5 / 27442 | last 27777.25 | Wed H/L 27609.75 / 26921.75\n\n## Notes for SETUP_FINDER\n1. Both are trading above Wed's highs (ES 7434.75, NQ 27609.75). Holding those levels keeps the gap-and-go long valid; losing them targets the ON lows.\n2. The gap is large (ES +92, NQ +590 pts). Expect a two-sided open around the ANT first print (usually late morning for mega-IPOs [UNVERIFIED time]).\n3. Hawkish Fed speakers are a headline risk to longs. The cyber group (PANW +10%) and chips/neoclouds are the leaders.",
+      "head": "# Daily Regime — Fri Nov 20, 2026\nWritten: Fri Nov 20, 2026 ~8:30 AM ET. Live prices: Yahoo chart API (~8:06 AM ET). For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n## Regime\n- Structure: **Risk-off, AI-led liquidation.** The ANT \"sell the news\" reversal turned into a -2% S&P / -2.25% Nasdaq day, the 6th straight S&P loss. Dow futures are flat, so it is concentrated in AI/chips/neoclouds.\n- Risk: **High.** VIX ~30.8 (Thu 28.44, Wed 24.56). The Fed is hawkish (Dec +25bp ~priced). BTC ~61.5k, ETH ~1,734.\n- Events: Waller 8:25, UMich 10:00, Trump presser 12:00, Cook 12:15. **Monthly OpEx.**\n\n## Bias\n- Short-term: **Bearish, NQ < ES.** Sell rips into the Thu lows unless they are reclaimed. OpEx and an oversold 6-day streak raise the odds of a violent short-covering pop, so size down.\n\n## Key levels (ES=F / NQ=F)\nES: Thu close 7197.25 | ON H/L 7183.25 / 7123.5 (18:00 ET start, Yahoo 5m) | last 7127.75 | Thu H/L 7440.5 / 7167.75\nNQ: Thu close 26600.25 | ON H/L 26447.75 / 26076.75 | last 26110 | Thu H/L 27838 / 26436\n\n## Notes for SETUP_FINDER\n1. Both are sitting on their ON lows at the open. A two-market sweep of the ON lows plus a 5m BOS up is the SB11 long trigger to watch. Confirm that ES and NQ both sweep (Thu's miss was ES by 4 pts).\n2. Upside magnets: ON highs, then the Thu lows (7167.75 / 26436).\n3. ANT, INTU, AMD and NVDA are the headline names. Expect 10:00 UMich and 12:00 presser volatility.",
       "source": "daily_regime.md"
     },
     "rejected_high_score": [
@@ -5323,10 +5332,14 @@
       {
         "batch": "2026-11-17_SE14",
         "count": 1
+      },
+      {
+        "batch": "2026-11-20_SE15",
+        "count": 1
       }
     ],
     "score_counts": {
-      "1": 101,
+      "1": 102,
       "2": 131,
       "3": 7,
       "4": 2,
@@ -5662,9 +5675,9 @@
         "status": "ok"
       },
       {
-        "bytes": 49970,
+        "bytes": 50995,
         "path": "desk/approved_strategies.json",
-        "sha256": "36ece5d75b4d3c577be25783dfd94c1903137f938acc2f729d5730aea9f8af40",
+        "sha256": "bd28d964fa9e3bdaaeaf84814b07188752618b820cec265a0c889463339e7294",
         "status": "ok"
       },
       {
@@ -5686,15 +5699,15 @@
         "status": "ok"
       },
       {
-        "bytes": 4097,
+        "bytes": 4185,
         "path": "desk/daily_briefing.md",
-        "sha256": "19a6782871511f708830f550caa727354af0a80b1edf0f6bc9bc975e16002169",
+        "sha256": "59620df9dcafcf90f238fa574254b2f58671eccb3314b4744c6e9d9e3fba729b",
         "status": "ok"
       },
       {
-        "bytes": 1965,
+        "bytes": 1894,
         "path": "desk/daily_regime.md",
-        "sha256": "a5f4d1a0310a93fc42fda408182ba0d9c027cae36004efdcc8a3aaabf19fa5f5",
+        "sha256": "eb02e86d4ad961b0b9ce44d3a4eb42d55e641ac748cd1161a69c6b93cf74f5b0",
         "status": "ok"
       },
       {
@@ -5728,9 +5741,9 @@
         "status": "ok"
       },
       {
-        "bytes": 152078,
+        "bytes": 152864,
         "path": "desk/research/results_table.csv",
-        "sha256": "d80fbef53da10ba6449a72839b897769560da7c0195dca2b81fee34223b7c240",
+        "sha256": "a6e9231a8b059a34a8d477d817ad8465f8980571da5e0c06382a79efc4a86d47",
         "status": "ok"
       },
       {
@@ -13219,16 +13232,16 @@
   "publish_blocker": "No non-AI publish path: pages.grok.bot Pages are updated only by a Bot (official docs: https://cursor.com/help/grok-bot/pages). No wrangler/CLI or stored publish credential found on this box. Live URL is login-gated (HTTP 302 apps-gate). Canvas a875f485 is private and must not be modified. Local generator is ready; republish remains a parent/Bot-in-chat step.",
   "publish_status": "blocked_no_non_ai_path",
   "regime_head": {
-    "head": "# Daily Regime — Thu Nov 19, 2026\nWritten: Thu Nov 19, 2026 ~8:25 AM ET. Live prices: Yahoo chart API (~8:07 AM ET). For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n## Regime\n- Structure: **Risk-on relief rally into the ANT debut**, inside a still-fragile tape. S&P has fallen 5 sessions in a row (Wed -0.23% to 7,323.63); Nasdaq +0.42%; Dow -1.11%.\n- Risk: **Elevated but easing.** VIX ~22.2 (Wed 24.56). Hawkish Fed minutes: almost all officials see more hikes; Dec +25bp ~fully priced (LSEG). BTC ~63.7k.\n- Events: 8:30 Claims/Philly Fed; ANT opens on Nasdaq (priced $83, ~$81B raised); Fed speakers through the day.\n\n## Bias\n- Short-term: **Bullish NQ > ES** (NQ +2.2%, ES +1.3% premarket). Gap-and-go only if ANT trades well. A weak debut risks a full gap fade, given the 5-day losing streak.\n\n## Key levels (ES=F / NQ=F)",
+    "head": "# Daily Regime — Fri Nov 20, 2026\nWritten: Fri Nov 20, 2026 ~8:30 AM ET. Live prices: Yahoo chart API (~8:06 AM ET). For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n## Regime\n- Structure: **Risk-off, AI-led liquidation.** The ANT \"sell the news\" reversal turned into a -2% S&P / -2.25% Nasdaq day, the 6th straight S&P loss. Dow futures are flat, so it is concentrated in AI/chips/neoclouds.\n- Risk: **High.** VIX ~30.8 (Thu 28.44, Wed 24.56). The Fed is hawkish (Dec +25bp ~priced). BTC ~61.5k, ETH ~1,734.\n- Events: Waller 8:25, UMich 10:00, Trump presser 12:00, Cook 12:15. **Monthly OpEx.**\n\n## Bias\n- Short-term: **Bearish, NQ < ES.** Sell rips into the Thu lows unless they are reclaimed. OpEx and an oversold 6-day streak raise the odds of a violent short-covering pop, so size down.\n\n## Key levels (ES=F / NQ=F)",
     "path": "desk/daily_regime.md",
-    "sha256": "a5f4d1a0310a93fc42fda408182ba0d9c027cae36004efdcc8a3aaabf19fa5f5",
+    "sha256": "eb02e86d4ad961b0b9ce44d3a4eb42d55e641ac748cd1161a69c6b93cf74f5b0",
     "status": "ok"
   },
   "schema_version": 2,
   "snapshot": {
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 68
+      "REJECT": 69
     },
     "approvals": [
       {
@@ -13814,6 +13827,14 @@
         "id": "SE14",
         "live_eligible": false,
         "name": "House PTR cluster-buy copy (2+ members within 30d, H=60, N=5, long-only)"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-20T08:17:14-05:00",
+        "decision": "REJECT",
+        "id": "SE15",
+        "live_eligible": false,
+        "name": "ICSM last-half-hour cross-sectional momentum, long-only (k5_L1_fon_x0)"
       }
     ],
     "calculation_notes": [
