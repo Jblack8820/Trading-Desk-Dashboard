@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-24 13:35:03 ET",
+  "as_of": "2026-11-24 13:45:01 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,8 +16,8 @@
     "sha256": "f0ac1a55b76ed0307ce6a8b28c34fd0b77b6903f90577385085d0bfd9f947d1a",
     "status": "ok"
   },
-  "built_at": "2026-11-24T13:35:08.855668-05:00",
-  "content_hash": "7dbd407d96627339497a19a93028e5fd8d9b44db2d0ba208da20ec0fb054c865",
+  "built_at": "2026-11-24T13:45:09.276946-05:00",
+  "content_hash": "5476ee96c548b8e2fccd19f61092e7e001af76c1dd0f5023fe8f53fa52ecce6b",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -25,9 +25,9 @@
       "cash_usd": 120.0,
       "current_tier": {},
       "deployed_usd": 80.0,
-      "mark_adjusted_equity": 197.386,
+      "mark_adjusted_equity": 197.324,
       "max_open_risk": null,
-      "open_unrealized_pnl": -2.614,
+      "open_unrealized_pnl": -2.676,
       "recorded_equity": 200.0,
       "recorded_equity_source": "risk_decisions.json account_equity",
       "total_open_risk": 8.0,
@@ -767,7 +767,7 @@
         "score": 1
       }
     ],
-    "as_of": "2026-11-24 13:35:03 ET",
+    "as_of": "2026-11-24 13:45:01 ET",
     "as_of_source": "mark PT-SB29-2026-10-30-001",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
@@ -867,13 +867,13 @@
         "format": "money",
         "hint": "Recorded equity plus open production-book unrealized P&L from the freshest sourced mark. Not a brokerage stream.",
         "label": "Mark-adjusted equity",
-        "value": 197.386
+        "value": 197.324
       },
       {
         "format": "pnl",
         "hint": "Open production paper trades only",
         "label": "Open unrealized P&L",
-        "value": -2.614
+        "value": -2.676
       },
       {
         "format": "money",
@@ -951,9 +951,9 @@
         "executed_at": null,
         "legs": [
           {
-            "change_pct": -4.325090313953256,
+            "change_pct": -4.446174214451559,
             "fill_price": 751.545,
-            "last_price": 719.04,
+            "last_price": 718.13,
             "notional_usd": 33.68,
             "price_time": "2026-10-30T14:43:21-04:00 (latest available Yahoo print; feed stale)",
             "shares": 0.044814,
@@ -962,9 +962,9 @@
             "weight_pct": 42.1
           },
           {
-            "change_pct": 0.055147058823531506,
+            "change_pct": 0.07352941176470867,
             "fill_price": 81.6,
-            "last_price": 81.645,
+            "last_price": 81.66,
             "notional_usd": 31.76,
             "price_time": "2026-10-30T15:44:57-04:00",
             "shares": 0.389216,
@@ -973,9 +973,9 @@
             "weight_pct": 39.7
           },
           {
-            "change_pct": -8.0667511618082,
+            "change_pct": -8.25235882270103,
             "fill_price": 355.05,
-            "last_price": 326.409,
+            "last_price": 325.75,
             "notional_usd": 14.56,
             "price_time": "2026-10-30T15:44:04-04:00",
             "shares": 0.041008,
@@ -985,12 +985,12 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-24 13:35:03 ET",
-          "basket_value_usd": 77.386,
+          "as_of": "2026-11-24 13:45:01 ET",
+          "basket_value_usd": 77.324,
           "freshness": "recent",
           "mark_source": "alerts/poll.log",
           "realized_pnl_net_fees_usd": null,
-          "unrealized_pnl_usd": -2.614
+          "unrealized_pnl_usd": -2.676
         },
         "mode": "paper",
         "name": null,
@@ -5447,7 +5447,7 @@
       "Skip the work when nothing has changed: exit quickly without long analysis or messages.",
       "No chatter between bots. Send messages only when the other bot must act on them, and batch FYIs.",
       "Add no new routine, and no shorter interval on an existing one, without Dwag (Chief of Staff) approving it.",
-      "Keep outputs short. Reuse files instead of recomputing. # Temporary order (Jaden, 2026-11-13) From 5:00 PM ET Friday Nov 13, 2026 until 8:00 AM ET Monday Nov 16, 2026, all bots must minimize non-essential work. Pause or skip non-essential routines in that window and restore them Monday at 8:00 AM ET. Do not add new routines and do not schedule catch-up runs. Plain no-AI scripts may keep running. One-time exception to the no-weekend rule: TRADE_MANAGER (60b98329-63ca-4596-90ed-dcc456bd38b8) and SETUP_FINDER (33c9fa30-a581-4456-bb58-e0231aabed70) may work crypto paper trades over this weekend only, to build paper-trade data. Crypto only, paper only, still within RISK_MANAGER's limits, using approved crypto strategies only, and kept as lean as practical. RISK_MANAGER's limits still apply to this exception. Normal operations resume Monday Nov 16 at 8:00 AM ET."
+      "Keep outputs short. Reuse files instead of recomputing. # Temporary order (Jaden, 2026-11-13) From 5:00 PM ET Friday Nov 13, 2026 until 8:00 AM ET Monday Nov 16, 2026, all bots must minimize non-essential work. Pause or skip non-essential routines in that window and restore them Monday at 8:00 AM ET. Do not add new routines and do not schedule catch-up runs. Plain no-AI scripts may keep running. One-time exception to the no-weekend rule: TRADE_MANAGER (60b98329-63ca-4596-90ed-dcc456bd38b8) and SETUP_FINDER (33c9fa30-a581-4456-bb58-e0231aabed70) may work crypto paper trades over this weekend only, to build paper-trade data. Crypto only, paper only, still within RISK_MANAGER's limits, using approved crypto strategies only, and kept as lean as practical. RISK_MANAGER's limits still apply to this exception. Normal operations resume Monday Nov 16 at 8:00 AM ET. - See AUTONOMY.md: decide paper-desk matters yourselves; ask Jaden only about live/real money, accounts, new routines/usage, or hard rules."
     ],
     "usage_source": "USAGE_RULES.md",
     "watcher": {
@@ -5721,9 +5721,9 @@
         "status": "ok"
       },
       {
-        "bytes": 1517,
+        "bytes": 1657,
         "path": "desk/USAGE_RULES.md",
-        "sha256": "61c7a521af9e6f72bb2bcb5a2ade0d22f32ea661985e3f572c58321830030d6f",
+        "sha256": "46774699e5464e243ed206cc515f7eea50f0188a263d520039bd4fefadab9887",
         "status": "ok"
       },
       {
@@ -5757,9 +5757,9 @@
         "status": "ok"
       },
       {
-        "bytes": 50532,
+        "bytes": 50774,
         "path": "desk/alerts/poll.log",
-        "sha256": "0977f11878c5afa69dc9b6c441bc7edf7e41f4687fc3fc554e00f50ab21644a2",
+        "sha256": "1db9360a780b376d1e52b4ec3c640e73f8273771fac4d7bbd8f9c620a9ddd86f",
         "status": "ok"
       },
       {
@@ -5827,21 +5827,21 @@
         }
       ],
       "mark": {
-        "as_of": "2026-11-24 13:35:03 ET",
-        "basket_value_usd": 77.386,
+        "as_of": "2026-11-24 13:45:01 ET",
+        "basket_value_usd": 77.324,
         "leg_prices": {
-          "GLD": 326.409,
-          "SPY": 719.04,
-          "TLT": 81.645
+          "GLD": 325.75,
+          "SPY": 718.13,
+          "TLT": 81.66
         },
-        "mark_as_of": "2026-11-24 13:35:03 ET",
+        "mark_as_of": "2026-11-24 13:45:01 ET",
         "mark_source": "alerts/poll.log",
         "price_source": "alerts poller output",
-        "unrealized_pnl_usd": -2.614
+        "unrealized_pnl_usd": -2.676
       },
       "mark_freshness": {
-        "et": "2026-11-24T13:35:03-05:00",
-        "source": "2026-11-24 13:35:03 ET",
+        "et": "2026-11-24T13:45:01-05:00",
+        "source": "2026-11-24 13:45:01 ET",
         "status": "recent"
       },
       "mode": "paper",
@@ -13888,21 +13888,21 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-24 13:35:03 ET",
-          "basket_value_usd": 77.386,
+          "as_of": "2026-11-24 13:45:01 ET",
+          "basket_value_usd": 77.324,
           "leg_prices": {
-            "GLD": 326.409,
-            "SPY": 719.04,
-            "TLT": 81.645
+            "GLD": 325.75,
+            "SPY": 718.13,
+            "TLT": 81.66
           },
-          "mark_as_of": "2026-11-24 13:35:03 ET",
+          "mark_as_of": "2026-11-24 13:45:01 ET",
           "mark_source": "alerts/poll.log",
           "price_source": "alerts poller output",
-          "unrealized_pnl_usd": -2.614
+          "unrealized_pnl_usd": -2.676
         },
         "mark_freshness": {
-          "et": "2026-11-24T13:35:03-05:00",
-          "source": "2026-11-24 13:35:03 ET",
+          "et": "2026-11-24T13:45:01-05:00",
+          "source": "2026-11-24 13:45:01 ET",
           "status": "recent"
         },
         "mode": "paper",
