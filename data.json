@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-24 14:40:01 ET",
+  "as_of": "2026-11-24 14:50:01 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,8 +16,8 @@
     "sha256": "f0ac1a55b76ed0307ce6a8b28c34fd0b77b6903f90577385085d0bfd9f947d1a",
     "status": "ok"
   },
-  "built_at": "2026-11-24T14:40:02.286728-05:00",
-  "content_hash": "8252d1471c857627df1b79d149c1ad896e87037ca615fe603c7be46287141c53",
+  "built_at": "2026-11-24T14:50:02.604528-05:00",
+  "content_hash": "f1490b61aeda3853717d45c2f9f8de4e74efe05874f79806d8a350adc611a5e6",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -25,9 +25,9 @@
       "cash_usd": 120.0,
       "current_tier": {},
       "deployed_usd": 80.0,
-      "mark_adjusted_equity": 197.2828,
+      "mark_adjusted_equity": 197.2814,
       "max_open_risk": null,
-      "open_unrealized_pnl": -2.7172,
+      "open_unrealized_pnl": -2.7186,
       "recorded_equity": 200.0,
       "recorded_equity_source": "risk_decisions.json account_equity",
       "total_open_risk": 8.0,
@@ -35,7 +35,7 @@
     },
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 69
+      "REJECT": 70
     },
     "approval_status": [
       {
@@ -765,9 +765,18 @@
         "live_eligible": false,
         "name": "ICSM last-half-hour cross-sectional momentum, long-only (k5_L1_fon_x0)",
         "score": 1
+      },
+      {
+        "category": "Stocks & ETFs",
+        "decided_at": "2026-11-24T14:55:00-05:00",
+        "decision": "REJECT",
+        "id": "SD01",
+        "live_eligible": false,
+        "name": "Stress-gated volume-climax reversal, 30 ETFs daily (N20_vm1.5_vix25)",
+        "score": 1
       }
     ],
-    "as_of": "2026-11-24 14:40:01 ET",
+    "as_of": "2026-11-24 14:50:01 ET",
     "as_of_source": "mark PT-SB29-2026-10-30-001",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
@@ -787,9 +796,9 @@
       "tested": {
         "Crypto": 70,
         "Options": 27,
-        "Stocks & ETFs": 150
+        "Stocks & ETFs": 151
       },
-      "tested_total": 247
+      "tested_total": 248
     },
     "deterioration": {
       "flagged": [],
@@ -826,12 +835,12 @@
     ],
     "funnel": [
       {
-        "count": 247,
+        "count": 248,
         "label": "Tested (results_table.csv)",
         "source": "research/results_table.csv"
       },
       {
-        "count": 74,
+        "count": 75,
         "label": "Reviewed (approved_strategies.json)",
         "source": "approved_strategies.json"
       },
@@ -867,13 +876,13 @@
         "format": "money",
         "hint": "Recorded equity plus open production-book unrealized P&L from the freshest sourced mark. Not a brokerage stream.",
         "label": "Mark-adjusted equity",
-        "value": 197.2828
+        "value": 197.2814
       },
       {
         "format": "pnl",
         "hint": "Open production paper trades only",
         "label": "Open unrealized P&L",
-        "value": -2.7172
+        "value": -2.7186
       },
       {
         "format": "money",
@@ -890,7 +899,7 @@
       },
       {
         "format": "int",
-        "hint": "69 rejected in approved_strategies.json",
+        "hint": "70 rejected in approved_strategies.json",
         "label": "Paper approved",
         "value": 5
       },
@@ -909,7 +918,7 @@
     ],
     "min_account": [
       {
-        "count": 183,
+        "count": 184,
         "label": "Under $500",
         "tier": "under_500"
       },
@@ -951,9 +960,9 @@
         "executed_at": null,
         "legs": [
           {
-            "change_pct": -4.539315676373339,
+            "change_pct": -4.576572261142045,
             "fill_price": 751.545,
-            "last_price": 717.43,
+            "last_price": 717.15,
             "notional_usd": 33.68,
             "price_time": "2026-10-30T14:43:21-04:00 (latest available Yahoo print; feed stale)",
             "shares": 0.044814,
@@ -962,9 +971,9 @@
             "weight_pct": 42.1
           },
           {
-            "change_pct": 0.03676470588235434,
+            "change_pct": 0.055147058823531506,
             "fill_price": 81.6,
-            "last_price": 81.63,
+            "last_price": 81.645,
             "notional_usd": 31.76,
             "price_time": "2026-10-30T15:44:57-04:00",
             "shares": 0.389216,
@@ -973,9 +982,9 @@
             "weight_pct": 39.7
           },
           {
-            "change_pct": -8.239684551471623,
+            "change_pct": -8.203069990142234,
             "fill_price": 355.05,
-            "last_price": 325.795,
+            "last_price": 325.925,
             "notional_usd": 14.56,
             "price_time": "2026-10-30T15:44:04-04:00",
             "shares": 0.041008,
@@ -985,12 +994,12 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-24 14:40:01 ET",
-          "basket_value_usd": 77.2828,
+          "as_of": "2026-11-24 14:50:01 ET",
+          "basket_value_usd": 77.2814,
           "freshness": "recent",
           "mark_source": "alerts/poll.log",
           "realized_pnl_net_fees_usd": null,
-          "unrealized_pnl_usd": -2.7172
+          "unrealized_pnl_usd": -2.7186
         },
         "mode": "paper",
         "name": null,
@@ -5328,11 +5337,15 @@
       {
         "batch": "2026-11-20_SE15",
         "count": 1
+      },
+      {
+        "batch": "2026-11-24_SD01",
+        "count": 1
       }
     ],
     "score_counts": {
       "1": 102,
-      "2": 131,
+      "2": 132,
       "3": 7,
       "4": 2,
       "5": 5
@@ -5667,9 +5680,9 @@
         "status": "ok"
       },
       {
-        "bytes": 50995,
+        "bytes": 50363,
         "path": "desk/approved_strategies.json",
-        "sha256": "bd28d964fa9e3bdaaeaf84814b07188752618b820cec265a0c889463339e7294",
+        "sha256": "7ba73ff5fe750c0818623d89a7607d6b523779637afe3805826febeeac0b91bf",
         "status": "ok"
       },
       {
@@ -5733,9 +5746,9 @@
         "status": "ok"
       },
       {
-        "bytes": 152864,
+        "bytes": 153759,
         "path": "desk/research/results_table.csv",
-        "sha256": "a6e9231a8b059a34a8d477d817ad8465f8980571da5e0c06382a79efc4a86d47",
+        "sha256": "441814911b8b3fbd12fc0160401f2c72150abf8ca10f368f521231afb0518e36",
         "status": "ok"
       },
       {
@@ -5757,9 +5770,9 @@
         "status": "ok"
       },
       {
-        "bytes": 51139,
+        "bytes": 51383,
         "path": "desk/alerts/poll.log",
-        "sha256": "50dd12761e146f2d059cd3930bc571362c0576875958da7fb4b4bcc785c2c1df",
+        "sha256": "89e7f55bc892561aa7f5dd19f62917cc3bc63280bd689bf453f898e4d1418d6e",
         "status": "ok"
       },
       {
@@ -5827,21 +5840,21 @@
         }
       ],
       "mark": {
-        "as_of": "2026-11-24 14:40:01 ET",
-        "basket_value_usd": 77.2828,
+        "as_of": "2026-11-24 14:50:01 ET",
+        "basket_value_usd": 77.2814,
         "leg_prices": {
-          "GLD": 325.795,
-          "SPY": 717.43,
-          "TLT": 81.63
+          "GLD": 325.925,
+          "SPY": 717.15,
+          "TLT": 81.645
         },
-        "mark_as_of": "2026-11-24 14:40:01 ET",
+        "mark_as_of": "2026-11-24 14:50:01 ET",
         "mark_source": "alerts/poll.log",
         "price_source": "alerts poller output",
-        "unrealized_pnl_usd": -2.7172
+        "unrealized_pnl_usd": -2.7186
       },
       "mark_freshness": {
-        "et": "2026-11-24T14:40:01-05:00",
-        "source": "2026-11-24 14:40:01 ET",
+        "et": "2026-11-24T14:50:01-05:00",
+        "source": "2026-11-24 14:50:01 ET",
         "status": "recent"
       },
       "mode": "paper",
@@ -13233,7 +13246,7 @@
   "snapshot": {
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 69
+      "REJECT": 70
     },
     "approvals": [
       {
@@ -13827,6 +13840,14 @@
         "id": "SE15",
         "live_eligible": false,
         "name": "ICSM last-half-hour cross-sectional momentum, long-only (k5_L1_fon_x0)"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-24T14:55:00-05:00",
+        "decision": "REJECT",
+        "id": "SD01",
+        "live_eligible": false,
+        "name": "Stress-gated volume-climax reversal, 30 ETFs daily (N20_vm1.5_vix25)"
       }
     ],
     "calculation_notes": [
@@ -13888,21 +13909,21 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-24 14:40:01 ET",
-          "basket_value_usd": 77.2828,
+          "as_of": "2026-11-24 14:50:01 ET",
+          "basket_value_usd": 77.2814,
           "leg_prices": {
-            "GLD": 325.795,
-            "SPY": 717.43,
-            "TLT": 81.63
+            "GLD": 325.925,
+            "SPY": 717.15,
+            "TLT": 81.645
           },
-          "mark_as_of": "2026-11-24 14:40:01 ET",
+          "mark_as_of": "2026-11-24 14:50:01 ET",
           "mark_source": "alerts/poll.log",
           "price_source": "alerts poller output",
-          "unrealized_pnl_usd": -2.7172
+          "unrealized_pnl_usd": -2.7186
         },
         "mark_freshness": {
-          "et": "2026-11-24T14:40:01-05:00",
-          "source": "2026-11-24 14:40:01 ET",
+          "et": "2026-11-24T14:50:01-05:00",
+          "source": "2026-11-24 14:50:01 ET",
           "status": "recent"
         },
         "mode": "paper",
