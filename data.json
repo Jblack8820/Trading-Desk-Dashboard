@@ -16,8 +16,8 @@
     "sha256": "f0ac1a55b76ed0307ce6a8b28c34fd0b77b6903f90577385085d0bfd9f947d1a",
     "status": "ok"
   },
-  "built_at": "2026-11-24T15:30:22.337699-05:00",
-  "content_hash": "5a0797a8c0721cb2f8b73def9a5bee9b3c67d64f4385499859bf955bfe19ea78",
+  "built_at": "2026-11-25T06:20:01.611348-05:00",
+  "content_hash": "36cab09d83fa1e24c898425c6a81d67e30142455a27faaead2252457145c7911",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -796,9 +796,9 @@
       "tested": {
         "Crypto": 70,
         "Options": 27,
-        "Stocks & ETFs": 151
+        "Stocks & ETFs": 152
       },
-      "tested_total": 248
+      "tested_total": 249
     },
     "deterioration": {
       "flagged": [],
@@ -835,7 +835,7 @@
     ],
     "funnel": [
       {
-        "count": 248,
+        "count": 249,
         "label": "Tested (results_table.csv)",
         "source": "research/results_table.csv"
       },
@@ -918,7 +918,7 @@
     ],
     "min_account": [
       {
-        "count": 184,
+        "count": 185,
         "label": "Under $500",
         "tier": "under_500"
       },
@@ -5341,10 +5341,14 @@
       {
         "batch": "2026-11-24_SD01",
         "count": 1
+      },
+      {
+        "batch": "2026-11-25_SD03",
+        "count": 1
       }
     ],
     "score_counts": {
-      "1": 102,
+      "1": 103,
       "2": 132,
       "3": 7,
       "4": 2,
@@ -5746,9 +5750,9 @@
         "status": "ok"
       },
       {
-        "bytes": 153759,
+        "bytes": 154664,
         "path": "desk/research/results_table.csv",
-        "sha256": "441814911b8b3fbd12fc0160401f2c72150abf8ca10f368f521231afb0518e36",
+        "sha256": "e6695c80a1cee4e7d7cb8406084892db6671c20a03806e4eceb82658c7dd5ff8",
         "status": "ok"
       },
       {
