@@ -16,8 +16,8 @@
     "sha256": "f0ac1a55b76ed0307ce6a8b28c34fd0b77b6903f90577385085d0bfd9f947d1a",
     "status": "ok"
   },
-  "built_at": "2026-11-25T06:20:01.611348-05:00",
-  "content_hash": "36cab09d83fa1e24c898425c6a81d67e30142455a27faaead2252457145c7911",
+  "built_at": "2026-11-25T06:25:27.355449-05:00",
+  "content_hash": "d2be1dffc17cd8ab5357559e33e7572ad14d542272c1e797341cbf08edcb6929",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -35,7 +35,7 @@
     },
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 70
+      "REJECT": 71
     },
     "approval_status": [
       {
@@ -774,6 +774,15 @@
         "live_eligible": false,
         "name": "Stress-gated volume-climax reversal, 30 ETFs daily (N20_vm1.5_vix25)",
         "score": 1
+      },
+      {
+        "category": "Stocks & ETFs",
+        "decided_at": "2026-11-25T06:25:00-05:00",
+        "decision": "REJECT",
+        "id": "SD03",
+        "live_eligible": false,
+        "name": "Uptrend 5-day-low pullback, PIT S&P 500 single stocks, daily (N5_sma200_h20)",
+        "score": 1
       }
     ],
     "as_of": "2026-11-24 15:30:20 ET",
@@ -840,7 +849,7 @@
         "source": "research/results_table.csv"
       },
       {
-        "count": 75,
+        "count": 76,
         "label": "Reviewed (approved_strategies.json)",
         "source": "approved_strategies.json"
       },
@@ -899,7 +908,7 @@
       },
       {
         "format": "int",
-        "hint": "70 rejected in approved_strategies.json",
+        "hint": "71 rejected in approved_strategies.json",
         "label": "Paper approved",
         "value": 5
       },
@@ -5684,9 +5693,9 @@
         "status": "ok"
       },
       {
-        "bytes": 50363,
+        "bytes": 51362,
         "path": "desk/approved_strategies.json",
-        "sha256": "7ba73ff5fe750c0818623d89a7607d6b523779637afe3805826febeeac0b91bf",
+        "sha256": "a8ddbe4f9fe2c9de347158582f172c0cc480f3c3836662779a3e4c1c6cb1e308",
         "status": "ok"
       },
       {
@@ -13250,7 +13259,7 @@
   "snapshot": {
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 70
+      "REJECT": 71
     },
     "approvals": [
       {
@@ -13852,6 +13861,14 @@
         "id": "SD01",
         "live_eligible": false,
         "name": "Stress-gated volume-climax reversal, 30 ETFs daily (N20_vm1.5_vix25)"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-25T06:25:00-05:00",
+        "decision": "REJECT",
+        "id": "SD03",
+        "live_eligible": false,
+        "name": "Uptrend 5-day-low pullback, PIT S&P 500 single stocks, daily (N5_sma200_h20)"
       }
     ],
     "calculation_notes": [
