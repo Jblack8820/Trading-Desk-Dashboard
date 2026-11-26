@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-25 15:45:59 ET",
+  "as_of": "2026-11-26 08:35:07 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,8 +16,8 @@
     "sha256": "b5da701b979d3db005ff6d767e910881a6a74271926901ecd6a95dac5e984a69",
     "status": "ok"
   },
-  "built_at": "2026-11-25T15:46:00.613976-05:00",
-  "content_hash": "53e5d1b02bf7aa3e2ec2c255bed9e9c6c24829347e419554a245ab644bfc6730",
+  "built_at": "2026-11-26T08:35:26.453875-05:00",
+  "content_hash": "533803881cd4c2da9a1b7a5a229685c1a410d23d749e39ac7b7fee1c2a8d1182",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -785,8 +785,8 @@
         "score": 1
       }
     ],
-    "as_of": "2026-11-25 15:45:59 ET",
-    "as_of_source": "mark PT-SB29-2026-10-30-001",
+    "as_of": "2026-11-26 08:35:07 ET",
+    "as_of_source": "watch_levels.json generated_at",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
       "eyebrow": "Trading team",
@@ -822,7 +822,7 @@
         "source": "risk_decisions.json"
       },
       {
-        "as_of": "2026-11-25T10:39:22.376777-05:00",
+        "as_of": "2026-11-26T08:35:07.356159-05:00",
         "label": "Watch levels",
         "source": "watch_levels.json"
       },
@@ -5478,7 +5478,7 @@
     "usage_source": "USAGE_RULES.md",
     "watcher": {
       "freshness": "recent",
-      "generated_at": "2026-11-25T10:39:22.376777-05:00",
+      "generated_at": "2026-11-26T08:35:07.356159-05:00",
       "level_count": 12,
       "levels": [
         {
@@ -5486,7 +5486,7 @@
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-BTC-USD-ENTRY-20261124",
+          "id": "CX06B-BTC-USD-ENTRY-20261125",
           "kind": "entry",
           "level": 86480.305,
           "strategy_id": "CX06B",
@@ -5498,7 +5498,7 @@
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-ETH-USD-ENTRY-20261124",
+          "id": "CX06B-ETH-USD-ENTRY-20261125",
           "kind": "entry",
           "level": 2726.509,
           "strategy_id": "CX06B",
@@ -5701,7 +5701,7 @@
       {
         "bytes": 13364,
         "path": "watch_levels.json",
-        "sha256": "f6315161b2d61b4ae368acd0e281d908255d5ce76da278a95aa197304dd97784",
+        "sha256": "ade7ee68342984fa565ac8b3d0ce3d89de6b1fb23ea956b21e9599812d520573",
         "status": "ok"
       },
       {
@@ -14190,52 +14190,52 @@
     "watch": {
       "coverage_complete": null,
       "freshness": {
-        "et": "2026-11-25T10:39:22.376777-05:00",
-        "source": "2026-11-25T10:39:22.376777-05:00",
+        "et": "2026-11-26T08:35:07.356159-05:00",
+        "source": "2026-11-26T08:35:07.356159-05:00",
         "status": "recent"
       },
       "gaps": null,
-      "generated_at": "2026-11-25T10:39:22.376777-05:00",
+      "generated_at": "2026-11-26T08:35:07.356159-05:00",
       "levels": [
         {
           "bar": "daily_close",
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-BTC-USD-ENTRY-20261124",
+          "id": "CX06B-BTC-USD-ENTRY-20261125",
           "invalidation_rule": "After a genuine entry, daily close below entry close - 2*N (N = 20-day mean absolute daily change), or below prior-20-day close low",
           "kind": "entry",
-          "last_full_close_utc": "2026-11-24T00:00:00+00:00",
+          "last_full_close_utc": "2026-11-25T00:00:00+00:00",
           "level": 86480.305,
           "near_atr_multiple": 0.5,
           "near_pct": 0.01,
           "price_source": "Yahoo",
-          "reference_atr": 1483.938,
+          "reference_atr": 1292.301,
           "strategy_id": "CX06B",
           "target_rule": "None; exit uses closing stop or channel exit. 25% per coin cap.",
           "ticker": "BTC-USD",
           "trigger": "cross_above",
-          "valid_from_utc": "2026-11-24T00:00:00+00:00"
+          "valid_from_utc": "2026-11-25T00:00:00+00:00"
         },
         {
           "bar": "daily_close",
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-ETH-USD-ENTRY-20261124",
+          "id": "CX06B-ETH-USD-ENTRY-20261125",
           "invalidation_rule": "After a genuine entry, daily close below entry close - 2*N (N = 20-day mean absolute daily change), or below prior-20-day close low",
           "kind": "entry",
-          "last_full_close_utc": "2026-11-24T00:00:00+00:00",
+          "last_full_close_utc": "2026-11-25T00:00:00+00:00",
           "level": 2726.509,
           "near_atr_multiple": 0.5,
           "near_pct": 0.01,
           "price_source": "Yahoo",
-          "reference_atr": 56.206,
+          "reference_atr": 47.468,
           "strategy_id": "CX06B",
           "target_rule": "None; exit uses closing stop or channel exit. 25% per coin cap.",
           "ticker": "ETH-USD",
           "trigger": "cross_above",
-          "valid_from_utc": "2026-11-24T00:00:00+00:00"
+          "valid_from_utc": "2026-11-25T00:00:00+00:00"
         },
         {
           "bar": "weekly_close",
@@ -14249,7 +14249,7 @@
           "near_atr_multiple": 0.5,
           "near_pct": 0.01,
           "price_source": "Yahoo",
-          "reference_atr": 1483.938,
+          "reference_atr": 1292.301,
           "strategy_id": "SB26",
           "ticker": "BTC-USD",
           "trigger": "cross_above"
@@ -14266,7 +14266,7 @@
           "near_atr_multiple": 0.5,
           "near_pct": 0.01,
           "price_source": "Yahoo",
-          "reference_atr": 1483.938,
+          "reference_atr": 1292.301,
           "strategy_id": "SB26",
           "ticker": "BTC-USD",
           "trigger": "cross_below"
