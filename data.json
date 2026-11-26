@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-26 14:20:01 ET",
+  "as_of": "2026-11-26 14:30:01 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,8 +16,8 @@
     "sha256": "b5da701b979d3db005ff6d767e910881a6a74271926901ecd6a95dac5e984a69",
     "status": "ok"
   },
-  "built_at": "2026-11-26T14:20:02.312259-05:00",
-  "content_hash": "a797d1275fcd7d8d31753333ee40298d2fb750ffb35f9dece5d42bdfc8cc76bf",
+  "built_at": "2026-11-26T14:30:01.988323-05:00",
+  "content_hash": "8abf7e8c511ae537a2a2f12113260c102fa25a0da344b60cb9b993fde990ea7e",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -785,7 +785,7 @@
         "score": 1
       }
     ],
-    "as_of": "2026-11-26 14:20:01 ET",
+    "as_of": "2026-11-26 14:30:01 ET",
     "as_of_source": "mark PT-SB29-2026-10-30-001",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
@@ -803,11 +803,11 @@
       "paper_approved_total": 5,
       "rule": "results_table.csv has no category column. Classification used here: Crypto if the strategy id letter-prefix is CX or NH, or the name contains crypto/bitcoin/btc/eth/coin keywords; Options if the letter-prefix is NO or OP, or the name contains 'option'; everything else is Stocks & ETFs.",
       "tested": {
-        "Crypto": 70,
+        "Crypto": 72,
         "Options": 27,
-        "Stocks & ETFs": 152
+        "Stocks & ETFs": 154
       },
-      "tested_total": 249
+      "tested_total": 253
     },
     "deterioration": {
       "flagged": [],
@@ -844,7 +844,7 @@
     ],
     "funnel": [
       {
-        "count": 249,
+        "count": 253,
         "label": "Tested (results_table.csv)",
         "source": "research/results_table.csv"
       },
@@ -927,7 +927,7 @@
     ],
     "min_account": [
       {
-        "count": 185,
+        "count": 189,
         "label": "Under $500",
         "tier": "under_500"
       },
@@ -1003,7 +1003,7 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-26 14:20:01 ET",
+          "as_of": "2026-11-26 14:30:01 ET",
           "basket_value_usd": 77.5554,
           "freshness": "recent",
           "mark_source": "alerts/poll.log",
@@ -5354,11 +5354,27 @@
       {
         "batch": "2026-11-25_SD03",
         "count": 1
+      },
+      {
+        "batch": "2026-11-26_CX15",
+        "count": 1
+      },
+      {
+        "batch": "2026-11-26_SE16-19",
+        "count": 1
+      },
+      {
+        "batch": "2026-11-26_CX17",
+        "count": 1
+      },
+      {
+        "batch": "2026-11-26_SE20",
+        "count": 1
       }
     ],
     "score_counts": {
-      "1": 103,
-      "2": 132,
+      "1": 106,
+      "2": 133,
       "3": 7,
       "4": 2,
       "5": 5
@@ -5759,9 +5775,9 @@
         "status": "ok"
       },
       {
-        "bytes": 154664,
+        "bytes": 158400,
         "path": "research/results_table.csv",
-        "sha256": "e6695c80a1cee4e7d7cb8406084892db6671c20a03806e4eceb82658c7dd5ff8",
+        "sha256": "8ddfeb04e8bef48abbd1dcc1d4ab2a304ab3f696def1e1d3320965c46f151e61",
         "status": "ok"
       },
       {
@@ -5847,21 +5863,21 @@
         }
       ],
       "mark": {
-        "as_of": "2026-11-26 14:20:01 ET",
+        "as_of": "2026-11-26 14:30:01 ET",
         "basket_value_usd": 77.5554,
         "leg_prices": {
           "GLD": 327.45,
           "SPY": 716.7,
           "TLT": 82.24
         },
-        "mark_as_of": "2026-11-26 14:20:01 ET",
+        "mark_as_of": "2026-11-26 14:30:01 ET",
         "mark_source": "alerts/poll.log",
         "price_source": "alerts poller output",
         "unrealized_pnl_usd": -2.4446
       },
       "mark_freshness": {
-        "et": "2026-11-26T14:20:01-05:00",
-        "source": "2026-11-26 14:20:01 ET",
+        "et": "2026-11-26T14:30:01-05:00",
+        "source": "2026-11-26 14:30:01 ET",
         "status": "recent"
       },
       "mode": "paper",
@@ -13924,21 +13940,21 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-26 14:20:01 ET",
+          "as_of": "2026-11-26 14:30:01 ET",
           "basket_value_usd": 77.5554,
           "leg_prices": {
             "GLD": 327.45,
             "SPY": 716.7,
             "TLT": 82.24
           },
-          "mark_as_of": "2026-11-26 14:20:01 ET",
+          "mark_as_of": "2026-11-26 14:30:01 ET",
           "mark_source": "alerts/poll.log",
           "price_source": "alerts poller output",
           "unrealized_pnl_usd": -2.4446
         },
         "mark_freshness": {
-          "et": "2026-11-26T14:20:01-05:00",
-          "source": "2026-11-26 14:20:01 ET",
+          "et": "2026-11-26T14:30:01-05:00",
+          "source": "2026-11-26 14:30:01 ET",
           "status": "recent"
         },
         "mode": "paper",
