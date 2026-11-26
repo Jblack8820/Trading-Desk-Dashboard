@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-26 14:30:01 ET",
+  "as_of": "2026-11-26 14:40:00 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,8 +16,8 @@
     "sha256": "b5da701b979d3db005ff6d767e910881a6a74271926901ecd6a95dac5e984a69",
     "status": "ok"
   },
-  "built_at": "2026-11-26T14:30:01.988323-05:00",
-  "content_hash": "8abf7e8c511ae537a2a2f12113260c102fa25a0da344b60cb9b993fde990ea7e",
+  "built_at": "2026-11-26T14:40:01.839910-05:00",
+  "content_hash": "10ec6cdfc5fcf187b8a06be0b7d4f704ef74b7ce2163a4a7510bf93e9a112bf3",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -35,7 +35,7 @@
     },
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 71
+      "REJECT": 81
     },
     "approval_status": [
       {
@@ -783,9 +783,99 @@
         "live_eligible": false,
         "name": "Uptrend 5-day-low pullback, PIT S&P 500 single stocks, daily (N5_sma200_h20)",
         "score": 1
+      },
+      {
+        "category": "Crypto",
+        "decided_at": "2026-11-26T14:35:00-05:00",
+        "decision": "REJECT",
+        "id": "CX15",
+        "live_eligible": false,
+        "name": "CombinedBinHAndCluc, BTC+ETH 5m ($100 each)",
+        "score": 1
+      },
+      {
+        "category": "Stocks & ETFs",
+        "decided_at": "2026-11-26T14:32:00-05:00",
+        "decision": "REJECT",
+        "id": "SE20",
+        "live_eligible": false,
+        "name": "SPY late-day continuation: buy 15:30 if >0.50% above prior close, sell at close",
+        "score": 1
+      },
+      {
+        "category": "Crypto",
+        "decided_at": "2026-11-26T14:34:00-05:00",
+        "decision": "REJECT",
+        "id": "CX17",
+        "live_eligible": false,
+        "name": "DCA safety-order bot (dman_v3 style), BTC/ETH, 1.5% TP, one deal",
+        "score": 1
+      },
+      {
+        "category": "Crypto",
+        "decided_at": "2026-11-26T14:36:00-05:00",
+        "decision": "REJECT",
+        "id": "CX16",
+        "live_eligible": false,
+        "name": "Hummingbot bollinger_v1, 3m, TP +2% / SL -3% / 45m limit",
+        "score": 1
+      },
+      {
+        "category": "Crypto",
+        "decided_at": "2026-11-26T14:36:00-05:00",
+        "decision": "REJECT",
+        "id": "CX16M",
+        "live_eligible": false,
+        "name": "Hummingbot macd_bb_v1, 3m, TP +2% / SL -3% / 45m limit",
+        "score": 1
+      },
+      {
+        "category": "Crypto",
+        "decided_at": "2026-11-26T14:38:00-05:00",
+        "decision": "REJECT",
+        "id": "CX19",
+        "live_eligible": false,
+        "name": "Chronos-Bolt small next-day hold, BTC+ETH (ctx 512, thr 0.1)",
+        "score": 1
+      },
+      {
+        "category": "Stocks & ETFs",
+        "decided_at": "2026-11-26T14:40:00-05:00",
+        "decision": "REJECT",
+        "id": "SE16",
+        "live_eligible": false,
+        "name": "Connors 25-ETF daily e25_x70",
+        "score": 2
+      },
+      {
+        "category": "Stocks & ETFs",
+        "decided_at": "2026-11-26T14:40:00-05:00",
+        "decision": "REJECT",
+        "id": "SE17",
+        "live_eligible": false,
+        "name": "Connors 25-ETF daily std2.0_d3_scaleoff",
+        "score": 2
+      },
+      {
+        "category": "Stocks & ETFs",
+        "decided_at": "2026-11-26T14:40:00-05:00",
+        "decision": "REJECT",
+        "id": "SE18",
+        "live_eligible": false,
+        "name": "Connors 25-ETF daily k4of5_sma5_scaleoff",
+        "score": 2
+      },
+      {
+        "category": "Stocks & ETFs",
+        "decided_at": "2026-11-26T14:40:00-05:00",
+        "decision": "REJECT",
+        "id": "SE19",
+        "live_eligible": false,
+        "name": "Connors 25-ETF daily comp2_sma5_scaleoff",
+        "score": 2
       }
     ],
-    "as_of": "2026-11-26 14:30:01 ET",
+    "as_of": "2026-11-26 14:40:00 ET",
     "as_of_source": "mark PT-SB29-2026-10-30-001",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
@@ -803,11 +893,11 @@
       "paper_approved_total": 5,
       "rule": "results_table.csv has no category column. Classification used here: Crypto if the strategy id letter-prefix is CX or NH, or the name contains crypto/bitcoin/btc/eth/coin keywords; Options if the letter-prefix is NO or OP, or the name contains 'option'; everything else is Stocks & ETFs.",
       "tested": {
-        "Crypto": 72,
+        "Crypto": 77,
         "Options": 27,
-        "Stocks & ETFs": 154
+        "Stocks & ETFs": 157
       },
-      "tested_total": 253
+      "tested_total": 261
     },
     "deterioration": {
       "flagged": [],
@@ -844,12 +934,12 @@
     ],
     "funnel": [
       {
-        "count": 253,
+        "count": 261,
         "label": "Tested (results_table.csv)",
         "source": "research/results_table.csv"
       },
       {
-        "count": 76,
+        "count": 86,
         "label": "Reviewed (approved_strategies.json)",
         "source": "approved_strategies.json"
       },
@@ -908,7 +998,7 @@
       },
       {
         "format": "int",
-        "hint": "71 rejected in approved_strategies.json",
+        "hint": "81 rejected in approved_strategies.json",
         "label": "Paper approved",
         "value": 5
       },
@@ -927,7 +1017,7 @@
     ],
     "min_account": [
       {
-        "count": 189,
+        "count": 197,
         "label": "Under $500",
         "tier": "under_500"
       },
@@ -1003,7 +1093,7 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-26 14:30:01 ET",
+          "as_of": "2026-11-26 14:40:00 ET",
           "basket_value_usd": 77.5554,
           "freshness": "recent",
           "mark_source": "alerts/poll.log",
@@ -5264,11 +5354,23 @@
         "count": 4
       },
       {
+        "batch": "2026-11-26_SE16-19",
+        "count": 4
+      },
+      {
+        "batch": "2026-11-26_CX19",
+        "count": 3
+      },
+      {
         "batch": "2026-11-13_KR01",
         "count": 2
       },
       {
         "batch": "2026-11-17_CX14",
+        "count": 2
+      },
+      {
+        "batch": "2026-11-26_CX16",
         "count": 2
       },
       {
@@ -5360,10 +5462,6 @@
         "count": 1
       },
       {
-        "batch": "2026-11-26_SE16-19",
-        "count": 1
-      },
-      {
         "batch": "2026-11-26_CX17",
         "count": 1
       },
@@ -5373,8 +5471,8 @@
       }
     ],
     "score_counts": {
-      "1": 106,
-      "2": 133,
+      "1": 111,
+      "2": 136,
       "3": 7,
       "4": 2,
       "5": 5
@@ -5489,7 +5587,7 @@
       "Skip the work when nothing has changed: exit quickly without long analysis or messages.",
       "No chatter between bots. Send messages only when the other bot must act on them, and batch FYIs.",
       "Add no new routine, and no shorter interval on an existing one, without Dwag (Chief of Staff) approving it.",
-      "Keep outputs short. Reuse files instead of recomputing. # Temporary order (Jaden, 2026-11-13) From 5:00 PM ET Friday Nov 13, 2026 until 8:00 AM ET Monday Nov 16, 2026, all bots must minimize non-essential work. Pause or skip non-essential routines in that window and restore them Monday at 8:00 AM ET. Do not add new routines and do not schedule catch-up runs. Plain no-AI scripts may keep running. One-time exception to the no-weekend rule: TRADE_MANAGER (60b98329-63ca-4596-90ed-dcc456bd38b8) and SETUP_FINDER (33c9fa30-a581-4456-bb58-e0231aabed70) may work crypto paper trades over this weekend only, to build paper-trade data. Crypto only, paper only, still within RISK_MANAGER's limits, using approved crypto strategies only, and kept as lean as practical. RISK_MANAGER's limits still apply to this exception. Normal operations resume Monday Nov 16 at 8:00 AM ET. - See AUTONOMY.md: decide paper-desk matters yourselves; ask Jaden only about live/real money, accounts, new routines/usage, or hard rules."
+      "Keep outputs short. Reuse files instead of recomputing. # Temporary order (Jaden, 2026-11-13) From 5:00 PM ET Friday Nov 13, 2026 until 8:00 AM ET Monday Nov 16, 2026, all bots must minimize non-essential work. Pause or skip non-essential routines in that window and restore them Monday at 8:00 AM ET. Do not add new routines and do not schedule catch-up runs. Plain no-AI scripts may keep running. One-time exception to the no-weekend rule: TRADE_MANAGER (60b98329-63ca-4596-90ed-dcc456bd38b8) and SETUP_FINDER (33c9fa30-a581-4456-bb58-e0231aabed70) may work crypto paper trades over this weekend only, to build paper-trade data. Crypto only, paper only, still within RISK_MANAGER's limits, using approved crypto strategies only, and kept as lean as practical. RISK_MANAGER's limits still apply to this exception. Normal operations resume Monday Nov 16 at 8:00 AM ET. - See AUTONOMY.md: decide paper-desk matters yourselves; ask Jaden only about live/real money, accounts, new routines/usage, or hard rules. - 2026-11-26 14:37 ET (Jaden): The pre-reset testing push is OVER. Back to normal usage mode: follow rules 1-5 above, routines on their normal schedules only, and no extra test runs or bot-to-bot chatter."
     ],
     "usage_source": "USAGE_RULES.md",
     "watcher": {
@@ -5709,9 +5807,9 @@
         "status": "ok"
       },
       {
-        "bytes": 51362,
+        "bytes": 60159,
         "path": "approved_strategies.json",
-        "sha256": "a8ddbe4f9fe2c9de347158582f172c0cc480f3c3836662779a3e4c1c6cb1e308",
+        "sha256": "3003e8ca6de239e4ebece307289079019a8086d218e8a75ab55b1fe5af1646a4",
         "status": "ok"
       },
       {
@@ -5763,9 +5861,9 @@
         "status": "ok"
       },
       {
-        "bytes": 1657,
+        "bytes": 1862,
         "path": "USAGE_RULES.md",
-        "sha256": "46774699e5464e243ed206cc515f7eea50f0188a263d520039bd4fefadab9887",
+        "sha256": "04ddeeaf44608b51f1e72db2a050744340f1c089375a16a1a0056b5010f8d190",
         "status": "ok"
       },
       {
@@ -5775,15 +5873,15 @@
         "status": "ok"
       },
       {
-        "bytes": 158400,
+        "bytes": 165399,
         "path": "research/results_table.csv",
-        "sha256": "8ddfeb04e8bef48abbd1dcc1d4ab2a304ab3f696def1e1d3320965c46f151e61",
+        "sha256": "168b0c50668fdd1511d434b5c97c5170c09496ade2c2c353f512f66d5011f8e0",
         "status": "ok"
       },
       {
-        "bytes": 1467,
+        "bytes": 1811,
         "path": "research/queue.md",
-        "sha256": "b6752f9391dd07a939e000b0ec1fdc205030249471bf5bfb1de19b2d9686e4b9",
+        "sha256": "d56f015f312702234796c0b1295c8ae98d4d0a032fe52efb38e8e3bd8e378c30",
         "status": "ok"
       },
       {
@@ -5863,21 +5961,21 @@
         }
       ],
       "mark": {
-        "as_of": "2026-11-26 14:30:01 ET",
+        "as_of": "2026-11-26 14:40:00 ET",
         "basket_value_usd": 77.5554,
         "leg_prices": {
           "GLD": 327.45,
           "SPY": 716.7,
           "TLT": 82.24
         },
-        "mark_as_of": "2026-11-26 14:30:01 ET",
+        "mark_as_of": "2026-11-26 14:40:00 ET",
         "mark_source": "alerts/poll.log",
         "price_source": "alerts poller output",
         "unrealized_pnl_usd": -2.4446
       },
       "mark_freshness": {
-        "et": "2026-11-26T14:30:01-05:00",
-        "source": "2026-11-26 14:30:01 ET",
+        "et": "2026-11-26T14:40:00-05:00",
+        "source": "2026-11-26 14:40:00 ET",
         "status": "recent"
       },
       "mode": "paper",
@@ -13269,7 +13367,7 @@
   "snapshot": {
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 71
+      "REJECT": 81
     },
     "approvals": [
       {
@@ -13879,6 +13977,86 @@
         "id": "SD03",
         "live_eligible": false,
         "name": "Uptrend 5-day-low pullback, PIT S&P 500 single stocks, daily (N5_sma200_h20)"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-26T14:35:00-05:00",
+        "decision": "REJECT",
+        "id": "CX15",
+        "live_eligible": false,
+        "name": "CombinedBinHAndCluc, BTC+ETH 5m ($100 each)"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-26T14:32:00-05:00",
+        "decision": "REJECT",
+        "id": "SE20",
+        "live_eligible": false,
+        "name": "SPY late-day continuation: buy 15:30 if >0.50% above prior close, sell at close"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-26T14:34:00-05:00",
+        "decision": "REJECT",
+        "id": "CX17",
+        "live_eligible": false,
+        "name": "DCA safety-order bot (dman_v3 style), BTC/ETH, 1.5% TP, one deal"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-26T14:36:00-05:00",
+        "decision": "REJECT",
+        "id": "CX16",
+        "live_eligible": false,
+        "name": "Hummingbot bollinger_v1, 3m, TP +2% / SL -3% / 45m limit"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-26T14:36:00-05:00",
+        "decision": "REJECT",
+        "id": "CX16M",
+        "live_eligible": false,
+        "name": "Hummingbot macd_bb_v1, 3m, TP +2% / SL -3% / 45m limit"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-26T14:38:00-05:00",
+        "decision": "REJECT",
+        "id": "CX19",
+        "live_eligible": false,
+        "name": "Chronos-Bolt small next-day hold, BTC+ETH (ctx 512, thr 0.1)"
+      },
+      {
+        "backtest_score": 2,
+        "decided_at": "2026-11-26T14:40:00-05:00",
+        "decision": "REJECT",
+        "id": "SE16",
+        "live_eligible": false,
+        "name": "Connors 25-ETF daily e25_x70"
+      },
+      {
+        "backtest_score": 2,
+        "decided_at": "2026-11-26T14:40:00-05:00",
+        "decision": "REJECT",
+        "id": "SE17",
+        "live_eligible": false,
+        "name": "Connors 25-ETF daily std2.0_d3_scaleoff"
+      },
+      {
+        "backtest_score": 2,
+        "decided_at": "2026-11-26T14:40:00-05:00",
+        "decision": "REJECT",
+        "id": "SE18",
+        "live_eligible": false,
+        "name": "Connors 25-ETF daily k4of5_sma5_scaleoff"
+      },
+      {
+        "backtest_score": 2,
+        "decided_at": "2026-11-26T14:40:00-05:00",
+        "decision": "REJECT",
+        "id": "SE19",
+        "live_eligible": false,
+        "name": "Connors 25-ETF daily comp2_sma5_scaleoff"
       }
     ],
     "calculation_notes": [
@@ -13940,21 +14118,21 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-26 14:30:01 ET",
+          "as_of": "2026-11-26 14:40:00 ET",
           "basket_value_usd": 77.5554,
           "leg_prices": {
             "GLD": 327.45,
             "SPY": 716.7,
             "TLT": 82.24
           },
-          "mark_as_of": "2026-11-26 14:30:01 ET",
+          "mark_as_of": "2026-11-26 14:40:00 ET",
           "mark_source": "alerts/poll.log",
           "price_source": "alerts poller output",
           "unrealized_pnl_usd": -2.4446
         },
         "mark_freshness": {
-          "et": "2026-11-26T14:30:01-05:00",
-          "source": "2026-11-26 14:30:01 ET",
+          "et": "2026-11-26T14:40:00-05:00",
+          "source": "2026-11-26 14:40:00 ET",
           "status": "recent"
         },
         "mode": "paper",
