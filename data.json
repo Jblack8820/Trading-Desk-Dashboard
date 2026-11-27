@@ -16,8 +16,8 @@
     "sha256": "b5da701b979d3db005ff6d767e910881a6a74271926901ecd6a95dac5e984a69",
     "status": "ok"
   },
-  "built_at": "2026-11-27T07:55:02.482682-05:00",
-  "content_hash": "208ed8b185b1929a7f907afbdc9b596570f4a911be396552079afb15d55882a3",
+  "built_at": "2026-11-27T08:10:01.767619-05:00",
+  "content_hash": "3915512f2428c39a434e931a1139405a9ac9088aac2a2606e5c5ec65a53c80b2",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -35,7 +35,7 @@
     },
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 81
+      "REJECT": 83
     },
     "approval_status": [
       {
@@ -873,6 +873,24 @@
         "live_eligible": false,
         "name": "Connors 25-ETF daily comp2_sma5_scaleoff",
         "score": 2
+      },
+      {
+        "category": "Stocks & ETFs",
+        "decided_at": "2026-11-27T08:10:00-05:00",
+        "decision": "REJECT",
+        "id": "SE21",
+        "live_eligible": false,
+        "name": "Keltner fade SPY/QQQ/IWM/DIA m2.0_N5_open1",
+        "score": 1
+      },
+      {
+        "category": "Crypto",
+        "decided_at": "2026-11-27T08:15:00-05:00",
+        "decision": "REJECT",
+        "id": "CX20",
+        "live_eligible": false,
+        "name": "E0V1E 5-min dip buy BTC+ETH, -25% stop, sell_fastx 84",
+        "score": 1
       }
     ],
     "as_of": "2026-11-26 15:30:00 ET",
@@ -893,11 +911,11 @@
       "paper_approved_total": 5,
       "rule": "results_table.csv has no category column. Classification used here: Crypto if the strategy id letter-prefix is CX or NH, or the name contains crypto/bitcoin/btc/eth/coin keywords; Options if the letter-prefix is NO or OP, or the name contains 'option'; everything else is Stocks & ETFs.",
       "tested": {
-        "Crypto": 77,
+        "Crypto": 78,
         "Options": 27,
-        "Stocks & ETFs": 157
+        "Stocks & ETFs": 158
       },
-      "tested_total": 261
+      "tested_total": 263
     },
     "deterioration": {
       "flagged": [],
@@ -934,12 +952,12 @@
     ],
     "funnel": [
       {
-        "count": 261,
+        "count": 263,
         "label": "Tested (results_table.csv)",
         "source": "research/results_table.csv"
       },
       {
-        "count": 86,
+        "count": 88,
         "label": "Reviewed (approved_strategies.json)",
         "source": "approved_strategies.json"
       },
@@ -998,7 +1016,7 @@
       },
       {
         "format": "int",
-        "hint": "81 rejected in approved_strategies.json",
+        "hint": "83 rejected in approved_strategies.json",
         "label": "Paper approved",
         "value": 5
       },
@@ -1129,7 +1147,7 @@
     },
     "min_account": [
       {
-        "count": 197,
+        "count": 199,
         "label": "Under $500",
         "tier": "under_500"
       },
@@ -5580,12 +5598,20 @@
       {
         "batch": "2026-11-26_SE20",
         "count": 1
+      },
+      {
+        "batch": "2026-11-27_CX20",
+        "count": 1
+      },
+      {
+        "batch": "2026-11-27_SE21",
+        "count": 1
       }
     ],
     "score_counts": {
-      "1": 111,
+      "1": 112,
       "2": 136,
-      "3": 7,
+      "3": 8,
       "4": 2,
       "5": 5
     },
@@ -5919,9 +5945,9 @@
         "status": "ok"
       },
       {
-        "bytes": 60159,
+        "bytes": 64572,
         "path": "approved_strategies.json",
-        "sha256": "3003e8ca6de239e4ebece307289079019a8086d218e8a75ab55b1fe5af1646a4",
+        "sha256": "6c47cb5d900c1830a7794d2158a39aabe3c1a7c0ea7f74c78b51937efd934e1f",
         "status": "ok"
       },
       {
@@ -5985,9 +6011,9 @@
         "status": "ok"
       },
       {
-        "bytes": 165399,
+        "bytes": 167509,
         "path": "research/results_table.csv",
-        "sha256": "168b0c50668fdd1511d434b5c97c5170c09496ade2c2c353f512f66d5011f8e0",
+        "sha256": "d5828dfd1e9f50fe9e34ad3a80130cffaf537d9c1fb2c25778e1aebc71d2f0cf",
         "status": "ok"
       },
       {
@@ -13479,7 +13505,7 @@
   "snapshot": {
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 81
+      "REJECT": 83
     },
     "approvals": [
       {
@@ -14169,6 +14195,22 @@
         "id": "SE19",
         "live_eligible": false,
         "name": "Connors 25-ETF daily comp2_sma5_scaleoff"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-27T08:10:00-05:00",
+        "decision": "REJECT",
+        "id": "SE21",
+        "live_eligible": false,
+        "name": "Keltner fade SPY/QQQ/IWM/DIA m2.0_N5_open1"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-27T08:15:00-05:00",
+        "decision": "REJECT",
+        "id": "CX20",
+        "live_eligible": false,
+        "name": "E0V1E 5-min dip buy BTC+ETH, -25% stop, sell_fastx 84"
       }
     ],
     "calculation_notes": [
