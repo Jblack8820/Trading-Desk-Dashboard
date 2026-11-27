@@ -16,8 +16,8 @@
     "sha256": "b5da701b979d3db005ff6d767e910881a6a74271926901ecd6a95dac5e984a69",
     "status": "ok"
   },
-  "built_at": "2026-11-26T19:07:53.608003-05:00",
-  "content_hash": "9fc123501bd378c177e40d79b43731ca7fa5a6401a2ac9c54b7e5b8a8f3e109c",
+  "built_at": "2026-11-26T19:19:47.893429-05:00",
+  "content_hash": "d9fdc56a0eef37720d0ac0bc8e417741620efcf65f45ac0c7e453efe160b9160",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -1071,8 +1071,9 @@
           "id": "SB29",
           "losses": 0,
           "name": "Robot Wealth risk-premia harvesting (inverse-vol SPY/TLT/GLD)",
+          "open_mark_as_of": "2026-11-26 15:30:00 ET",
           "open_trades": 1,
-          "open_unrealized_pnl_usd": 0.1178,
+          "open_unrealized_pnl_usd": -2.4446,
           "reachable_by_trade_50": true,
           "realized_pnl_usd": 0,
           "score": 3,
@@ -14764,7 +14765,7 @@
     }
   },
   "target_url_not_published": "https://trading-desk-dashboard-2exs.pages.grok.bot/",
-  "template_hash": "dbbec6108f44132e53492950163223ffdf9efcfb5ff41f6aaeeafebe7451ed22",
+  "template_hash": "f20acc47d0dbd32918fe30cceb7a5227b5b7202898845a7115e15acaf3df61d7",
   "tester_only_trades": [
     {
       "book": "TESTER_ONLY",
