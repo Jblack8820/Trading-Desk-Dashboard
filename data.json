@@ -16,8 +16,8 @@
     "sha256": "b5da701b979d3db005ff6d767e910881a6a74271926901ecd6a95dac5e984a69",
     "status": "ok"
   },
-  "built_at": "2026-11-26T19:19:47.893429-05:00",
-  "content_hash": "d9fdc56a0eef37720d0ac0bc8e417741620efcf65f45ac0c7e453efe160b9160",
+  "built_at": "2026-11-27T07:55:02.482682-05:00",
+  "content_hash": "208ed8b185b1929a7f907afbdc9b596570f4a911be396552079afb15d55882a3",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -5991,9 +5991,9 @@
         "status": "ok"
       },
       {
-        "bytes": 1811,
+        "bytes": 2137,
         "path": "research/queue.md",
-        "sha256": "d56f015f312702234796c0b1295c8ae98d4d0a032fe52efb38e8e3bd8e378c30",
+        "sha256": "eb058d8e5d57257f3abb2fd16c6acaed27c77aea645f40359472820d1a00336e",
         "status": "ok"
       },
       {
