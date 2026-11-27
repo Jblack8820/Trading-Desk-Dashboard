@@ -16,8 +16,8 @@
     "sha256": "b5da701b979d3db005ff6d767e910881a6a74271926901ecd6a95dac5e984a69",
     "status": "ok"
   },
-  "built_at": "2026-11-27T08:10:01.767619-05:00",
-  "content_hash": "3915512f2428c39a434e931a1139405a9ac9088aac2a2606e5c5ec65a53c80b2",
+  "built_at": "2026-11-27T08:15:02.364879-05:00",
+  "content_hash": "b8e2124e225ba546d5bc58611b4ccfd12479e7bb1b3359bd990547277a27d1d3",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -35,7 +35,7 @@
     },
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 83
+      "REJECT": 84
     },
     "approval_status": [
       {
@@ -891,6 +891,15 @@
         "live_eligible": false,
         "name": "E0V1E 5-min dip buy BTC+ETH, -25% stop, sell_fastx 84",
         "score": 1
+      },
+      {
+        "category": "Crypto",
+        "decided_at": "2026-11-27T08:15:00-05:00",
+        "decision": "REJECT",
+        "id": "CX21",
+        "live_eligible": false,
+        "name": "Cost-gated XGBoost hourly BTC k1.0/W12m/returns+technical",
+        "score": 1
       }
     ],
     "as_of": "2026-11-26 15:30:00 ET",
@@ -911,11 +920,11 @@
       "paper_approved_total": 5,
       "rule": "results_table.csv has no category column. Classification used here: Crypto if the strategy id letter-prefix is CX or NH, or the name contains crypto/bitcoin/btc/eth/coin keywords; Options if the letter-prefix is NO or OP, or the name contains 'option'; everything else is Stocks & ETFs.",
       "tested": {
-        "Crypto": 78,
+        "Crypto": 79,
         "Options": 27,
         "Stocks & ETFs": 158
       },
-      "tested_total": 263
+      "tested_total": 264
     },
     "deterioration": {
       "flagged": [],
@@ -952,12 +961,12 @@
     ],
     "funnel": [
       {
-        "count": 263,
+        "count": 264,
         "label": "Tested (results_table.csv)",
         "source": "research/results_table.csv"
       },
       {
-        "count": 88,
+        "count": 89,
         "label": "Reviewed (approved_strategies.json)",
         "source": "approved_strategies.json"
       },
@@ -1016,7 +1025,7 @@
       },
       {
         "format": "int",
-        "hint": "83 rejected in approved_strategies.json",
+        "hint": "84 rejected in approved_strategies.json",
         "label": "Paper approved",
         "value": 5
       },
@@ -1147,7 +1156,7 @@
     },
     "min_account": [
       {
-        "count": 199,
+        "count": 200,
         "label": "Under $500",
         "tier": "under_500"
       },
@@ -5606,10 +5615,14 @@
       {
         "batch": "2026-11-27_SE21",
         "count": 1
+      },
+      {
+        "batch": "2026-11-27_CX21",
+        "count": 1
       }
     ],
     "score_counts": {
-      "1": 112,
+      "1": 113,
       "2": 136,
       "3": 8,
       "4": 2,
@@ -5945,9 +5958,9 @@
         "status": "ok"
       },
       {
-        "bytes": 64572,
+        "bytes": 65638,
         "path": "approved_strategies.json",
-        "sha256": "6c47cb5d900c1830a7794d2158a39aabe3c1a7c0ea7f74c78b51937efd934e1f",
+        "sha256": "c6d73d52d5f0fc4b52ee048f0a1e184e56f33ea6231f1480bb8c113a4511094d",
         "status": "ok"
       },
       {
@@ -6011,9 +6024,9 @@
         "status": "ok"
       },
       {
-        "bytes": 167509,
+        "bytes": 168135,
         "path": "research/results_table.csv",
-        "sha256": "d5828dfd1e9f50fe9e34ad3a80130cffaf537d9c1fb2c25778e1aebc71d2f0cf",
+        "sha256": "45bfb0328b7bddff0d4440e93b67711c6d25745a328f3a259c71e78bfb462c08",
         "status": "ok"
       },
       {
@@ -13505,7 +13518,7 @@
   "snapshot": {
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 83
+      "REJECT": 84
     },
     "approvals": [
       {
@@ -14211,6 +14224,14 @@
         "id": "CX20",
         "live_eligible": false,
         "name": "E0V1E 5-min dip buy BTC+ETH, -25% stop, sell_fastx 84"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-27T08:15:00-05:00",
+        "decision": "REJECT",
+        "id": "CX21",
+        "live_eligible": false,
+        "name": "Cost-gated XGBoost hourly BTC k1.0/W12m/returns+technical"
       }
     ],
     "calculation_notes": [
