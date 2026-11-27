@@ -11,13 +11,13 @@
     "TRADE_MANAGER"
   ],
   "briefing_head": {
-    "head": "# Morning Briefing — Wed Nov 25, 2026\nWritten ~8:30 AM ET by BRIEFING. ES/NQ/VIX/BTC/ETH/gold live (delayed) from the Yahoo chart API (ES/NQ 8:08, VIX 8:03, BTC/ETH 8:18 AM ET). Tue closes from the Yahoo chart API daily raw Close. Tue ES/NQ RTH H/L/C from the prefetch cache (completed_regular_session, session 2026-11-24 9:30–16:00 ET, built 8:05 AM ET). ON = Tue 18:00 ET onward (Yahoo 5m).\n\n## ES/NQ bias, levels, overnight\n- **Bias: bearish, NQ weakest.** AI/chip selling resumed. NVDA is lower again premarket after -5.9% Tue, and DELL fell despite a large beat (margin worries, PT cuts; Investing.com/Reuters). Reports also cite tariff worries ahead of PCE (Yahoo, Reuters; details [UNVERIFIED]). Futures sold off from the 18:00 open all night. VIX 30.9 (Tue close 26.4). 8:30 PCE/GDP/claims/durables is the swing factor. Fade rallies into the ON mid. A reclaim of the ON mid negates.\n- ES: Tue settle-ref 7217.5 | ON H/L 7224.0 (18:00) / 7069.5 (07:20) | last 7077.5 (-1.9%) @ 8:08 | Tue RTH H/L/C 7240.75 / 7152.25 / 7220.25 | ON mid ~7147\n- NQ: Tue settle-ref 26275.75 | ON H/L 26350.75 (18:05) / 25470.5 (07:05) | last 25514.75 (-2.9%) @ 8:08 | Tue RTH H/L/C 26509.75 / 25998 / 26284 | ON mid ~25911\n- Both are trading below Tue's RTH lows, near the ON lows. Mon open references (ES 7023 / NQ 25561.5) are next for ES. NQ is already below its level. Fri settles: 6935 / 25126.5.\n- Premarket: DELL ~-4.4% to ~$282 (Q3 rev $54.94B vs ~$49.3B est, FY guide raised to $202B, +$25B buyback; Investing.com). NVDA and chipmakers are lower (Investing.com, CNBC). Gold GC=F 3541.\n\n## Prior day (Tue Nov 24)\n- S&P 500 -0.50% to 7201.09. Nasdaq -1.48% to 23,733.54. Dow +0.85% to 50,018.70 (Yahoo). The market rotated out of AI/chips.\n- NVDA -5.9% ($155.38), DELL -11.8% ($295.28), MU -11.0%, AMD -8.9%, SNDK -11.1% (socialtickers/AltIndex prices). QQQ -2.0% (638.10), SPY -0.5% (718.78).\n- VIX closed 26.36. TLT 81.49, GLD 325.45 (-2.3%).\n\n## Desk activity",
+    "head": "# Morning Briefing — Fri Nov 27, 2026 (Black Friday, stocks close 1:00 PM ET)\nWritten ~8:25 AM ET by BRIEFING. ES/NQ/VIX/BTC/ETH live (delayed) prices from the Yahoo chart API (ES/NQ 8:07, VIX 8:02, BTC/ETH 8:17 AM ET). Wed Nov 25 ES/NQ RTH O/H/L/C from the prefetch cache (completed_regular_session, session 2026-11-25 9:30–16:00 ET, built 8:15 AM ET). Thu was the Thanksgiving holiday, so Wed is the prior completed session. Wed cash closes from Yahoo daily raw Close.\n\n## ES/NQ bias, levels, overnight\n- **Bias: bullish gap, NQ leading.** The AI/chip rebound continues after the holiday: NVDA +~3–4% and MU +~5% premarket (Yahoo Finance, Investing.com). Reuters/CNBC cite the strongest week in months [weekly claim UNVERIFIED]. 10y yield 4.84% and falling (Yahoo). VIX 25.2 (Wed 28.29). The session is thin and ends at 1 PM: expect gap-fill risk. Holding above the Wed RTH high keeps longs favored. A loss of the Wed settle negates.\n- ES: last 7315.5 (+1.7%) @ 8:07 | Wed settle-ref 7195.75 | Wed RTH O/H/L/C 7060 / 7214 / 6982.5 / 7196.75 | Wed evening high 7253.75 (23:40)\n- NQ: last 26719 (+2.4%) @ 8:07 | Wed settle-ref 26100.25 | Wed RTH O/H/L/C 25409.25 / 26146.25 / 25027.5 / 26105.75 | Wed evening high 26436 (23:40)\n- **ON H/L: UNVERIFIED.** Yahoo 1m, 5m and 15m bars stop at Wed 23:55 ET, so the Thu–Fri overnight range is unavailable. Use your own feed for the ON H/L before trading SB11.\n\n## Prior-day recap (Wed Nov 25)\nViolent reversal day. ES traded 6982.5 → 7214 (231.5 pt range), NQ 25027.5 → 26146.25 (1,119 pt range), and both closed near the highs. Cash closes: SPY 716.70 (-0.3%), QQQ 633.93 (-0.7%), TLT 82.24 (+0.9%), GLD 327.45 (+0.6%). Core PCE ran hot at 3.3% y/y. Oil settled firmer (WTI $83.68). Thu: Gulf attack headlines (Kuwait, Jazan refinery) while US cash markets were closed.\n\n## Desk activity\n- No new paper or live fills since the SB11 exit on Nov 18. The only open book is the SB29 paper basket.\n- SETUP_FINDER: SB11 had near-misses Nov 23/24/25 and all were rejected, so no trade. PROVER logged REJECTs this morning for CX20 (E0V1E BTC/ETH dip buy) and CX21 (XGBoost hourly BTC).\n",
     "path": "desk/daily_briefing.md",
-    "sha256": "b5da701b979d3db005ff6d767e910881a6a74271926901ecd6a95dac5e984a69",
+    "sha256": "1658b42f1982f5fb86fd1e4927243adc513a82dc9283525957600757e7526756",
     "status": "ok"
   },
-  "built_at": "2026-11-27T08:15:02.364879-05:00",
-  "content_hash": "b8e2124e225ba546d5bc58611b4ccfd12479e7bb1b3359bd990547277a27d1d3",
+  "built_at": "2026-11-27T08:25:02.344051-05:00",
+  "content_hash": "8d43c7cd3717685f2c1972f9f43ca3b991bf732834bd15e082117fa7511c1150",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -35,7 +35,7 @@
     },
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 84
+      "REJECT": 85
     },
     "approval_status": [
       {
@@ -900,6 +900,15 @@
         "live_eligible": false,
         "name": "Cost-gated XGBoost hourly BTC k1.0/W12m/returns+technical",
         "score": 1
+      },
+      {
+        "category": "Stocks & ETFs",
+        "decided_at": "2026-11-27T08:25:00-05:00",
+        "decision": "REJECT",
+        "id": "SE22",
+        "live_eligible": false,
+        "name": "Bertola down-day 1-day hold, 0.50% stop, SMA200, SPY/QQQ/EWJ/EWG/EWU/EWH",
+        "score": 1
       }
     ],
     "as_of": "2026-11-26 15:30:00 ET",
@@ -922,9 +931,9 @@
       "tested": {
         "Crypto": 79,
         "Options": 27,
-        "Stocks & ETFs": 158
+        "Stocks & ETFs": 159
       },
-      "tested_total": 264
+      "tested_total": 265
     },
     "deterioration": {
       "flagged": [],
@@ -944,7 +953,7 @@
         "source": "watch_levels.json"
       },
       {
-        "as_of": "Wed Nov 25, 2026 ~8:30 AM ET. Live prices: Yahoo chart API (~8:08 AM ET). For SETUP_FINDER.",
+        "as_of": "Fri Nov 27, 2026 ~8:25 AM ET. Live prices: Yahoo chart API (~8:07 AM ET). For SETUP_FINDER.",
         "label": "Daily regime",
         "source": "daily_regime.md"
       },
@@ -961,12 +970,12 @@
     ],
     "funnel": [
       {
-        "count": 264,
+        "count": 265,
         "label": "Tested (results_table.csv)",
         "source": "research/results_table.csv"
       },
       {
-        "count": 89,
+        "count": 90,
         "label": "Reviewed (approved_strategies.json)",
         "source": "approved_strategies.json"
       },
@@ -1025,7 +1034,7 @@
       },
       {
         "format": "int",
-        "hint": "84 rejected in approved_strategies.json",
+        "hint": "85 rejected in approved_strategies.json",
         "label": "Paper approved",
         "value": 5
       },
@@ -1156,7 +1165,7 @@
     },
     "min_account": [
       {
-        "count": 200,
+        "count": 201,
         "label": "Under $500",
         "tier": "under_500"
       },
@@ -5075,7 +5084,7 @@
       }
     ],
     "regime": {
-      "briefing_head": "# Morning Briefing — Wed Nov 25, 2026\nWritten ~8:30 AM ET by BRIEFING. ES/NQ/VIX/BTC/ETH/gold live (delayed) from the Yahoo chart API (ES/NQ 8:08, VIX 8:03, BTC/ETH 8:18 AM ET). Tue closes from the Yahoo chart API daily raw Close. Tue ES/NQ RTH H/L/C from the prefetch cache (completed_regular_session, session 2026-11-24 9:30–16:00 ET, built 8:05 AM ET). ON = Tue 18:00 ET onward (Yahoo 5m).\n\n## ES/NQ bias, levels, overnight\n- **Bias: bearish, NQ weakest.** AI/chip selling resumed. NVDA is lower again premarket after -5.9% Tue, and DELL fell despite a large beat (margin worries, PT cuts; Investing.com/Reuters). Reports also cite tariff worries ahead of PCE (Yahoo, Reuters; details [UNVERIFIED]). Futures sold off from the 18:00 open all night. VIX 30.9 (Tue close 26.4). 8:30 PCE/GDP/claims/durables is the swing factor. Fade rallies into the ON mid. A reclaim of the ON mid negates.\n- ES: Tue settle-ref 7217.5 | ON H/L 7224.0 (18:00) / 7069.5 (07:20) | last 7077.5 (-1.9%) @ 8:08 | Tue RTH H/L/C 7240.75 / 7152.25 / 7220.25 | ON mid ~7147\n- NQ: Tue settle-ref 26275.75 | ON H/L 26350.75 (18:05) / 25470.5 (07:05) | last 25514.75 (-2.9%) @ 8:08 | Tue RTH H/L/C 26509.75 / 25998 / 26284 | ON mid ~25911\n- Both are trading below Tue's RTH lows, near the ON lows. Mon open references (ES 7023 / NQ 25561.5) are next for ES. NQ is already below its level. Fri settles: 6935 / 25126.5.\n- Premarket: DELL ~-4.4% to ~$282 (Q3 rev $54.94B vs ~$49.3B est, FY guide raised to $202B, +$25B buyback; Investing.com). NVDA and chipmakers are lower (Investing.com, CNBC). Gold GC=F 3541.\n\n## Prior day (Tue Nov 24)\n- S&P 500 -0.50% to 7201.09. Nasdaq -1.48% to 23,733.54. Dow +0.85% to 50,018.70 (Yahoo). The market rotated out of AI/chips.\n- NVDA -5.9% ($155.38), DELL -11.8% ($295.28), MU -11.0%, AMD -8.9%, SNDK -11.1% (socialtickers/AltIndex prices). QQQ -2.0% (638.10), SPY -0.5% (718.78).\n- VIX closed 26.36. TLT 81.49, GLD 325.45 (-2.3%).\n\n## Desk activity\n- No new trades since the Nov 18 SB11 paper exit. SB29 is the only open position (paper). STRATEGY_APPROVER rejected SD01 (Nov 24) and SD03 (Nov 25 06:25; failed C1–C4, PBO, DSR, edge-margin and tail guard). SETUP_FINDER logged an SB11 near-miss on Tue (no two-market sweep).\n\n## Strategy recap\n| Strategy | Status | Trades (W/L) | Win rate | P&L | Flag |\n|---|---|---|---|---|---|\n| SB29 inverse-vol SPY/TLT/GLD | PAPER, open | 1 open | n/a | ~$77.27 at Tue closes (-2.73 / -3.4%) | **Watch:** $5.27 above the $72 stop (was $5.82 Mon). Rebalance Nov 30 |\n| SB11 TJR NY-open sweep + SMT | PAPER | 1 (0/1) | 0% (n=1) | -$0.47 (-0.68R) | No flag, n too small |\n| SE01 Nasdaq top-5 + SMA | CLOSED_TESTER_ONLY | 1 (1/0) | 100% (n=1) | +$3.51 | Not desk-approved |",
+      "briefing_head": "# Morning Briefing — Fri Nov 27, 2026 (Black Friday, stocks close 1:00 PM ET)\nWritten ~8:25 AM ET by BRIEFING. ES/NQ/VIX/BTC/ETH live (delayed) prices from the Yahoo chart API (ES/NQ 8:07, VIX 8:02, BTC/ETH 8:17 AM ET). Wed Nov 25 ES/NQ RTH O/H/L/C from the prefetch cache (completed_regular_session, session 2026-11-25 9:30–16:00 ET, built 8:15 AM ET). Thu was the Thanksgiving holiday, so Wed is the prior completed session. Wed cash closes from Yahoo daily raw Close.\n\n## ES/NQ bias, levels, overnight\n- **Bias: bullish gap, NQ leading.** The AI/chip rebound continues after the holiday: NVDA +~3–4% and MU +~5% premarket (Yahoo Finance, Investing.com). Reuters/CNBC cite the strongest week in months [weekly claim UNVERIFIED]. 10y yield 4.84% and falling (Yahoo). VIX 25.2 (Wed 28.29). The session is thin and ends at 1 PM: expect gap-fill risk. Holding above the Wed RTH high keeps longs favored. A loss of the Wed settle negates.\n- ES: last 7315.5 (+1.7%) @ 8:07 | Wed settle-ref 7195.75 | Wed RTH O/H/L/C 7060 / 7214 / 6982.5 / 7196.75 | Wed evening high 7253.75 (23:40)\n- NQ: last 26719 (+2.4%) @ 8:07 | Wed settle-ref 26100.25 | Wed RTH O/H/L/C 25409.25 / 26146.25 / 25027.5 / 26105.75 | Wed evening high 26436 (23:40)\n- **ON H/L: UNVERIFIED.** Yahoo 1m, 5m and 15m bars stop at Wed 23:55 ET, so the Thu–Fri overnight range is unavailable. Use your own feed for the ON H/L before trading SB11.\n\n## Prior-day recap (Wed Nov 25)\nViolent reversal day. ES traded 6982.5 → 7214 (231.5 pt range), NQ 25027.5 → 26146.25 (1,119 pt range), and both closed near the highs. Cash closes: SPY 716.70 (-0.3%), QQQ 633.93 (-0.7%), TLT 82.24 (+0.9%), GLD 327.45 (+0.6%). Core PCE ran hot at 3.3% y/y. Oil settled firmer (WTI $83.68). Thu: Gulf attack headlines (Kuwait, Jazan refinery) while US cash markets were closed.\n\n## Desk activity\n- No new paper or live fills since the SB11 exit on Nov 18. The only open book is the SB29 paper basket.\n- SETUP_FINDER: SB11 had near-misses Nov 23/24/25 and all were rejected, so no trade. PROVER logged REJECTs this morning for CX20 (E0V1E BTC/ETH dip buy) and CX21 (XGBoost hourly BTC).\n\n## Strategy recap\n| Strategy | Trades | W/L | Win rate | P&L | Flag |\n|---|---|---|---|---|---|\n| SB29 risk-premia (paper) | 1 open | 0/0 | n/a | Basket ≈ $77.56 at Wed closes vs $80 start (≈ -$2.44, -3.0%; my calc, the file was last marked Nov 6) | **Watch:** $5.56 above the $72 stop. Rebalance Mon Nov 30 at the close |\n| SB11 NY-open sweep (paper) | 1 closed | 0/1 | 0% | -$0.47, -0.68R | No pause flag yet (n=1). Too small to judge |\n| SE01 (tester only, closed) | 1 | 1/0 | 100% | +$3.51 | Not desk-approved |\n\n## News and earnings for held names (SPY/TLT/GLD)",
       "briefing_source": "daily_briefing.md",
       "events": [
         {
@@ -5256,7 +5265,7 @@
         }
       ],
       "events_updated": "Mon Nov 23, 2026, ~8:30 AM ET (by BRIEFING). Next refresh: Mon Nov 30 (weekly).",
-      "head": "# Daily Regime — Wed Nov 25, 2026\nWritten: Wed Nov 25, 2026 ~8:30 AM ET. Live prices: Yahoo chart API (~8:08 AM ET). For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n## Regime\n- Structure: **Risk-off trend day setup.** The AI/chip unwind continues (Tue Nasdaq -1.5%, NVDA -5.9%, DELL -11.8%). Overnight: ES -1.9%, NQ -2.9%, a one-way slide from the 18:00 open.\n- Risk: **High.** VIX 30.9 (Tue 26.4). 8:30 PCE/GDP cluster, 2 PM Beige Book. Holiday-thinned liquidity (Thu closed, Fri 1 PM). BTC ~58.6k, ETH ~1,644.\n\n## Bias\n- Short-term: **Bearish, NQ < ES.** Fade rallies into the ON mid (ES ~7147 / NQ ~25911). A reclaim of the ON mid negates. The 8:30 print can flip the tape: wait for it to settle. Size down.\n\n## Key levels (ES=F / NQ=F)\nES: Tue settle-ref 7217.5 | ON H/L 7224.0 / 7069.5 | last 7077.5 | Tue RTH H/L 7240.75 / 7152.25 | Mon open 7023 | Fri settle 6935\nNQ: Tue settle-ref 26275.75 | ON H/L 26350.75 / 25470.5 | last 25514.75 | Tue RTH H/L 26509.75 / 25998 | Mon open 25561.5 | Fri settle 25126.5\n\n## Notes for SETUP_FINDER\n1. The open is near the ON lows, below Tue's RTH lows. An SB11 long needs an ES+NQ sweep of the ON lows / 9:30 low plus a 5m BOS up with SMT. A short needs a sweep of the 9:30 high, then a BOS down toward Mon's open (ES 7023).\n2. Headline names: NVDA, DELL (beat, then down), MU/AMD/SNDK (chip unwind). SB29 is $5.27 above its $72 stop.",
+      "head": "# Daily Regime — Fri Nov 27, 2026\nWritten: Fri Nov 27, 2026 ~8:25 AM ET. Live prices: Yahoo chart API (~8:07 AM ET). For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n## Regime\n- Structure: **Risk-on relief gap after the holiday.** AI/chip names are leading (NVDA +~3–4%, MU +~5% pre). ES +1.7%, NQ +2.4% vs the Wed settle.\n- Risk: **Elevated but easing.** VIX 25.2 (Wed 28.29). Thin Black Friday liquidity and a 1 PM ET stock close. Gulf/Iran headline risk remains. BTC ~61.4k, ETH ~1,719.\n\n## Bias\n- Short-term: **Bullish, NQ > ES**, while above the Wed RTH highs (ES 7214 / NQ 26146.25). A loss of the Wed settle (7195.75 / 26100.25) negates. Gap-fill risk is high in a short session: size down.\n\n## Key levels (ES=F / NQ=F)\nES: last 7315.5 | Wed settle-ref 7195.75 | Wed RTH H/L 7214 / 6982.5 | Wed evening high 7253.75 | ON H/L UNVERIFIED (Yahoo bars missing after Wed 23:55)\nNQ: last 26719 | Wed settle-ref 26100.25 | Wed RTH H/L 26146.25 / 25027.5 | Wed evening high 26436 | ON H/L UNVERIFIED\n\n## Notes for SETUP_FINDER\n1. SB11 needs completed ON highs/lows. Get them from a feed with Thu–Fri bars before evaluating. The window closes early (1 PM cash close).\n2. Headline names: NVDA, MU, AMD, SNDK (chip rebound), VRTX (FDA review). SB29 is ~$5.56 above its $72 stop (Wed closes).",
       "source": "daily_regime.md"
     },
     "rejected_high_score": [
@@ -5619,10 +5628,14 @@
       {
         "batch": "2026-11-27_CX21",
         "count": 1
+      },
+      {
+        "batch": "2026-11-27_SE22",
+        "count": 1
       }
     ],
     "score_counts": {
-      "1": 113,
+      "1": 114,
       "2": 136,
       "3": 8,
       "4": 2,
@@ -5958,9 +5971,9 @@
         "status": "ok"
       },
       {
-        "bytes": 65638,
+        "bytes": 66637,
         "path": "approved_strategies.json",
-        "sha256": "c6d73d52d5f0fc4b52ee048f0a1e184e56f33ea6231f1480bb8c113a4511094d",
+        "sha256": "cc32a0f9bf22665435c5f71f57b4b05bd9eb50d0a8fb7e0890a68f387d8b5c27",
         "status": "ok"
       },
       {
@@ -5982,15 +5995,15 @@
         "status": "ok"
       },
       {
-        "bytes": 4682,
+        "bytes": 4877,
         "path": "daily_briefing.md",
-        "sha256": "b5da701b979d3db005ff6d767e910881a6a74271926901ecd6a95dac5e984a69",
+        "sha256": "1658b42f1982f5fb86fd1e4927243adc513a82dc9283525957600757e7526756",
         "status": "ok"
       },
       {
-        "bytes": 1853,
+        "bytes": 1766,
         "path": "daily_regime.md",
-        "sha256": "a5a533c076cae159da18fc418091485e33b99a448d989921bf49e17de88df1a4",
+        "sha256": "444159636467869a0500dcc043841b464385f90c67e65f3e5a0546f9fb03a0f0",
         "status": "ok"
       },
       {
@@ -6024,9 +6037,9 @@
         "status": "ok"
       },
       {
-        "bytes": 168135,
+        "bytes": 169043,
         "path": "research/results_table.csv",
-        "sha256": "45bfb0328b7bddff0d4440e93b67711c6d25745a328f3a259c71e78bfb462c08",
+        "sha256": "d5882376af09503cec5b01277114452c596a40fadd528377a4d4f2c3413ee227",
         "status": "ok"
       },
       {
@@ -13509,16 +13522,16 @@
   "publish_blocker": "No non-AI publish path: pages.grok.bot Pages are updated only by a Bot (official docs: https://cursor.com/help/grok-bot/pages). No wrangler/CLI or stored publish credential found on this box. Live URL is login-gated (HTTP 302 apps-gate). Canvas a875f485 is private and must not be modified. Local generator is ready; republish remains a parent/Bot-in-chat step.",
   "publish_status": "blocked_no_non_ai_path",
   "regime_head": {
-    "head": "# Daily Regime — Wed Nov 25, 2026\nWritten: Wed Nov 25, 2026 ~8:30 AM ET. Live prices: Yahoo chart API (~8:08 AM ET). For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n## Regime\n- Structure: **Risk-off trend day setup.** The AI/chip unwind continues (Tue Nasdaq -1.5%, NVDA -5.9%, DELL -11.8%). Overnight: ES -1.9%, NQ -2.9%, a one-way slide from the 18:00 open.\n- Risk: **High.** VIX 30.9 (Tue 26.4). 8:30 PCE/GDP cluster, 2 PM Beige Book. Holiday-thinned liquidity (Thu closed, Fri 1 PM). BTC ~58.6k, ETH ~1,644.\n\n## Bias\n- Short-term: **Bearish, NQ < ES.** Fade rallies into the ON mid (ES ~7147 / NQ ~25911). A reclaim of the ON mid negates. The 8:30 print can flip the tape: wait for it to settle. Size down.\n\n## Key levels (ES=F / NQ=F)\nES: Tue settle-ref 7217.5 | ON H/L 7224.0 / 7069.5 | last 7077.5 | Tue RTH H/L 7240.75 / 7152.25 | Mon open 7023 | Fri settle 6935",
+    "head": "# Daily Regime — Fri Nov 27, 2026\nWritten: Fri Nov 27, 2026 ~8:25 AM ET. Live prices: Yahoo chart API (~8:07 AM ET). For SETUP_FINDER.\n\n## Month-end regime (Oct 2026)\nQQQ regime: last month-end close $690.49 vs 10-month SMA $678.38, ABOVE (cushion +1.8%)\nCompute breadth: 8/22 above 10-month SMA (above: NVDA, TSM, AMD, MSFT, MU, ANET, DELL, SMCI)\nNote: matches @antoinersx's Oct 30 X post (QQQ +1.9%, 8/22): breadth is an exact match and the cushion is 1.8% vs 1.9%, a rounding/price-source difference. Source: yfinance unadjusted monthly closes; all 22 have >=10 months of history. Rerun: python3 scripts/month_end_regime.py YYYY-MM-DD\n## Regime\n- Structure: **Risk-on relief gap after the holiday.** AI/chip names are leading (NVDA +~3–4%, MU +~5% pre). ES +1.7%, NQ +2.4% vs the Wed settle.\n- Risk: **Elevated but easing.** VIX 25.2 (Wed 28.29). Thin Black Friday liquidity and a 1 PM ET stock close. Gulf/Iran headline risk remains. BTC ~61.4k, ETH ~1,719.\n\n## Bias\n- Short-term: **Bullish, NQ > ES**, while above the Wed RTH highs (ES 7214 / NQ 26146.25). A loss of the Wed settle (7195.75 / 26100.25) negates. Gap-fill risk is high in a short session: size down.\n\n## Key levels (ES=F / NQ=F)\nES: last 7315.5 | Wed settle-ref 7195.75 | Wed RTH H/L 7214 / 6982.5 | Wed evening high 7253.75 | ON H/L UNVERIFIED (Yahoo bars missing after Wed 23:55)",
     "path": "desk/daily_regime.md",
-    "sha256": "a5a533c076cae159da18fc418091485e33b99a448d989921bf49e17de88df1a4",
+    "sha256": "444159636467869a0500dcc043841b464385f90c67e65f3e5a0546f9fb03a0f0",
     "status": "ok"
   },
   "schema_version": 2,
   "snapshot": {
     "approval_counts": {
       "PAPER_APPROVED": 5,
-      "REJECT": 84
+      "REJECT": 85
     },
     "approvals": [
       {
@@ -14232,6 +14245,14 @@
         "id": "CX21",
         "live_eligible": false,
         "name": "Cost-gated XGBoost hourly BTC k1.0/W12m/returns+technical"
+      },
+      {
+        "backtest_score": 1,
+        "decided_at": "2026-11-27T08:25:00-05:00",
+        "decision": "REJECT",
+        "id": "SE22",
+        "live_eligible": false,
+        "name": "Bertola down-day 1-day hold, 0.50% stop, SMA200, SPY/QQQ/EWJ/EWG/EWU/EWH"
       }
     ],
     "calculation_notes": [
