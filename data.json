@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-27 08:26:47 ET",
+  "as_of": "2026-11-27 09:30:00 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,8 +16,8 @@
     "sha256": "1658b42f1982f5fb86fd1e4927243adc513a82dc9283525957600757e7526756",
     "status": "ok"
   },
-  "built_at": "2026-11-27T08:30:07.478270-05:00",
-  "content_hash": "3c8c9a041b91f8cbecb473bed4da6ae17ec32775331103984361fd0fe7fc39c3",
+  "built_at": "2026-11-27T09:30:01.811757-05:00",
+  "content_hash": "cab21d6ad4492b036a8908594d18e19d870cb513f9f7092d3555f96a594281e1",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -911,8 +911,8 @@
         "score": 1
       }
     ],
-    "as_of": "2026-11-27 08:26:47 ET",
-    "as_of_source": "watch_levels.json generated_at",
+    "as_of": "2026-11-27 09:30:00 ET",
+    "as_of_source": "mark PT-SB29-2026-10-30-001",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
       "eyebrow": "Trading team",
@@ -1107,7 +1107,7 @@
           "id": "SB29",
           "losses": 0,
           "name": "Robot Wealth risk-premia harvesting (inverse-vol SPY/TLT/GLD)",
-          "open_mark_as_of": "2026-11-26 15:30:00 ET",
+          "open_mark_as_of": "2026-11-27 09:30:00 ET",
           "open_trades": 1,
           "open_unrealized_pnl_usd": -2.4446,
           "reachable_by_trade_50": true,
@@ -1241,7 +1241,7 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-26 15:30:00 ET",
+          "as_of": "2026-11-27 09:30:00 ET",
           "basket_value_usd": 77.5554,
           "freshness": "recent",
           "mark_source": "alerts/poll.log",
@@ -6125,21 +6125,21 @@
         }
       ],
       "mark": {
-        "as_of": "2026-11-26 15:30:00 ET",
+        "as_of": "2026-11-27 09:30:00 ET",
         "basket_value_usd": 77.5554,
         "leg_prices": {
           "GLD": 327.45,
           "SPY": 716.7,
           "TLT": 82.24
         },
-        "mark_as_of": "2026-11-26 15:30:00 ET",
+        "mark_as_of": "2026-11-27 09:30:00 ET",
         "mark_source": "alerts/poll.log",
         "price_source": "alerts poller output",
         "unrealized_pnl_usd": -2.4446
       },
       "mark_freshness": {
-        "et": "2026-11-26T15:30:00-05:00",
-        "source": "2026-11-26 15:30:00 ET",
+        "et": "2026-11-27T09:30:00-05:00",
+        "source": "2026-11-27 09:30:00 ET",
         "status": "recent"
       },
       "mode": "paper",
@@ -14314,21 +14314,21 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-26 15:30:00 ET",
+          "as_of": "2026-11-27 09:30:00 ET",
           "basket_value_usd": 77.5554,
           "leg_prices": {
             "GLD": 327.45,
             "SPY": 716.7,
             "TLT": 82.24
           },
-          "mark_as_of": "2026-11-26 15:30:00 ET",
+          "mark_as_of": "2026-11-27 09:30:00 ET",
           "mark_source": "alerts/poll.log",
           "price_source": "alerts poller output",
           "unrealized_pnl_usd": -2.4446
         },
         "mark_freshness": {
-          "et": "2026-11-26T15:30:00-05:00",
-          "source": "2026-11-26 15:30:00 ET",
+          "et": "2026-11-27T09:30:00-05:00",
+          "source": "2026-11-27 09:30:00 ET",
           "status": "recent"
         },
         "mode": "paper",
