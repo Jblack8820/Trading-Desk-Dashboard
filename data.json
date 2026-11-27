@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-27 09:30:00 ET",
+  "as_of": "2026-11-27 10:25:57 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,8 +16,8 @@
     "sha256": "1658b42f1982f5fb86fd1e4927243adc513a82dc9283525957600757e7526756",
     "status": "ok"
   },
-  "built_at": "2026-11-27T09:30:01.811757-05:00",
-  "content_hash": "cab21d6ad4492b036a8908594d18e19d870cb513f9f7092d3555f96a594281e1",
+  "built_at": "2026-11-27T10:26:43.508453-05:00",
+  "content_hash": "66e7ff599ca150173b7f4b0b7adfe82b8bcaf50bf8d3eaa839462751c5724eac",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -25,9 +25,9 @@
       "cash_usd": 120.0,
       "current_tier": {},
       "deployed_usd": 80.0,
-      "mark_adjusted_equity": 197.5554,
+      "mark_adjusted_equity": 197.7611,
       "max_open_risk": null,
-      "open_unrealized_pnl": -2.4446,
+      "open_unrealized_pnl": -2.2389,
       "recorded_equity": 200.0,
       "recorded_equity_source": "risk_decisions.json account_equity",
       "total_open_risk": 8.0,
@@ -911,7 +911,7 @@
         "score": 1
       }
     ],
-    "as_of": "2026-11-27 09:30:00 ET",
+    "as_of": "2026-11-27 10:25:57 ET",
     "as_of_source": "mark PT-SB29-2026-10-30-001",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
@@ -1011,13 +1011,13 @@
         "format": "money",
         "hint": "Recorded equity plus open production-book unrealized P&L from the freshest sourced mark. Not a brokerage stream.",
         "label": "Mark-adjusted equity",
-        "value": 197.5554
+        "value": 197.7611
       },
       {
         "format": "pnl",
         "hint": "Open production paper trades only",
         "label": "Open unrealized P&L",
-        "value": -2.4446
+        "value": -2.2389
       },
       {
         "format": "money",
@@ -1107,9 +1107,9 @@
           "id": "SB29",
           "losses": 0,
           "name": "Robot Wealth risk-premia harvesting (inverse-vol SPY/TLT/GLD)",
-          "open_mark_as_of": "2026-11-27 09:30:00 ET",
+          "open_mark_as_of": "2026-11-27 10:25:57 ET",
           "open_trades": 1,
-          "open_unrealized_pnl_usd": -2.4446,
+          "open_unrealized_pnl_usd": -2.2389,
           "reachable_by_trade_50": true,
           "realized_pnl_usd": 0,
           "score": 3,
@@ -1207,9 +1207,9 @@
         "executed_at": null,
         "legs": [
           {
-            "change_pct": -4.636448915234605,
+            "change_pct": -3.7862004271201233,
             "fill_price": 751.545,
-            "last_price": 716.7,
+            "last_price": 723.09,
             "notional_usd": 33.68,
             "price_time": "2026-10-30T14:43:21-04:00 (latest available Yahoo print; feed stale)",
             "shares": 0.044814,
@@ -1218,9 +1218,9 @@
             "weight_pct": 42.1
           },
           {
-            "change_pct": 0.7843137254901967,
+            "change_pct": -0.1164215686274496,
             "fill_price": 81.6,
-            "last_price": 82.24,
+            "last_price": 81.505,
             "notional_usd": 31.76,
             "price_time": "2026-10-30T15:44:57-04:00",
             "shares": 0.389216,
@@ -1229,9 +1229,9 @@
             "weight_pct": 39.7
           },
           {
-            "change_pct": -7.773553020701315,
+            "change_pct": -6.362484157160972,
             "fill_price": 355.05,
-            "last_price": 327.45,
+            "last_price": 332.46,
             "notional_usd": 14.56,
             "price_time": "2026-10-30T15:44:04-04:00",
             "shares": 0.041008,
@@ -1241,12 +1241,12 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-27 09:30:00 ET",
-          "basket_value_usd": 77.5554,
+          "as_of": "2026-11-27 10:25:57 ET",
+          "basket_value_usd": 77.7611,
           "freshness": "recent",
           "mark_source": "alerts/poll.log",
           "realized_pnl_net_fees_usd": null,
-          "unrealized_pnl_usd": -2.4446
+          "unrealized_pnl_usd": -2.2389
         },
         "mode": "paper",
         "name": null,
@@ -6125,21 +6125,21 @@
         }
       ],
       "mark": {
-        "as_of": "2026-11-27 09:30:00 ET",
-        "basket_value_usd": 77.5554,
+        "as_of": "2026-11-27 10:25:57 ET",
+        "basket_value_usd": 77.7611,
         "leg_prices": {
-          "GLD": 327.45,
-          "SPY": 716.7,
-          "TLT": 82.24
+          "GLD": 332.46,
+          "SPY": 723.09,
+          "TLT": 81.505
         },
-        "mark_as_of": "2026-11-27 09:30:00 ET",
+        "mark_as_of": "2026-11-27 10:25:57 ET",
         "mark_source": "alerts/poll.log",
         "price_source": "alerts poller output",
-        "unrealized_pnl_usd": -2.4446
+        "unrealized_pnl_usd": -2.2389
       },
       "mark_freshness": {
-        "et": "2026-11-27T09:30:00-05:00",
-        "source": "2026-11-27 09:30:00 ET",
+        "et": "2026-11-27T10:25:57-05:00",
+        "source": "2026-11-27 10:25:57 ET",
         "status": "recent"
       },
       "mode": "paper",
@@ -14314,21 +14314,21 @@
           }
         ],
         "mark": {
-          "as_of": "2026-11-27 09:30:00 ET",
-          "basket_value_usd": 77.5554,
+          "as_of": "2026-11-27 10:25:57 ET",
+          "basket_value_usd": 77.7611,
           "leg_prices": {
-            "GLD": 327.45,
-            "SPY": 716.7,
-            "TLT": 82.24
+            "GLD": 332.46,
+            "SPY": 723.09,
+            "TLT": 81.505
           },
-          "mark_as_of": "2026-11-27 09:30:00 ET",
+          "mark_as_of": "2026-11-27 10:25:57 ET",
           "mark_source": "alerts/poll.log",
           "price_source": "alerts poller output",
-          "unrealized_pnl_usd": -2.4446
+          "unrealized_pnl_usd": -2.2389
         },
         "mark_freshness": {
-          "et": "2026-11-27T09:30:00-05:00",
-          "source": "2026-11-27 09:30:00 ET",
+          "et": "2026-11-27T10:25:57-05:00",
+          "source": "2026-11-27 10:25:57 ET",
           "status": "recent"
         },
         "mode": "paper",
