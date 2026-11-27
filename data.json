@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-26 15:30:00 ET",
+  "as_of": "2026-11-27 08:26:47 ET",
   "audience_bots": [
     "STRATEGY_SCANNER",
     "CRYPTO_TESTER",
@@ -16,8 +16,8 @@
     "sha256": "1658b42f1982f5fb86fd1e4927243adc513a82dc9283525957600757e7526756",
     "status": "ok"
   },
-  "built_at": "2026-11-27T08:25:02.344051-05:00",
-  "content_hash": "8d43c7cd3717685f2c1972f9f43ca3b991bf732834bd15e082117fa7511c1150",
+  "built_at": "2026-11-27T08:30:07.478270-05:00",
+  "content_hash": "3c8c9a041b91f8cbecb473bed4da6ae17ec32775331103984361fd0fe7fc39c3",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -911,8 +911,8 @@
         "score": 1
       }
     ],
-    "as_of": "2026-11-26 15:30:00 ET",
-    "as_of_source": "mark PT-SB29-2026-10-30-001",
+    "as_of": "2026-11-27 08:26:47 ET",
+    "as_of_source": "watch_levels.json generated_at",
     "banner": {
       "desk_policy": "Paper-only $200 desk. No real orders. Safety controls, stops, and account constraints stay in force. This file is the role authority for strategy approval vs testing vs position sizing; older wording that conflicts is superseded by this document.",
       "eyebrow": "Trading team",
@@ -948,7 +948,7 @@
         "source": "risk_decisions.json"
       },
       {
-        "as_of": "2026-11-26T10:44:54.630950-05:00",
+        "as_of": "2026-11-27T08:26:47.474732-05:00",
         "label": "Watch levels",
         "source": "watch_levels.json"
       },
@@ -5756,7 +5756,7 @@
     "usage_source": "USAGE_RULES.md",
     "watcher": {
       "freshness": "recent",
-      "generated_at": "2026-11-26T10:44:54.630950-05:00",
+      "generated_at": "2026-11-27T08:26:47.474732-05:00",
       "level_count": 12,
       "levels": [
         {
@@ -5764,7 +5764,7 @@
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-BTC-USD-ENTRY-20261125",
+          "id": "CX06B-BTC-USD-ENTRY-20261126",
           "kind": "entry",
           "level": 86480.305,
           "strategy_id": "CX06B",
@@ -5776,7 +5776,7 @@
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-ETH-USD-ENTRY-20261125",
+          "id": "CX06B-ETH-USD-ENTRY-20261126",
           "kind": "entry",
           "level": 2726.509,
           "strategy_id": "CX06B",
@@ -5826,7 +5826,7 @@
           "enabled": true,
           "id": "SB11-NQ=F-overnight_low-2026-11-26",
           "kind": "sweep",
-          "level": 25997.5,
+          "level": 26007.0,
           "strategy_id": "SB11",
           "ticker": "NQ=F",
           "trigger": "cross_below"
@@ -5850,7 +5850,7 @@
           "enabled": true,
           "id": "SB11-ES=F-overnight_low-2026-11-26",
           "kind": "confirmation_sweep",
-          "level": 7187.0,
+          "level": 7187.25,
           "strategy_id": "SB11",
           "ticker": "ES=F",
           "trigger": "touch"
@@ -5977,9 +5977,9 @@
         "status": "ok"
       },
       {
-        "bytes": 13355,
+        "bytes": 13357,
         "path": "watch_levels.json",
-        "sha256": "684c516f7c1e8f21721081bbd3e82e9d7e5f15313d67985c1be9d7da261445e3",
+        "sha256": "895999164115b7ab278d473de5f985876133dac29b63d77d676c0ae6cd3a1fd8",
         "status": "ok"
       },
       {
@@ -14580,52 +14580,52 @@
     "watch": {
       "coverage_complete": null,
       "freshness": {
-        "et": "2026-11-26T10:44:54.630950-05:00",
-        "source": "2026-11-26T10:44:54.630950-05:00",
+        "et": "2026-11-27T08:26:47.474732-05:00",
+        "source": "2026-11-27T08:26:47.474732-05:00",
         "status": "recent"
       },
       "gaps": null,
-      "generated_at": "2026-11-26T10:44:54.630950-05:00",
+      "generated_at": "2026-11-27T08:26:47.474732-05:00",
       "levels": [
         {
           "bar": "daily_close",
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-BTC-USD-ENTRY-20261125",
+          "id": "CX06B-BTC-USD-ENTRY-20261126",
           "invalidation_rule": "After a genuine entry, daily close below entry close - 2*N (N = 20-day mean absolute daily change), or below prior-20-day close low",
           "kind": "entry",
-          "last_full_close_utc": "2026-11-25T00:00:00+00:00",
+          "last_full_close_utc": "2026-11-26T00:00:00+00:00",
           "level": 86480.305,
           "near_atr_multiple": 0.5,
           "near_pct": 0.01,
           "price_source": "Yahoo",
-          "reference_atr": 1292.301,
+          "reference_atr": 1288.367,
           "strategy_id": "CX06B",
           "target_rule": "None; exit uses closing stop or channel exit. 25% per coin cap.",
           "ticker": "BTC-USD",
           "trigger": "cross_above",
-          "valid_from_utc": "2026-11-25T00:00:00+00:00"
+          "valid_from_utc": "2026-11-26T00:00:00+00:00"
         },
         {
           "bar": "daily_close",
           "condition": "A completed 00:00 UTC daily close strictly above prior 55 complete daily closes",
           "direction": "LONG",
           "enabled": true,
-          "id": "CX06B-ETH-USD-ENTRY-20261125",
+          "id": "CX06B-ETH-USD-ENTRY-20261126",
           "invalidation_rule": "After a genuine entry, daily close below entry close - 2*N (N = 20-day mean absolute daily change), or below prior-20-day close low",
           "kind": "entry",
-          "last_full_close_utc": "2026-11-25T00:00:00+00:00",
+          "last_full_close_utc": "2026-11-26T00:00:00+00:00",
           "level": 2726.509,
           "near_atr_multiple": 0.5,
           "near_pct": 0.01,
           "price_source": "Yahoo",
-          "reference_atr": 47.468,
+          "reference_atr": 47.591,
           "strategy_id": "CX06B",
           "target_rule": "None; exit uses closing stop or channel exit. 25% per coin cap.",
           "ticker": "ETH-USD",
           "trigger": "cross_above",
-          "valid_from_utc": "2026-11-25T00:00:00+00:00"
+          "valid_from_utc": "2026-11-26T00:00:00+00:00"
         },
         {
           "bar": "weekly_close",
@@ -14639,7 +14639,7 @@
           "near_atr_multiple": 0.5,
           "near_pct": 0.01,
           "price_source": "Yahoo",
-          "reference_atr": 1292.301,
+          "reference_atr": 1288.367,
           "strategy_id": "SB26",
           "ticker": "BTC-USD",
           "trigger": "cross_above"
@@ -14656,7 +14656,7 @@
           "near_atr_multiple": 0.5,
           "near_pct": 0.01,
           "price_source": "Yahoo",
-          "reference_atr": 1292.301,
+          "reference_atr": 1288.367,
           "strategy_id": "SB26",
           "ticker": "BTC-USD",
           "trigger": "cross_below"
@@ -14688,7 +14688,7 @@
           "id": "SB11-NQ=F-overnight_low-2026-11-26",
           "invalidation_rule": "Sweep extreme, only after matching SMT and 5m BOS confirms; target 2R, flat 16:00 ET",
           "kind": "sweep",
-          "level": 25997.5,
+          "level": 26007.0,
           "near_pct": 0.002,
           "price_source": "Yahoo",
           "session_date_et": "2026-11-26",
@@ -14724,7 +14724,7 @@
           "id": "SB11-ES=F-overnight_low-2026-11-26",
           "invalidation_rule": "Sweep extreme, only after matching SMT and 5m BOS confirms; target 2R, flat 16:00 ET",
           "kind": "confirmation_sweep",
-          "level": 7187.0,
+          "level": 7187.25,
           "near_pct": 0.002,
           "price_source": "Yahoo",
           "session_date_et": "2026-11-26",
