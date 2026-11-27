@@ -16,8 +16,8 @@
     "sha256": "b5da701b979d3db005ff6d767e910881a6a74271926901ecd6a95dac5e984a69",
     "status": "ok"
   },
-  "built_at": "2026-11-26T15:30:02.098214-05:00",
-  "content_hash": "31574983fa6a6abfff8fb199ca426db5cc70eff58c979c39bb99b58e683d49cb",
+  "built_at": "2026-11-26T19:07:53.608003-05:00",
+  "content_hash": "9fc123501bd378c177e40d79b43731ca7fa5a6401a2ac9c54b7e5b8a8f3e109c",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -1015,6 +1015,117 @@
         "value": 0
       }
     ],
+    "live_readiness": {
+      "gate": {
+        "also": "positive expectancy after costs, acceptable drawdown for $200, and Jaden's explicit yes",
+        "backtest_score": 5,
+        "paper_trades": 50,
+        "win_rate": 0.8
+      },
+      "rows": [
+        {
+          "closed_trades": 1,
+          "closed_trades_auto_logger": 0,
+          "closed_trades_trade_manager": 1,
+          "gate_met": false,
+          "id": "SB11",
+          "losses": 1,
+          "name": "TJR NY-open liquidity sweep + 5m BOS reversal with ES/NQ SMT gate",
+          "open_trades": 0,
+          "open_unrealized_pnl_usd": null,
+          "reachable_by_trade_50": true,
+          "realized_pnl_usd": -0.4671,
+          "score": 3,
+          "score_ok": false,
+          "status": "needs score 5 + 49 more trades, 40 more wins",
+          "trades_to_50": 49,
+          "win_rate": 0.0,
+          "wins": 0,
+          "wins_needed_for_80pct": 40
+        },
+        {
+          "closed_trades": 0,
+          "closed_trades_auto_logger": 0,
+          "closed_trades_trade_manager": 0,
+          "gate_met": false,
+          "id": "SB26",
+          "losses": 0,
+          "name": "Benjamin Cowen BTC bull-market support band (YouTube)",
+          "open_trades": 0,
+          "open_unrealized_pnl_usd": null,
+          "reachable_by_trade_50": true,
+          "realized_pnl_usd": 0,
+          "score": 3,
+          "score_ok": false,
+          "status": "needs score 5 + 50 more trades, 40 more wins",
+          "trades_to_50": 50,
+          "win_rate": null,
+          "wins": 0,
+          "wins_needed_for_80pct": 40
+        },
+        {
+          "closed_trades": 0,
+          "closed_trades_auto_logger": 0,
+          "closed_trades_trade_manager": 0,
+          "gate_met": false,
+          "id": "SB29",
+          "losses": 0,
+          "name": "Robot Wealth risk-premia harvesting (inverse-vol SPY/TLT/GLD)",
+          "open_trades": 1,
+          "open_unrealized_pnl_usd": 0.1178,
+          "reachable_by_trade_50": true,
+          "realized_pnl_usd": 0,
+          "score": 3,
+          "score_ok": false,
+          "status": "needs score 5 + 50 more trades, 40 more wins",
+          "trades_to_50": 50,
+          "win_rate": null,
+          "wins": 0,
+          "wins_needed_for_80pct": 40
+        },
+        {
+          "closed_trades": 0,
+          "closed_trades_auto_logger": 0,
+          "closed_trades_trade_manager": 0,
+          "gate_met": false,
+          "id": "NC06",
+          "losses": 0,
+          "name": "Treasury end-of-month effect (TLT last 5 trading days, T-bills otherwise)",
+          "open_trades": 0,
+          "open_unrealized_pnl_usd": null,
+          "reachable_by_trade_50": true,
+          "realized_pnl_usd": 0,
+          "score": 5,
+          "score_ok": true,
+          "status": "50 more trades, 40 more wins",
+          "trades_to_50": 50,
+          "win_rate": null,
+          "wins": 0,
+          "wins_needed_for_80pct": 40
+        },
+        {
+          "closed_trades": 0,
+          "closed_trades_auto_logger": 0,
+          "closed_trades_trade_manager": 0,
+          "gate_met": false,
+          "id": "CX06B",
+          "losses": 0,
+          "name": "CX06 on BTC + ETH only (the two coins Robinhood has listed continuously since its 2018 crypto launch): Turtle-style breakout with stop-defined sizing",
+          "open_trades": 0,
+          "open_unrealized_pnl_usd": null,
+          "reachable_by_trade_50": true,
+          "realized_pnl_usd": 0,
+          "score": 5,
+          "score_ok": true,
+          "status": "50 more trades, 40 more wins",
+          "trades_to_50": 50,
+          "win_rate": null,
+          "wins": 0,
+          "wins_needed_for_80pct": 40
+        }
+      ],
+      "source": "paper_trades.json closes (TRADE_MANAGER production + auto_logger records; tester-only excluded); approved_strategies.json scores"
+    },
     "min_account": [
       {
         "count": 197,
@@ -14653,7 +14764,7 @@
     }
   },
   "target_url_not_published": "https://trading-desk-dashboard-2exs.pages.grok.bot/",
-  "template_hash": "8451c27972fc765dd4b136fc8b0c990d770f796fc52c018a56e4de25a6041ddd",
+  "template_hash": "dbbec6108f44132e53492950163223ffdf9efcfb5ff41f6aaeeafebe7451ed22",
   "tester_only_trades": [
     {
       "book": "TESTER_ONLY",

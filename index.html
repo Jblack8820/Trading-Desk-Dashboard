@@ -247,9 +247,45 @@ footer ul{margin:6px 0 0;padding-left:18px}
     return '<article class="card">'+head+prop(rows)+'<div class="legs">'+legs+"</div></article>";
   }
 
+  function readinessPanel(d){
+    var lr=d.live_readiness;
+    var html='<section class="panel"><h2>Live readiness (paper-approved strategies)</h2>';
+    if(!lr||!lr.rows){ return html+'<p class="omit">Live-readiness data was not available.</p></section>'; }
+    var g=lr.gate||{};
+    html+='<p class="dim">Live gate: backtest score '+esc(g.backtest_score)+', '+esc(g.paper_trades)+'+ closed paper trades at '+esc(Math.round((g.win_rate||0)*100))+'%+ win rate, '+esc(g.also||"")+'. Source: '+esc(lr.source||"")+'.</p>';
+    html+=tbl(
+      [
+        {label:"Strategy", key:"id"},
+        {label:"Score", key:"score", num:true},
+        {label:"Closed trades", key:"closed", num:true},
+        {label:"TM / auto", key:"split", num:true},
+        {label:"Open", key:"open", num:true},
+        {label:"Win rate", key:"wr", html:true, num:true},
+        {label:"Realized P&L", key:"pnl", html:true, num:true},
+        {label:"Open uPnL", key:"upnl", html:true, num:true},
+        {label:"Trades to 50", key:"to50", num:true},
+        {label:"Wins needed (80%)", key:"wins", num:true},
+        {label:"Distance to gate", key:"st", html:true}
+      ],
+      lr.rows.map(function(r){
+        return {
+          id:r.id, score:r.score==null?"—":r.score,
+          closed:r.closed_trades, split:r.closed_trades_trade_manager+" / "+r.closed_trades_auto_logger, open:r.open_trades,
+          wr:r.win_rate==null?"—":(r.win_rate*100).toFixed(1)+"%",
+          pnl:pnl(r.realized_pnl_usd), upnl:r.open_unrealized_pnl_usd==null?"—":pnl(r.open_unrealized_pnl_usd),
+          to50:r.trades_to_50, wins:r.wins_needed_for_80pct,
+          st:pill(r.status, r.gate_met?"good":(r.score_ok?"info":"warn"))
+        };
+      }),
+      "No paper-approved strategies."
+    );
+    return html+"</section>";
+  }
+
   function renderOverview(d){
     var html="";
     html+='<div class="grid">'+(d.kpis||[]).map(fmtKpi).join("")+"</div>";
+    html+=readinessPanel(d);
     if(d.issues && d.issues.length){
       html+='<div class="note"><b>Data-quality flags</b><ul style="margin:8px 0 0 18px">'+d.issues.map(function(i){return "<li>"+esc(i)+"</li>";}).join("")+"</ul></div>";
     }
@@ -349,6 +385,7 @@ footer ul{margin:6px 0 0;padding-left:18px}
 
   function renderStrategies(d){
     var html="";
+    html+=readinessPanel(d);
     html+='<section class="panel"><h2>Approval status (paper-approved)</h2>';
     html+=tbl(
       [{label:"ID",key:"id"},{label:"Name",key:"name"},{label:"Status",key:"st",html:true},{label:"Category",key:"category"},{label:"Score",key:"score",num:true},{label:"live_eligible",key:"live"},{label:"Decided",key:"decided_at"},{label:"Reason",key:"reason"}],
