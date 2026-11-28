@@ -16,8 +16,8 @@
     "sha256": "1658b42f1982f5fb86fd1e4927243adc513a82dc9283525957600757e7526756",
     "status": "ok"
   },
-  "built_at": "2026-11-28T12:30:01.789091-05:00",
-  "content_hash": "e671bf429aebdb5ebc2a2bdb57d0afe1abd7124c34c5b81f3fb32d9d486964ec",
+  "built_at": "2026-11-28T15:32:57.386785-05:00",
+  "content_hash": "4073fef5b74abdfe235ade9b7d44bcfadb97002761d5d4970e7059fe9e2a0836",
   "dashboard": {
     "account": {
       "account_mode": "paper",
@@ -1243,7 +1243,7 @@
         "mark": {
           "as_of": "2026-11-27 15:30:00 ET",
           "basket_value_usd": 77.9836,
-          "freshness": "recent",
+          "freshness": "stale",
           "mark_source": "alerts/poll.log",
           "realized_pnl_net_fees_usd": null,
           "unrealized_pnl_usd": -2.0164
@@ -6092,7 +6092,7 @@
       "mark_freshness": {
         "et": "2026-11-27T15:30:00-05:00",
         "source": "2026-11-27 15:30:00 ET",
-        "status": "recent"
+        "status": "stale"
       },
       "mode": "paper",
       "owner": null,
@@ -14281,7 +14281,7 @@
         "mark_freshness": {
           "et": "2026-11-27T15:30:00-05:00",
           "source": "2026-11-27 15:30:00 ET",
-          "status": "recent"
+          "status": "stale"
         },
         "mode": "paper",
         "owner": null,
